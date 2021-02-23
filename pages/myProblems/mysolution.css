@@ -1,0 +1,15 @@
+.solution-statement textarea {
+  background: #fafafa;
+  resize: none;
+  height: 150px !important;
+  overflow: auto;
+}
+
+.search-result {
+  max-height: 200px;
+  overflow: auto;
+}
+.search-result li:hover {
+  color: #fff;
+  background-color: #007bff;
+}
