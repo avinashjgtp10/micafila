@@ -1,0 +1,65 @@
+
+@media only screen and (min-width: 768px) {
+    .mobile-nav {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.mobile-nav .dropdown-menu {
+		left: 15px !important;
+		font-size: 12px;
+		width: 200px;
+	}
+	.mob-hide {
+		display: none !important;
+	}
+	.mobile-nav .dropdown-menu li {
+		padding: 15px;
+	}
+	.mobile-nav .people-nav .dropdown-menu{
+		right: 15px !important;
+		left: inherit !important;
+	}
+	.inboxMenu h4 {
+		display: inline-block;
+		padding: 0;
+	}
+	.inboxMenu {
+		padding: 20px;
+		display: none;
+	}
+	.inboxMenu ul li {
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.inboxppl .photoProfile {
+		width: 10%;
+	}
+	.inboxppl .proDetails {
+		width: 90%;
+	}
+	.inboxppl .pplMsg {
+		display: inline-block;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.inboxppl .inboxSearch {
+		margin-bottom: 20px;
+		font-size: 12px;
+	}
+
+	.inboxName {
+		height: 100%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.inboxppl .photoProfile {
+		width: 15%;
+	}
+	.inboxppl .proDetails {
+		width: 85%;
+	}
+	.inboxppl .inboxSearch {
+		padding: 10px 0;
+	}
+}
