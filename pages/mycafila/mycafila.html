@@ -505,10 +505,13 @@
                             ></span>
                             <div class="action_menu">
                               <ul>
-                                <li>
+                                <li
+                                  data-toggle="modal"
+                                  data-target="#fullHeightModalRight"
+                                >
                                   <i class="fas fa-users"></i> Cafila Info
                                 </li>
-                                <li>
+                                <li >
                                   <i class="fas fa-trash-alt"></i> Delete Cafila
                                 </li>
                               </ul>
@@ -638,8 +641,8 @@
         </div>
       </div>
 
-<!-- Page Model -->
-<!-- Cafila Model -->
+      <!-- Page Model -->
+      <!-- Cafila Model -->
       <div
         class="modal fade right"
         id="fullHeightModalRight"
@@ -715,7 +718,9 @@
                           />
 
                           <span>Cras justo odio</span>
-                          <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                          <span class="trash"
+                            ><i class="fas fa-trash-alt"></i
+                          ></span>
                         </li>
                         <li class="list-group-item">
                           <img
@@ -725,7 +730,9 @@
                           />
 
                           <span>Cras justo odio</span>
-                          <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                          <span class="trash"
+                            ><i class="fas fa-trash-alt"></i
+                          ></span>
                         </li>
                         <li class="list-group-item">
                           <img
@@ -735,9 +742,10 @@
                           />
 
                           <span>Cras justo odio</span>
-                          <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                          <span class="trash"
+                            ><i class="fas fa-trash-alt"></i
+                          ></span>
                         </li>
-                
                       </ul>
                     </div>
                   </form>
@@ -759,127 +767,6 @@
           </div>
         </div>
       </div>
-
-<!-- Cafila Info Model -->
-      <div
-      class="modal fade right"
-      id="fullHeightModalRight"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true"
-    >
-      <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
-      <div class="modal-dialog modal-full-height modal-right" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title w-100" id="myModalLabel">
-              Create your Cafila!
-            </h4>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-2">
-                <div class="addcflphoto">
-                  <div class="plusign"></div>
-                  <input
-                    _ngcontent-serverapp-c5=""
-                    accept=".jpeg,.png,.jpg"
-                    class="custom-file-input file-upload"
-                    id="category_banner"
-                    type="file"
-                  />
-                </div>
-              </div>
-              <div class="col-md-9 ml-3">
-                <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1"
-                      >What shall we call your Cafila?</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cafila"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter Cafila"
-                    />
-                    <small id="emailHelp" class="form-text text-muted"
-                      >Validation Message</small
-                    >
-                  </div>
-                  <div class="form-group" custom-search-form>
-                    <label for="exampleInputEmail1">Add participants :</label>
-                    <div class="input-append span12">
-                      <input
-                        type="text"
-                        class="form-control"
-                        class="search-query"
-                        placeholder="Search"
-                      />
-                    </div>
-                    <ul class="list-group search-line">
-                      <li class="list-group-item">
-                        <img
-                          src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                          alt="user"
-                          class="avatar-img"
-                        />
-
-                        <span>Cras justo odio</span>
-                        <span class="trash"><i class="fas fa-trash-alt"></i></span>
-                      </li>
-                      <li class="list-group-item">
-                        <img
-                          src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                          alt="user"
-                          class="avatar-img"
-                        />
-
-                        <span>Cras justo odio</span>
-                        <span class="trash"><i class="fas fa-trash-alt"></i></span>
-                      </li>
-                      <li class="list-group-item">
-                        <img
-                          src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                          alt="user"
-                          class="avatar-img"
-                        />
-
-                        <span>Cras justo odio</span>
-                        <span class="trash"><i class="fas fa-trash-alt"></i></span>
-                      </li>
-              
-                    </ul>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer justify-content-center">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">
-              Create Cafila
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
       <!-- Main Footer -->
       <footer class="main-footer">
