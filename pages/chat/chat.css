@@ -110,7 +110,7 @@
   background-color: #c23616 !important;
 }
 .user_info {
-  margin-top: auto;
+  margin-top: 10px;
   margin-bottom: auto;
   margin-left: 15px;
 }
@@ -126,7 +126,7 @@
   margin-bottom: auto;
   margin-left: 10px;
   border-radius: 25px;
-  background-color: #82ccdd;
+  background-color:rgb(241, 196, 15);
   padding: 10px;
   position: relative;
 }
@@ -135,7 +135,7 @@
   margin-bottom: auto;
   margin-right: 10px;
   border-radius: 25px;
-  background-color: #78e08f;
+  background-color:#d7d7d7;
   padding: 10px;
   position: relative;
 }
@@ -158,8 +158,8 @@
 }
 #action_menu_btn {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  left: 10px;
+  top: 25px;
   cursor: pointer;
   font-size: 20px;
 }
@@ -167,11 +167,11 @@
   z-index: 1;
   position: absolute;
   padding: 15px 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: #fff;
   border-radius: 15px;
   top: 30px;
-  right: 15px;
+  right: 20px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
   display: none;
 }
 .action_menu ul {
@@ -191,8 +191,30 @@
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.msgsection.chat .type_msg::placeholder {
+  color: #fff !important;
+}
+.msgsection.chat .type_msg {
+  line-height: 44px;
+}
+.msgsection.chat .msg_cotainer_send, .msgsection.chat .msg_cotainer {
+  font-size: 14px;
+}
 @media (max-width: 576px) {
   .contacts_card {
     margin-bottom: 15px !important;
+  }
+}
+@media (max-width: 767px) {
+  .msgsection.chat {
+    margin-top: 20px;
+  }
+  .img_cont {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .msgsection.chat .msg_head .fa-arrow-left {
+    display: none;
   }
 }
