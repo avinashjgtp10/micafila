@@ -40,3 +40,35 @@
   background: rgba(0, 0, 0, 0.3);
   color: white;
 }
+.mycafila-chat #action_menu_btn {
+  position: absolute;
+  right: 10px;
+  left: inherit;
+  top: 25px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.create-mycafila .cafila-search {
+  margin-top: 15px;
+}
+.create-mycafila .modal-footer .btn-primary{
+  background-color: rgb(241, 196, 15);
+  border-color: rgb(241, 196, 15);
+}
+@media (max-width: 767px) {
+  .msgsection.chat {
+    margin-top: 20px;
+  }
+  .img_cont {
+    margin-left: 15px;
+  }
+  .mycafila-chat .action_menu-arrow {
+    left: 10px !important;
+    right: inherit !important;
+    top: 25px !important;
+    position: absolute;
+  }
+}
+@media (min-width: 768px) {
+  
+}
