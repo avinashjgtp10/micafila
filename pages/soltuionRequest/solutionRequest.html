@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="../../plugins/fontawesome-free/css/all.min.css"
     />
-    <link rel="stylesheet" href="./problemModel.css" />
+    <link rel="stylesheet" href="./solutionRequest.css" />
     <!-- IonIcons -->
     <link
       rel="stylesheet"
@@ -708,7 +708,65 @@
                       </div>
                     </div>
 
-                    
+                     <!-- Soltuion Screen  -->
+                     <div class="solution-screen3 mr-3 ml-3">
+                      <div class="row  screen3-title">
+                        <p>
+                          <b
+                            >Reply to ITI's request
+                            </b
+                          >
+                        </p>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-3 screen3-user-avtar">
+                          <img
+                            src="https://ui-avatars.com/api/?name=John+Doe"
+                            class="img-circle"
+                            width="100"
+                            height="100"
+                          />
+                        </div>
+                        <div class="col-md-9">
+                          <form>
+                            <div class="form-group">
+                              <textarea class="form-control solution-textarea"  id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+
+                      <div class="row  mt-5 solution-price-div">
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">State if this is a chargeable service :
+                            </label>  
+                            <div class="form-check  mt-2">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                Easy peasy, I can do this pro-bono. 
+                              </label>
+                            </div>
+                            <div class="form-check  mt-3">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                              <label class="form-check-label" for="flexRadioDefault2">
+                                This is going to take up my time, I'll need to charge the user. 
+                              </label>
+                            </div>
+                            <input type="text" class="form-control solution-price " aria-describedby="emailHelp" placeholder="" value="0">
+                            <small id="emailHelp" class="form-text text-muted">Enter the amount you will charge for solving the problem.  </small>
+                          </div>
+                       
+                        </form>
+</div>                        
+                        <div class="row justify-content-center">
+                          <button type="button" class="btn btn-outline-primary mr-3">Primary</button>
+
+                          <button type="button" class="btn btn-primary">Replay to Request</button>
+                        </div>
+                      </div>
+                    </div>
 
                   </div>
                   <div class="clear"></div>

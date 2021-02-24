@@ -28,9 +28,27 @@
   overflow-x: hidden;
   overflow-y: auto;
   border: 1px solid;
+  border-radius: 0.25rem;
+  border-color: #007bff;
 }
 
-.right-attachments div{
-    border: 1px solid;
-    margin: 8px;
+.right-attachments div {
+  border: 1px solid;
+  margin: 8px;
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-color: #007bff;
+  border-radius: 10rem;
+}
+.right-attachments div:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.right-attachments div i {
+  display: block;
+  float: right;
+  margin: 0;
+  padding: 5px 10px;
+  cursor: pointer;
 }
