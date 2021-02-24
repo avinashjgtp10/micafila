@@ -52,3 +52,46 @@
   padding: 5px 10px;
   cursor: pointer;
 }
+.mysolutions-page .img-thumbnail {
+  border: 0;
+  box-shadow: none;
+}
+.mysolutions-page .userData a{
+  color: #222;
+  font-size: 18px;
+}
+.mysolutions-page .attachments {
+  margin-top: 20px;
+}
+.mysolutions-page .collapsed {
+  font-size: 14px;
+}
+.mysolutions-page .data-section button {
+  margin-right: 10px;
+}
+.mysolutions-page .data-section button img {
+  width: 20px;
+  height: 20px;
+}
+.mysolutions-page .right-attachments {
+  margin-bottom: 20px !important;
+}
+.mysolutions-page .right-attachments div {
+  padding: 10px;
+}
+.mysolutions-page .right-attachments div .fa-times-circle {
+  float: right;
+  margin-top: 5px;
+}
+.mysolutions-page .download-all-btn button{
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
+}
+.mysolutions-page .solution-button button{
+  box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+
+}

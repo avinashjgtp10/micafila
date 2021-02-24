@@ -7,3 +7,18 @@
 .problem img {
   width: 37.34375vw;
 }
+.page-problems .ppl {
+  padding: 15px 0 0 10px;
+}
+.page-problems .ppl:hover{
+  box-shadow: 0 6px 12px rgb(0 0 0 / 16%);
+}
+@media (max-width: 767px) {
+  .page-problems .ppl {
+    padding: 15px 0 10px 10px;
+    border-top: 1px solid #F1F1F3;
+  }
+  .page-problems .inboxtab {
+    margin-top: 20px;
+  }
+}
