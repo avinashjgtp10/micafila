@@ -13,3 +13,24 @@
   color: #fff;
   background-color: #007bff;
 }
+
+.soltion-screenshot img {
+  margin: 10px;
+}
+
+.close-icon {
+  position: absolute;
+  font-size: 1.3rem;
+  right: 10px;
+}
+.right-attachments {
+  max-height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid;
+}
+
+.right-attachments div{
+    border: 1px solid;
+    margin: 8px;
+}
