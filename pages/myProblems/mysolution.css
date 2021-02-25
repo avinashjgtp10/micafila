@@ -77,11 +77,10 @@
   margin-bottom: 20px !important;
 }
 .mysolutions-page .right-attachments div {
-  padding: 10px;
+  padding: 5px 10px;
 }
 .mysolutions-page .right-attachments div .fa-times-circle {
   float: right;
-  margin-top: 5px;
 }
 .mysolutions-page .download-all-btn button{
   width: 100%;

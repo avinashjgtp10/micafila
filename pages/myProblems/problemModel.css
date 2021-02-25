@@ -65,6 +65,7 @@
 }
 .mysolutions-page .attachments {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .mysolutions-page .collapsed {
   font-size: 14px;
@@ -80,11 +81,10 @@
   margin-bottom: 20px !important;
 }
 .mysolutions-page .right-attachments div {
-  padding: 10px;
+  padding: 5px 10px;
 }
 .mysolutions-page .right-attachments div .fa-times-circle {
   float: right;
-  margin-top: 5px;
 }
 .mysolutions-page .download-all-btn button{
   width: 100%;
@@ -95,8 +95,17 @@
   box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
   margin-bottom: 15px;
 }
+.mysolutions-page .feedback-attahcment button {
+  margin-bottom: 10px;
+}
+.mysolutions-page .review-block-description {
+  margin-bottom: 20px;
+}
 @media (max-width: 767px) {
-
+  .mysolutions-page .attachments .attachments-thumbnail {
+    width: 70px;
+    float: left;
+  }
 }
 
 
