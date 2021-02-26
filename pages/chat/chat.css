@@ -1,3 +1,11 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../fonts/Roboto-Regular.woff);
+}
+body {
+  font-family: RobotoRegular, sans-serif !important;
+  font-size: 14px !important;
+}
 .chat {
   margin-top: auto;
   margin-bottom: auto;
@@ -95,6 +103,12 @@
 .img_cont_msg {
   height: 40px;
   width: 40px;
+}
+.ppl {
+  padding: 15px 0 0 10px;
+}
+.ppl:hover{
+  box-shadow: 0 6px 12px rgb(0 0 0 / 16%);
 }
 .online_icon {
   position: absolute;
@@ -212,9 +226,16 @@
   .img_cont {
     margin-left: 15px;
   }
+  .ppl {
+    padding: 15px 0 10px 10px;
 }
 @media (min-width: 768px) {
   .msgsection.chat .msg_head .fa-arrow-left {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .ppl {
+    padding: 15px 0 10px 10px;
   }
 }

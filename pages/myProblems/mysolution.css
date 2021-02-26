@@ -1,3 +1,11 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../fonts/Roboto-Regular.woff);
+}
+body {
+  font-family: RobotoRegular, sans-serif !important;
+  font-size: 14px !important;
+}
 .solution-statement textarea {
   background: #fafafa;
   resize: none;
@@ -91,6 +99,14 @@
   box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
   margin-bottom: 15px;
 }
+.ppl {
+  padding: 15px 0 0 10px;
+}
+.ppl:hover{
+  box-shadow: 0 6px 12px rgb(0 0 0 / 16%);
+}
 @media (max-width: 767px) {
-
+  .ppl {
+    padding: 15px 0 10px 10px;
+  }
 }

@@ -1,3 +1,11 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../fonts/Roboto-Regular.woff);
+}
+body {
+  font-family: RobotoRegular, sans-serif !important;
+  font-size: 14px !important;
+}
 .problem {
   color: rgba(0, 0, 0, 0.3);
   margin-top: 12%;
@@ -47,11 +55,37 @@
   font-size: 1rem;
   color: #616161;
 }
-
+.ppl {
+  padding: 15px 0 0 10px;
+}
+.ppl:hover{
+  box-shadow: 0 6px 12px rgb(0 0 0 / 16%);
+}
 .screen3-user-avtar {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+}
+.user-avtar-details .details {
+  margin-top: 10px;
+}
+.user-avtar-details .details li {
+  list-style-type: none;
+}
+.user-avtar-details .details li p {
+  margin-bottom: 5px;
+}
+.user-avtar-details button {
+  box-shadow: 0 2px 2px rgb(0 0 0 / 28%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.user-avtar-details .container {
+  padding-left: 0;
+}
+.user-avtar-details .container h2 {
+  font-size: 14px;
+  font-weight: bold;
 }
 .solution-price {
   width: 15rem !important;
@@ -65,4 +99,31 @@
 .solution-textarea {
   background: #f6f6f6 !important;
   resize: none;
+}
+.multi-screen-level .screen1, .multi-screen-level .screen2 {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #F1F1F3;
+}
+.multi-screen-level .negotiation-panle .price-tag {
+  font-family: RobotoRegular, sans-serif !important;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+.multi-screen-level .negotiation-panle .amount-negotiation-panel {
+  line-height: 30px;
+}
+.multi-screen-level .solution-dp {
+  max-width: 12%;
+}
+@media (max-width: 767px) {
+  .user-avtar-details button {
+    margin-bottom: 50px;
+  }
+  .multi-screen-level .negotiation-panle .price-tag {
+    padding: 10px 20px;
+  }
+  .ppl {
+    padding: 15px 0 10px 10px;
+  }
 }
