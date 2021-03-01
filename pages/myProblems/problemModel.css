@@ -81,6 +81,10 @@ body {
 .mysolutions-page .data-section button {
   margin-right: 10px;
   font-family: RobotoRegular, sans-serif !important;
+  border-color: #039be5;
+}
+.mysolutions-page .data-section button:hover {
+  background-color: #039be5;
 }
 .mysolutions-page .data-section button img {
   width: 20px;
@@ -88,6 +92,9 @@ body {
 }
 .mysolutions-page .right-attachments {
   margin-bottom: 20px !important;
+}
+.mysolutions-page .right-attachments .fa-times-circle:before {
+  color: red;
 }
 .mysolutions-page .right-attachments div {
   padding: 5px 10px;
@@ -103,6 +110,14 @@ body {
 .mysolutions-page .solution-button button {
   box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
   margin-bottom: 15px;
+  border-color: #039be5;
+}
+.mysolutions-page .solution-button button:hover {
+  background-color: #039be5;
+}
+.mysolutions-page .solution-button .btn-primary{
+  background-color: #039be5;
+  border-color: #039be5;
 }
 .mysolutions-page .feedback-attahcment button {
   margin-bottom: 10px;

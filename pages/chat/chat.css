@@ -99,6 +99,7 @@ body {
   position: relative;
   height: 70px;
   width: 70px;
+  left: 10px;
 }
 .img_cont_msg {
   height: 40px;
@@ -114,19 +115,29 @@ body {
   position: absolute;
   height: 15px;
   width: 15px;
-  background-color: #4cd137;
+  background-color: #28b5f4;
+  border-radius: 50%;
+  bottom: 0.2em;
+  right: 0.4em;
+  border: 1.5px solid white;
+}
+.offline_icon {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: #e4e4e4;
   border-radius: 50%;
   bottom: 0.2em;
   right: 0.4em;
   border: 1.5px solid white;
 }
 .offline {
-  background-color: #c23616 !important;
+  background-color: #e4e4e4 !important;
 }
 .user_info {
   margin-top: 10px;
   margin-bottom: auto;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .user_info span {
   font-size: 20px;
@@ -140,7 +151,7 @@ body {
   margin-bottom: auto;
   margin-left: 10px;
   border-radius: 25px;
-  background-color:rgb(241, 196, 15);
+  background-color:#28b5f4;
   padding: 10px;
   position: relative;
 }

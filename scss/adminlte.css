@@ -37609,3 +37609,27 @@ a.text-muted:hover {
   color: #ced4da;
 }
 /*# sourceMappingURL=adminlte.css.map */
+.sidebar-dark-primary {
+  background-color: #d7d7d7;
+}
+.sidebar-dark-primary .nav-sidebar .nav-link p {
+  color: #616161;
+}
+.sidebar-dark-primary .nav-sidebar .nav-link i {
+  color: #616161;
+}
+.sidebar-dark-primary .nav-sidebar .nav-item.active {
+  background-color: #cdcdcd;
+  border: 0;
+  border-radius: 0;
+}
+.sidebar-dark-primary .nav-sidebar .nav-item.active .nav-link {
+  background-color: transparent;
+}
+.sidebar-dark-primary .nav-sidebar .nav-item.active i{
+  color: #fff;
+}
+.sidebar-dark-primary .nav-sidebar .nav-item i{
+  width: 25px;
+  margin: 0;
+}

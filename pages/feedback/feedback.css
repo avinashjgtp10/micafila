@@ -1,3 +1,15 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../..//fonts/Roboto-Regular.woff);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(../../fonts/Roboto-Bold.woff);
+}
+body {
+  font-family: RobotoRegular, sans-serif !important;
+  font-size: 14px !important;
+}
 /* .problem {
     color: rgba(0, 0, 0, 0.3);
     margin-top: 12%;
@@ -84,14 +96,14 @@ margin: 4px;
 }
 .feedPhoto {
   padding: 0;
-  margin: 4.166666666666666vw 0 0 3.854166666666667vw;
+  margin: 2.166666666666666vw 0 0 3.854166666666667vw;
   float: left;
   width: 7.8125vw;
   height: 7.8125vw;
   border-radius: 50%;
 }
 .feedCnt p {
-  padding: 5.208333333333334vw 0 0;
+  padding: 2.208333333333334vw 0 0;
   margin: 0;
   font-size: calc(0.875rem + ((1vw - 13.6px) * 0.7143));
   line-height: 1.25vw;
@@ -112,7 +124,7 @@ margin: 4px;
 .ignore a {
   float: left;
   background: #fff;
-  color: #616161;
+  color: #039BE5;
   font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
@@ -121,6 +133,11 @@ margin: 4px;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0px 2px 8px rgb(0 0 0 / 24%);
+  border: 1px solid #039BE5;
+}
+.ignore a:hover {
+  background-color: #039BE5;
+  color: #fff;
 }
 .viewPost a {
   float: left;
@@ -152,6 +169,28 @@ a {
   cursor: pointer;
 }
 
-
-
+@media (max-width: 767px) {
+  .feedSec h4 {
+    line-height: 1.2;
+    font-size: 18px;
+    padding-left: 0;
+  }
+  .feedCnt p {
+    line-height: 1.2;
+    font-size: 14px;
+  }
+  .feedPhoto {
+    width: 20%;
+  }
+  .viewProfile {
+    font-size: 12px;
+  }
+  .viewPost a, .ignore a {
+    font-size: 16px;
+    line-height: 16px;
+    width: auto;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+  }
+}
 
