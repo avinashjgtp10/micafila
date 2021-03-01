@@ -1,0 +1,94 @@
+.problem {
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: 12%;
+    width: auto;
+  }
+  
+  .problem img {
+    width: 37.34375vw;
+  }
+
+.active{
+    background: rgba(40, 181, 244, 0.5);
+    border-left: 0.41667vw solid #28b5f4;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+  .scroller{
+    height: 42.604167vw;
+    overflow-y: scroll;
+    overflow: auto;
+}  
+ .connections ul {
+    overflow: auto;
+    height: 43.854166666666664vw;
+    margin: 2.34375vw 0 0 0;
+}
+ .connections .pplMsg.feedback {
+    margin: 0 0 0.5124450951683748vw;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    position: relative;
+    clear: both;
+}
+.pplMsg{
+    min-height: 4.6875vw;
+}  
+.evrKnow h4 {
+    font-size: calc(1.625rem + ((1vw - 13.6px) * 1.7857));
+    color: #616161;
+    width: 79.4%;
+    line-height: 2.083333333333333vw;
+    font-weight: normal;
+    font-family: 'MontserratRegular';
+    padding: 2.604166666666667vw 0 0;
+    margin: 0 auto;
+}
+.evrKnow h5 {
+    font-size: calc(0.875rem + ((1vw - 13.6px) * 0.7143));
+    color: #000;
+    line-height: 1.25vw;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    padding: 1.0416666666666665vw 0 0;
+    width: 79.4%;
+    margin: 0 auto;
+}
+.evrKnow ul {
+    padding: 0 0 0 11.51%;
+    margin: 3.4895833333333335vw 0 0;
+    height: 31.927083333333332vw;
+    overflow: auto;
+    list-style: none;
+}
+
+
+.evrKnow ul li {
+    width: 7.8125vw;
+    float: left;
+    padding: 0;
+    margin: 0 1.5625vw 0 0;
+    min-height: 13.541666666666666vw;
+    list-style: none;
+}
+img, object, embed, video {
+    max-width: 100%;
+    width: 100%;
+}
+.evrKnow ul li .cumName {
+    padding: 1.0416666666666665vw 0 0;
+    margin: 0;
+    font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
+    line-height: 1.1458333333333333vw;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.evrKnow ul li .cumposition {
+    padding: 0;
+    margin: 0;
+    font-size: calc(0.75rem + ((1vw - 13.6px) * 0.7143));
+    line-height: 1.0416666666666665vw;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
