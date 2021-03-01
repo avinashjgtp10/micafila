@@ -1,671 +1,914 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MiCafila</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
     <!-- IonIcons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
     <!-- Theme style -->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
     <!-- <link rel=" stylesheet" type="text/css" href="sass/main.css" /> -->
     <!-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> -->
-    <link rel="stylesheet" href="./scss/adminlte.css">
-	<link rel="stylesheet" type="text/css" href="./dist/css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./scss/adminlte.css" />
+    <link rel="stylesheet" type="text/css" href="./dist/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
 
-</head>
-
-<body class="hold-transition sidebar-mini" style="background: #e4e4e4;">
+  <body class="hold-transition sidebar-mini" style="background: #e4e4e4;">
     <div class="wrapper">
-        <!-- Navbar Main -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="box-shadow: 0px -1px 9px #666;">
-            <!-- Left navbar links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </li>
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="" style="width: 100%;" />
-                </a>
-            </ul>
-
-            <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Josh Clark
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Edit bio</a></li>
-                        <li><a class="dropdown-item" href="#">Change language</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item profilepic">
-                    <a class="nav-link" href="#"><img src="images/josh.png" style="width: 30px;" /></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <i class="far fa-bell"></i>
-                        <span class="badge badge-warning navbar-badge">15</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <span class="dropdown-item dropdown-header">15 Notifications</span>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-envelope mr-2"></i> 4 new messages
-                            <span class="float-right text-muted text-sm">3 mins</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-users mr-2"></i> 8 friend requests
-                            <span class="float-right text-muted text-sm">12 hours</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-file mr-2"></i> 3 new reports
-                            <span class="float-right text-muted text-sm">2 days</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <!-- /.navbar main -->
-
-        <!-- menu navbar -->
-        <div id="my-content" class="mobile-nav">
-            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-                <div class="col-md-4">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Inbox
-                            </a>
-                            <ul class="dropdown-menu inboxUl" aria-labelledby="navbarDropdown">
-                                <li class="active"><a class="colorText" href="#">Messages <span
-                                            class="menuRight">10</span></a>
-                                </li>
-                                <li><a class="colorText" href="#">My solutions <span class="menuRight">7</span></a></li>
-                                <li><a class="colorText" href="#">My problems <span class="menuRight">4</span></a></li>
-                                <li><a class="colorText" href="#">My Cafila <span class="menuRight">9</span></a></li>
-                                <li class="fntfm"><a class="colorText" href="#">Starred</a></li>
-                                <li class="fntfm"><a class="colorText" href="#">Trash</a></li>
-                                <div class="clear"></div>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Requests
-                            </a>
-                            <ul class=" dropdown-menu inboxUl" aria-labelledby="navbarDropdown">
-                                <li><a class="colorText" href="#">Problem requests <span class="menuRight">2</span></a>
-                                </li>
-                                <li><a class="colorText" href="#">Solution requests <span class="menuRight">5</span></a>
-                                </li>
-                                <li><a class="colorText" href="#">Be my mentor <span class="menuRight">5</span></a></li>
-                                <li><a class="colorText" href="#">New connections <span class="menuRight">10</span></a>
-                                </li>
-                                <li><a class="colorText" href="#">Feedback <span class="menuRight">5</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 people-nav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                People
-                            </a>
-                            <ul class=" dropdown-menu inboxUl" aria-labelledby="navbarDropdown">
-                                <li><a class="colorText" href="#">My network <span class="menuRight">6</span></a></li>
-                                <li><a class="colorText" href="#">Blocked/Spam <span class="menuRight">8</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-
-
-        <!-- /. menu navbar -->
-
-        <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
-            <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
-                <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-                    style="opacity: .8">
-                <span class="brand-text font-weight-light">MiCafila</span>
+      <!-- Navbar Main -->
+      <nav
+        class="main-header navbar navbar-expand navbar-white navbar-light"
+        style="box-shadow: 0px -1px 9px #666;"
+      >
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button">
+              <i class="fas fa-bars"></i>
             </a>
+          </li>
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="" style="width: 100%;" />
+          </a>
+        </ul>
 
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <!-- SidebarSearch Form -->
-                <div class="form-inline">
-                    <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
-                            aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-sidebar">
-                                <i class="fas fa-search fa-fw"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Josh Clark
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Edit bio</a></li>
+              <li><a class="dropdown-item" href="#">Change language</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </li>
+          <li class="nav-item profilepic">
+            <a class="nav-link" href="#"
+              ><img src="images/josh.png" style="width: 30px;"
+            /></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-bell"></i>
+              <span class="badge badge-warning navbar-badge">15</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <span class="dropdown-item dropdown-header"
+                >15 Notifications</span
+              >
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                <span class="float-right text-muted text-sm">3 mins</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-users mr-2"></i> 8 friend requests
+                <span class="float-right text-muted text-sm">12 hours</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-file mr-2"></i> 3 new reports
+                <span class="float-right text-muted text-sm">2 days</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer"
+                >See All Notifications</a
+              >
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar main -->
 
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                        data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
+      <!-- menu navbar -->
+      <div id="my-content" class="mobile-nav">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+          <div class="col-md-4">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Inbox
+                </a>
+                <ul
+                  class="dropdown-menu inboxUl"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li class="active">
+                    <a class="colorText" href="#"
+                      >Messages <span class="menuRight">10</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >My solutions <span class="menuRight">7</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >My problems <span class="menuRight">4</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >My Cafila <span class="menuRight">9</span></a
+                    >
+                  </li>
+                  <li class="fntfm">
+                    <a class="colorText" href="#">Starred</a>
+                  </li>
+                  <li class="fntfm"><a class="colorText" href="#">Trash</a></li>
+                  <div class="clear"></div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Requests
+                </a>
+                <ul
+                  class="dropdown-menu inboxUl"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="colorText" href="#"
+                      >Problem requests <span class="menuRight">2</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >Solution requests <span class="menuRight">5</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >Be my mentor <span class="menuRight">5</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >New connections <span class="menuRight">10</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >Feedback <span class="menuRight">5</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 people-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  People
+                </a>
+                <ul
+                  class="dropdown-menu inboxUl"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="colorText" href="#"
+                      >My network <span class="menuRight">6</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >Blocked/Spam <span class="menuRight">8</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- /. menu navbar -->
+
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+          <img
+            src="dist/img/AdminLTELogo.png"
+            alt="AdminLTE Logo"
+            class="brand-image img-circle elevation-3"
+            style="opacity: 0.8;"
+          />
+          <span class="brand-text font-weight-light">MiCafila</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- SidebarSearch Form -->
+          <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+              <input
+                class="form-control form-control-sidebar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-sidebar">
+                  <i class="fas fa-search fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
+              <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
-
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Home
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Dashboard
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tree"></i>
-                                <p>
-                                    Recommandations
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-edit"></i>
-                                <p>
-                                    Connections
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    Contact Us
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/calendar.html" class="nav-link">
-                                <i class="nav-icon fas fa-calendar-alt"></i>
-                                <p>
-                                    Upgrade to Premium!
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
-
-        <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            <!-- Main content -->
-            <div class="content">
-                <div class="container-fluid">
-                    <div class="row maincontentRow">
-                        <div class="col-lg-2  col-md-2  inboxMenu">
-                            <h4 class="mob-hide">Inbox</h4>
-                            <ul class="inboxUl mob-hide">
-                                <li class="active"><a class="colorText" href="#">Messages <span
-                                            class="menuRight">10</span></a> </li>
-                                <li><a class="colorText" href="#">My solutions <span class="menuRight">7</span></a></li>
-                                <li><a class="colorText" href="#">My problems <span class="menuRight">4</span></a></li>
-                                <li><a class="colorText" href="#">My Cafila <span class="menuRight">9</span></a></li>
-                                <li class="fntfm"><a class="colorText" href="#">Starred</a></li>
-                                <li class="fntfm"><a class="colorText" href="#">Trash</a></li>
-                                <div class="clear"></div>
-                            </ul>
-                            <h4 class="requestPadding mob-hide">Requests</h4>
-                            <ul class="inboxUl mob-hide">
-                                <li><a class="colorText" href="#">Problem requests <span class="menuRight">2</span></a>
-                                </li>
-                                <li><a class="colorText" href="#">Solution requests <span class="menuRight">5</span></a>
-                                </li>
-                                <li><a class="colorText" href="#">Be my mentor <span class="menuRight">5</span></a></li>
-                                <li><a class="colorText" href="#">New connections <span class="menuRight">10</span></a>
-                                </li>
-                                <li><a class="colorText" href="#">Feedback <span class="menuRight">5</span></a></li>
-                            </ul>
-                            <h4 class="mob-hide">People</h4>
-                            <ul class="inboxUl mob-hide">
-                                <li><a class="colorText" href="#">My network <span class="menuRight">6</span></a></li>
-                                <li><a class="colorText" href="#">Blocked/Spam <span class="menuRight">8</span></a></li>
-                            </ul>
-                            <div class="clear"></div>
-                        </div>
-                        <div class="col-lg-10 col-md-10">
-                            <div class="row no-gutters inboxppl">
-                                <div class="inboxName col-lg-4 col-md-4">
-
-
-                                    <div class="row no-gutters">
-                                        <div class="searchbutn"><button class="btnSearch"></button></div>
-                                        <input type="text" id="" name="" class="inboxSearch"
-                                            placeholder="Search Message or Name…" />
-                                    </div>
-
-                                    <div class="row no-gutters">
-                                        <ul class="responsive-tabs inboxtab">
-                                            <li class="pplMsg selected">
-                                                <a href="#chat-tab-1" class="ppl" target="_self">
-
-                                                    <span class="photoProfile col-lg-2 col-md-2"><img
-                                                            src="images/photo.png" alt="" /></span>
-                                                    <span class="proDetails col-lg-10 col-md-10">
-                                                        <div class="row no-gutters">
-                                                            <span class="NameLeft col-lg-9 col-md-9">David James</span>
-                                                            <span class="dateBlk col-lg-3 col-md-3">Jan 5</span>
-                                                        </div>
-                                                        <p>Lorem ipsum dolor sit amet Consectetur…</p>
-                                                    </span>
-
-                                                </a>
-                                            </li>
-                                            <li class="pplMsg ">
-                                                <a href="#chat-tab-2" class="ppl" target="_self">
-                                                    <span class="photoProfile col-lg-2 col-md-2">
-                                                        <img src="images/avatar.png" alt="" />
-                                                    </span>
-                                                    <span class="proDetails col-lg-10 col-md-10">
-                                                        <div class="row no-gutters">
-                                                            <span class="NameLeft col-lg-9 col-md-9">Tony Stark</span>
-                                                            <span class="dateBlk col-lg-3 col-md-3">Jan 4</span>
-                                                        </div>
-                                                        <p>Hi Josh, how can I help you?</p>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="pplMsg">
-                                                <a href="#chat-tab-3" class="ppl" target="_self">
-                                                    <span class="photoProfile col-lg-2 col-md-2">
-                                                        <img src="images/avatar-1.png" alt="" />
-                                                    </span>
-                                                    <span class="proDetails col-lg-10 col-md-10">
-                                                        <div class="row no-gutters">
-                                                            <span class="NameLeft col-lg-9 col-md-9">Bessie Berry</span>
-                                                            <span class="dateBlk col-lg-3 col-md-3">Jan 2</span>
-                                                        </div>
-                                                        <p>Lorem ipsum dolor sit amet Consectetur…</p>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="pplMsg">
-                                                <a href="#chat-tab-4" class="ppl" target="_self">
-                                                    <span class="photoProfile col-lg-2 col-md-2">
-                                                        <img src="images/avatar-2.png" alt="" />
-                                                    </span>
-                                                    <span class="proDetails col-lg-10 col-md-10">
-                                                        <div class="row no-gutters">
-                                                            <span class="NameLeft col-lg-9 col-md-9">Gleb
-                                                                Kuznetsov</span>
-                                                            <span class="dateBlk col-lg-3 col-md-3">Dec 30</span>
-                                                        </div>
-                                                        <p>Lorem ipsum dolor sit amet Consectetur…</p>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="pplMsg ">
-                                                <a href="#chat-tab-5" class="ppl" target="_self">
-                                                    <span class="photoProfile col-lg-2 col-md-2">
-                                                        <img src="images/avatar-1.png" alt="" />
-                                                    </span>
-                                                    <span class="proDetails col-lg-10 col-md-10">
-                                                        <div class="row no-gutters">
-                                                            <span class="NameLeft col-lg-9 col-md-9">Andrey
-                                                                Prokopenko</span>
-                                                            <span class="dateBlk col-lg-3 col-md-3">Dec 28</span>
-                                                        </div>
-                                                        <p>Lorem ipsum dolor sit amet Consectetur…</p>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="pplMsg">
-                                                <a href="#chat-tab-6" class="ppl" target="_self">
-                                                    <span class="photoProfile col-lg-2 col-md-2">
-                                                        <img src="images/avatar-4.png" alt="" /></span>
-                                                    <span class="proDetails col-lg-10 col-md-10">
-                                                        <div class="row no-gutters">
-                                                            <span class="NameLeft col-lg-9 col-md-9">Nick
-                                                                Herasimenka</span>
-                                                            <span class="dateBlk col-lg-3 col-md-3">Dec 28</span>
-                                                        </div>
-                                                        <p>Lorem ipsum dolor sit amet Consectetur…</p>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="pplMsg ">
-                                                <a href="#chat-tab-7" class="ppl" target="_self">
-                                                    <span class="photoProfile col-lg-2 col-md-2">
-                                                        <img src="images/avatar-5.png" alt="" />
-                                                    </span>
-                                                    <span class="proDetails col-lg-10 col-md-10">
-                                                        <div class="row no-gutters">
-                                                            <span class="NameLeft col-lg-9 col-md-9">Valentin
-                                                                Salmon</span>
-                                                            <span class="dateBlk col-lg-3 col-md-3">Dec 12</span>
-                                                        </div>
-                                                        <p>Lorem ipsum dolor sit amet Consectetur…</p>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="pplMsg">
-                                                <a href="#chat-tab-8" class="ppl" target="_self">
-                                                    <span class="photoProfile col-lg-2 col-md-2">
-                                                        <img src="images/avatar-6.png" alt="" /></span>
-                                                    <span class="proDetails col-lg-10 col-md-10">
-                                                        <div class="row no-gutters">
-                                                            <span class="NameLeft col-lg-9 col-md-9">Miro Kirov</span>
-                                                            <span class="dateBlk col-lg-3 col-md-3">Nov 29</span>
-                                                        </div>
-                                                        <p>Lorem ipsum dolor sit amet Consectetur…</p>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li class="pplMsg">
-                                                <a href="#chat-tab-9" class="ppl" target="_self">
-                                                    <span class="photoProfile col-lg-2 col-md-2">
-                                                        <img src="images/avatar-7.png" alt="" />
-                                                    </span>
-                                                    <span class="proDetails col-lg-10 col-md-10">
-                                                        <div class="row no-gutters">
-                                                            <span class="NameLeft col-lg-9 col-md-9">David James</span>
-                                                            <span class="dateBlk col-lg-3 col-md-3">Nov 28</span>
-                                                        </div>
-                                                        <p>Lorem ipsum dolor sit amet Consectetur…</p>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-8 col-md-8">
-                                    <div class="inboxMsg">
-                                        <div class="msgsection">
-                                            <div class="startMsg">
-                                                <p>Select a message to open the conversation thread.</p>
-                                                <img class="startMsgImg" src="images/msgImg.png" alt="" />
-                                            </div>
-                                            <div class="responsive-tabs-content bm-larger">
-                                                <div id="chat-tab-1" class="responsive-tabs-panel">
-                                                    <div class="msgMainblk">
-                                                        <div class="backarrow backarrw"></div>
-                                                        <div class="chatdetals">
-                                                            <div class="chatphoto"><img src="images/photo.png" alt="" />
-                                                            </div>
-                                                            <div class="chatName">
-                                                                <h3 id="name">David James</h3>
-                                                                <p id="post">Digital Illustrator</p>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="chatinput"><input type="text" id=""
-                                                            placeholder="Type your message here…"
-                                                            name=""><button></button>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div id="chat-tab-2" class="responsive-tabs-panel">
-                                                    <div class="msgMainblk">
-                                                        <div class="backarrow backarrw"></div>
-                                                        <div class="chatdetals">
-                                                            <div class="chatphoto"><img src="images/avatar.png"
-                                                                    alt="" />
-                                                            </div>
-                                                            <div class="chatName">
-                                                                <h3 id="name">Tony Stark</h3>
-                                                                <p id="post">Digital Illustrator</p>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <div class="outgoMsg">Hi Josh, how can I help you?</div>
-                                                        <div class="msgTime">10:24</div>
-                                                        <div class="incomingMsg">Hey Tony, I have a question regarding
-                                                            my
-                                                            brushes. Do you have time for a call?
-                                                        </div>
-                                                        <div class="msgTimeinn">10:24</div>
-
-                                                    </div>
-                                                    <div class="chatinput"><input type="text" id=""
-                                                            placeholder="Type your message here…"
-                                                            name=""><button></button>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div id="chat-tab-3" class="responsive-tabs-panel">
-                                                    <div class="msgMainblk">
-                                                        <div class="backarrow backarrw"></div>
-                                                        <div class="chatdetals">
-                                                            <div class="chatphoto"><img src="images/avatar-1.png"
-                                                                    alt="" />
-                                                            </div>
-                                                            <div class="chatName">
-                                                                <h3 id="name">Bessie Berry</h3>
-                                                                <p id="post">Digital Illustrator</p>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="chatinput"><input type="text" id=""
-                                                            placeholder="Type your message here…"
-                                                            name=""><button></button>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div id="chat-tab-4" class="responsive-tabs-panel">
-                                                    <div class="msgMainblk">
-                                                        <div class="backarrow backarrw"></div>
-                                                        <div class="chatdetals">
-                                                            <div class="chatphoto"><img src="images/avatar-2.png"
-                                                                    alt="" />
-                                                            </div>
-                                                            <div class="chatName">
-                                                                <h3 id="name">Gleb Kuznetsov</h3>
-                                                                <p id="post">Digital Illustrator</p>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="chatinput"><input type="text" id=""
-                                                            placeholder="Type your message here…"
-                                                            name=""><button></button>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div id="chat-tab-5" class="responsive-tabs-panel">
-                                                    <div class="msgMainblk">
-                                                        <div class="backarrow backarrw"></div>
-                                                        <div class="chatdetals">
-                                                            <div class="chatphoto"><img src="images/avatar-1.png"
-                                                                    alt="" />
-                                                            </div>
-                                                            <div class="chatName">
-                                                                <h3 id="name">Andrey Prokopenko</h3>
-                                                                <p id="post">Digital Illustrator</p>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="chatinput"><input type="text" id=""
-                                                            placeholder="Type your message here…"
-                                                            name=""><button></button>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div id="chat-tab-6" class="responsive-tabs-panel">
-                                                    <div class="msgMainblk">
-                                                        <div class="backarrow backarrw"></div>
-                                                        <div class="chatdetals">
-                                                            <div class="chatphoto"><img src="images/avatar-4.png"
-                                                                    alt="" />
-                                                            </div>
-                                                            <div class="chatName">
-                                                                <h3 id="name">Nick Herasimenka</h3>
-                                                                <p id="post">Digital Illustrator</p>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="chatinput"><input type="text" id=""
-                                                            placeholder="Type your message here…"
-                                                            name=""><button></button>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div id="chat-tab-7" class="responsive-tabs-panel">
-                                                    <div class="msgMainblk">
-                                                        <div class="backarrow backarrw"></div>
-                                                        <div class="chatdetals">
-                                                            <div class="chatphoto"><img src="images/avatar-5.png"
-                                                                    alt="" />
-                                                            </div>
-                                                            <div class="chatName">
-                                                                <h3 id="name">Valentin Salmon</h3>
-                                                                <p id="post">Digital Illustrator</p>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="chatinput"><input type="text" id=""
-                                                            placeholder="Type your message here…"
-                                                            name=""><button></button>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div id="chat-tab-8" class="responsive-tabs-panel">
-                                                    <div class="msgMainblk">
-                                                        <div class="backarrow backarrw"></div>
-                                                        <div class="chatdetals">
-                                                            <div class="chatphoto"><img src="images/avatar-6.png"
-                                                                    alt="" />
-                                                            </div>
-                                                            <div class="chatName">
-                                                                <h3 id="name">Miro Kirov</h3>
-                                                                <p id="post">Digital Illustrator</p>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="chatinput"><input type="text" id=""
-                                                            placeholder="Type your message here…"
-                                                            name=""><button></button>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                                <div id="chat-tab-9" class="responsive-tabs-panel">
-                                                    <div class="msgMainblk">
-                                                        <div class="backarrow backarrw"></div>
-                                                        <div class="chatdetals">
-                                                            <div class="chatphoto"><img src="images/avatar-7.png"
-                                                                    alt="" />
-                                                            </div>
-                                                            <div class="chatName">
-                                                                <h3 id="name">David James</h3>
-                                                                <p id="post">Digital Illustrator</p>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="chatinput"><input type="text" id=""
-                                                            placeholder="Type your message here…"
-                                                            name=""><button></button>
-                                                        <div class="clear"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              <li class="nav-item">
+                <a href="./images/home_icn.png" class="nav-link">
+                  <i class="fas fa-home"></i>
+                  <p>
+                    Home
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <p>
+                    Dashboard
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-users"></i>
+                  <p>
+                    Connections
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-edit"></i>
+                  <p>
+                    Explore
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-table"></i>
+                  <p>
+                    Contact Us
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/calendar.html" class="nav-link">
+                  <i class="nav-icon fas fa-calendar-alt"></i>
+                  <p>
+                    Upgrade to Premium!
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/calendar.html" class="nav-link">
+                  <i class="fas fa-cloud"></i>
+                  <p>
+                    Cloud Storage
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/calendar.html" class="nav-link">
+                    <i class="fas fa-chart-pie"></i>
+                  <p>
+                    Analytics
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <!-- Main Footer -->
-        <footer class="main-footer">
-            <strong>TERMS OF SERVICE | PRIVACY POLICY | PRICING | HELP </strong>
-            <!-- <div>
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Main content -->
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row maincontentRow">
+              <div class="col-lg-2 col-md-2 inboxMenu">
+                <h4 class="mob-hide">Inbox</h4>
+                <ul class="inboxUl mob-hide">
+                  <li class="active">
+                    <a class="colorText" href="#"
+                      >Messages <span class="menuRight">10</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >My solutions <span class="menuRight">7</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >My problems <span class="menuRight">4</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >My Cafila <span class="menuRight">9</span></a
+                    >
+                  </li>
+                  <li class="fntfm">
+                    <a class="colorText" href="#">Starred</a>
+                  </li>
+                  <li class="fntfm"><a class="colorText" href="#">Trash</a></li>
+                  <div class="clear"></div>
+                </ul>
+                <h4 class="requestPadding mob-hide">Requests</h4>
+                <ul class="inboxUl mob-hide">
+                  <li>
+                    <a class="colorText" href="#"
+                      >Problem requests <span class="menuRight">2</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >Solution requests <span class="menuRight">5</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >Be my mentor <span class="menuRight">5</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >New connections <span class="menuRight">10</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >Feedback <span class="menuRight">5</span></a
+                    >
+                  </li>
+                </ul>
+                <h4 class="mob-hide">People</h4>
+                <ul class="inboxUl mob-hide">
+                  <li>
+                    <a class="colorText" href="#"
+                      >My network <span class="menuRight">6</span></a
+                    >
+                  </li>
+                  <li>
+                    <a class="colorText" href="#"
+                      >Blocked/Spam <span class="menuRight">8</span></a
+                    >
+                  </li>
+                </ul>
+                <div class="clear"></div>
+              </div>
+              <div class="col-lg-10 col-md-10">
+                <div class="row no-gutters inboxppl">
+                  <div class="inboxName col-lg-4 col-md-4">
+                    <div class="row no-gutters">
+                      <div class="searchbutn">
+                        <button class="btnSearch"></button>
+                      </div>
+                      <input
+                        type="text"
+                        id=""
+                        name=""
+                        class="inboxSearch"
+                        placeholder="Search Message or Name…"
+                      />
+                    </div>
+
+                    <div class="row no-gutters">
+                      <ul class="responsive-tabs inboxtab">
+                        <li class="pplMsg selected">
+                          <a href="#chat-tab-1" class="ppl" target="_self">
+                            <span class="photoProfile col-lg-2 col-md-2"
+                              ><img src="images/photo.png" alt=""
+                            /></span>
+                            <span class="proDetails col-lg-10 col-md-10">
+                              <div class="row no-gutters">
+                                <span class="NameLeft col-lg-9 col-md-9"
+                                  >David James</span
+                                >
+                                <span class="dateBlk col-lg-3 col-md-3"
+                                  >Jan 5</span
+                                >
+                              </div>
+                              <p>Lorem ipsum dolor sit amet Consectetur…</p>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="pplMsg">
+                          <a href="#chat-tab-2" class="ppl" target="_self">
+                            <span class="photoProfile col-lg-2 col-md-2">
+                              <img src="images/avatar.png" alt="" />
+                            </span>
+                            <span class="proDetails col-lg-10 col-md-10">
+                              <div class="row no-gutters">
+                                <span class="NameLeft col-lg-9 col-md-9"
+                                  >Tony Stark</span
+                                >
+                                <span class="dateBlk col-lg-3 col-md-3"
+                                  >Jan 4</span
+                                >
+                              </div>
+                              <p>Hi Josh, how can I help you?</p>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="pplMsg">
+                          <a href="#chat-tab-3" class="ppl" target="_self">
+                            <span class="photoProfile col-lg-2 col-md-2">
+                              <img src="images/avatar-1.png" alt="" />
+                            </span>
+                            <span class="proDetails col-lg-10 col-md-10">
+                              <div class="row no-gutters">
+                                <span class="NameLeft col-lg-9 col-md-9"
+                                  >Bessie Berry</span
+                                >
+                                <span class="dateBlk col-lg-3 col-md-3"
+                                  >Jan 2</span
+                                >
+                              </div>
+                              <p>Lorem ipsum dolor sit amet Consectetur…</p>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="pplMsg">
+                          <a href="#chat-tab-4" class="ppl" target="_self">
+                            <span class="photoProfile col-lg-2 col-md-2">
+                              <img src="images/avatar-2.png" alt="" />
+                            </span>
+                            <span class="proDetails col-lg-10 col-md-10">
+                              <div class="row no-gutters">
+                                <span class="NameLeft col-lg-9 col-md-9"
+                                  >Gleb Kuznetsov</span
+                                >
+                                <span class="dateBlk col-lg-3 col-md-3"
+                                  >Dec 30</span
+                                >
+                              </div>
+                              <p>Lorem ipsum dolor sit amet Consectetur…</p>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="pplMsg">
+                          <a href="#chat-tab-5" class="ppl" target="_self">
+                            <span class="photoProfile col-lg-2 col-md-2">
+                              <img src="images/avatar-1.png" alt="" />
+                            </span>
+                            <span class="proDetails col-lg-10 col-md-10">
+                              <div class="row no-gutters">
+                                <span class="NameLeft col-lg-9 col-md-9"
+                                  >Andrey Prokopenko</span
+                                >
+                                <span class="dateBlk col-lg-3 col-md-3"
+                                  >Dec 28</span
+                                >
+                              </div>
+                              <p>Lorem ipsum dolor sit amet Consectetur…</p>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="pplMsg">
+                          <a href="#chat-tab-6" class="ppl" target="_self">
+                            <span class="photoProfile col-lg-2 col-md-2">
+                              <img src="images/avatar-4.png" alt=""
+                            /></span>
+                            <span class="proDetails col-lg-10 col-md-10">
+                              <div class="row no-gutters">
+                                <span class="NameLeft col-lg-9 col-md-9"
+                                  >Nick Herasimenka</span
+                                >
+                                <span class="dateBlk col-lg-3 col-md-3"
+                                  >Dec 28</span
+                                >
+                              </div>
+                              <p>Lorem ipsum dolor sit amet Consectetur…</p>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="pplMsg">
+                          <a href="#chat-tab-7" class="ppl" target="_self">
+                            <span class="photoProfile col-lg-2 col-md-2">
+                              <img src="images/avatar-5.png" alt="" />
+                            </span>
+                            <span class="proDetails col-lg-10 col-md-10">
+                              <div class="row no-gutters">
+                                <span class="NameLeft col-lg-9 col-md-9"
+                                  >Valentin Salmon</span
+                                >
+                                <span class="dateBlk col-lg-3 col-md-3"
+                                  >Dec 12</span
+                                >
+                              </div>
+                              <p>Lorem ipsum dolor sit amet Consectetur…</p>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="pplMsg">
+                          <a href="#chat-tab-8" class="ppl" target="_self">
+                            <span class="photoProfile col-lg-2 col-md-2">
+                              <img src="images/avatar-6.png" alt=""
+                            /></span>
+                            <span class="proDetails col-lg-10 col-md-10">
+                              <div class="row no-gutters">
+                                <span class="NameLeft col-lg-9 col-md-9"
+                                  >Miro Kirov</span
+                                >
+                                <span class="dateBlk col-lg-3 col-md-3"
+                                  >Nov 29</span
+                                >
+                              </div>
+                              <p>Lorem ipsum dolor sit amet Consectetur…</p>
+                            </span>
+                          </a>
+                        </li>
+                        <li class="pplMsg">
+                          <a href="#chat-tab-9" class="ppl" target="_self">
+                            <span class="photoProfile col-lg-2 col-md-2">
+                              <img src="images/avatar-7.png" alt="" />
+                            </span>
+                            <span class="proDetails col-lg-10 col-md-10">
+                              <div class="row no-gutters">
+                                <span class="NameLeft col-lg-9 col-md-9"
+                                  >David James</span
+                                >
+                                <span class="dateBlk col-lg-3 col-md-3"
+                                  >Nov 28</span
+                                >
+                              </div>
+                              <p>Lorem ipsum dolor sit amet Consectetur…</p>
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-8">
+                    <div class="inboxMsg">
+                      <div class="msgsection">
+                        <div class="startMsg">
+                          <p>
+                            Select a message to open the conversation thread.
+                          </p>
+                          <img
+                            class="startMsgImg"
+                            src="images/msgImg.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="responsive-tabs-content bm-larger">
+                          <div id="chat-tab-1" class="responsive-tabs-panel">
+                            <div class="msgMainblk">
+                              <div class="backarrow backarrw"></div>
+                              <div class="chatdetals">
+                                <div class="chatphoto">
+                                  <img src="images/photo.png" alt="" />
+                                </div>
+                                <div class="chatName">
+                                  <h3 id="name">David James</h3>
+                                  <p id="post">Digital Illustrator</p>
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                            <div class="chatinput">
+                              <input
+                                type="text"
+                                id=""
+                                placeholder="Type your message here…"
+                                name=""
+                              /><button></button>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+                          <div id="chat-tab-2" class="responsive-tabs-panel">
+                            <div class="msgMainblk">
+                              <div class="backarrow backarrw"></div>
+                              <div class="chatdetals">
+                                <div class="chatphoto">
+                                  <img src="images/avatar.png" alt="" />
+                                </div>
+                                <div class="chatName">
+                                  <h3 id="name">Tony Stark</h3>
+                                  <p id="post">Digital Illustrator</p>
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                              <div class="outgoMsg">
+                                Hi Josh, how can I help you?
+                              </div>
+                              <div class="msgTime">10:24</div>
+                              <div class="incomingMsg">
+                                Hey Tony, I have a question regarding my
+                                brushes. Do you have time for a call?
+                              </div>
+                              <div class="msgTimeinn">10:24</div>
+                            </div>
+                            <div class="chatinput">
+                              <input
+                                type="text"
+                                id=""
+                                placeholder="Type your message here…"
+                                name=""
+                              /><button></button>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+                          <div id="chat-tab-3" class="responsive-tabs-panel">
+                            <div class="msgMainblk">
+                              <div class="backarrow backarrw"></div>
+                              <div class="chatdetals">
+                                <div class="chatphoto">
+                                  <img src="images/avatar-1.png" alt="" />
+                                </div>
+                                <div class="chatName">
+                                  <h3 id="name">Bessie Berry</h3>
+                                  <p id="post">Digital Illustrator</p>
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                            <div class="chatinput">
+                              <input
+                                type="text"
+                                id=""
+                                placeholder="Type your message here…"
+                                name=""
+                              /><button></button>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+                          <div id="chat-tab-4" class="responsive-tabs-panel">
+                            <div class="msgMainblk">
+                              <div class="backarrow backarrw"></div>
+                              <div class="chatdetals">
+                                <div class="chatphoto">
+                                  <img src="images/avatar-2.png" alt="" />
+                                </div>
+                                <div class="chatName">
+                                  <h3 id="name">Gleb Kuznetsov</h3>
+                                  <p id="post">Digital Illustrator</p>
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                            <div class="chatinput">
+                              <input
+                                type="text"
+                                id=""
+                                placeholder="Type your message here…"
+                                name=""
+                              /><button></button>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+                          <div id="chat-tab-5" class="responsive-tabs-panel">
+                            <div class="msgMainblk">
+                              <div class="backarrow backarrw"></div>
+                              <div class="chatdetals">
+                                <div class="chatphoto">
+                                  <img src="images/avatar-1.png" alt="" />
+                                </div>
+                                <div class="chatName">
+                                  <h3 id="name">Andrey Prokopenko</h3>
+                                  <p id="post">Digital Illustrator</p>
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                            <div class="chatinput">
+                              <input
+                                type="text"
+                                id=""
+                                placeholder="Type your message here…"
+                                name=""
+                              /><button></button>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+                          <div id="chat-tab-6" class="responsive-tabs-panel">
+                            <div class="msgMainblk">
+                              <div class="backarrow backarrw"></div>
+                              <div class="chatdetals">
+                                <div class="chatphoto">
+                                  <img src="images/avatar-4.png" alt="" />
+                                </div>
+                                <div class="chatName">
+                                  <h3 id="name">Nick Herasimenka</h3>
+                                  <p id="post">Digital Illustrator</p>
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                            <div class="chatinput">
+                              <input
+                                type="text"
+                                id=""
+                                placeholder="Type your message here…"
+                                name=""
+                              /><button></button>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+                          <div id="chat-tab-7" class="responsive-tabs-panel">
+                            <div class="msgMainblk">
+                              <div class="backarrow backarrw"></div>
+                              <div class="chatdetals">
+                                <div class="chatphoto">
+                                  <img src="images/avatar-5.png" alt="" />
+                                </div>
+                                <div class="chatName">
+                                  <h3 id="name">Valentin Salmon</h3>
+                                  <p id="post">Digital Illustrator</p>
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                            <div class="chatinput">
+                              <input
+                                type="text"
+                                id=""
+                                placeholder="Type your message here…"
+                                name=""
+                              /><button></button>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+                          <div id="chat-tab-8" class="responsive-tabs-panel">
+                            <div class="msgMainblk">
+                              <div class="backarrow backarrw"></div>
+                              <div class="chatdetals">
+                                <div class="chatphoto">
+                                  <img src="images/avatar-6.png" alt="" />
+                                </div>
+                                <div class="chatName">
+                                  <h3 id="name">Miro Kirov</h3>
+                                  <p id="post">Digital Illustrator</p>
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                            <div class="chatinput">
+                              <input
+                                type="text"
+                                id=""
+                                placeholder="Type your message here…"
+                                name=""
+                              /><button></button>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+                          <div id="chat-tab-9" class="responsive-tabs-panel">
+                            <div class="msgMainblk">
+                              <div class="backarrow backarrw"></div>
+                              <div class="chatdetals">
+                                <div class="chatphoto">
+                                  <img src="images/avatar-7.png" alt="" />
+                                </div>
+                                <div class="chatName">
+                                  <h3 id="name">David James</h3>
+                                  <p id="post">Digital Illustrator</p>
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                            <div class="chatinput">
+                              <input
+                                type="text"
+                                id=""
+                                placeholder="Type your message here…"
+                                name=""
+                              /><button></button>
+                              <div class="clear"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <strong>TERMS OF SERVICE | PRIVACY POLICY | PRICING | HELP </strong>
+        <!-- <div>
                 <i class="fab fa-facebook-square"></i>
             </div> -->
-            <div class="float-right d-none d-sm-inline-block">
-                Copyright 2021 <strong>@Execelerator Softwares Pvt.Ltd.</strong>
-            </div>
-        </footer>
+        <div class="float-right d-none d-sm-inline-block">
+          Copyright 2021 <strong>@Execelerator Softwares Pvt.Ltd.</strong>
+        </div>
+      </footer>
     </div>
     <script>
-        $(window).load(function () {
-            $(".btn-nav").on("click tap", function () {
-                $(".nav-container").toggleClass("showNav hideNav").removeClass("hidden");
-                $(this).toggleClass("animated");
-            });
+      $(window).load(function () {
+        $(".btn-nav").on("click tap", function () {
+          $(".nav-container")
+            .toggleClass("showNav hideNav")
+            .removeClass("hidden");
+          $(this).toggleClass("animated");
         });
-        $(document).ready(function () {
-            $(".dropMenu").click(function () {
-                $(".dropMenu ul").toggle();
-                $(this).toggleClass('current')
-            });
-
-            $(".pplMsg").click(function () {
-                $(".inboxMsg, .scrollPo").css({ left: 0 });
-                $(".inboxName").toggleClass("leffaddd");
-                $(".responsive-tabs-panel").toggleClass("scrollPo");
-            });
-
-            $(".backarrw").click(function () {
-                $(".inboxMsg").css({ "left": "100%" });
-                $(".inboxName").toggleClass("leffaddd");
-            });
-
-            $(".SubMenu").click(function () {
-                $(".inboxMenu").toggle("leffaddd");
-            });
+      });
+      $(document).ready(function () {
+        $(".dropMenu").click(function () {
+          $(".dropMenu ul").toggle();
+          $(this).toggleClass("current");
         });
+
+        $(".pplMsg").click(function () {
+          $(".inboxMsg, .scrollPo").css({ left: 0 });
+          $(".inboxName").toggleClass("leffaddd");
+          $(".responsive-tabs-panel").toggleClass("scrollPo");
+        });
+
+        $(".backarrw").click(function () {
+          $(".inboxMsg").css({ left: "100%" });
+          $(".inboxName").toggleClass("leffaddd");
+        });
+
+        $(".SubMenu").click(function () {
+          $(".inboxMenu").toggle("leffaddd");
+        });
+      });
     </script>
     <script src="js/responsive-tabs.min.js" type="text/javascript"></script>
     <!-- REQUIRED SCRIPTS -->
@@ -681,7 +924,5 @@
     <script src="dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="dist/js/pages/dashboard3.js"></script>
-
-</body>
-
+  </body>
 </html>

@@ -1,11 +1,20 @@
 @font-face {
   font-family: RobotoRegular;
-  src: url(../fonts/Roboto-Regular.woff);
+  src: url(../..//fonts/Roboto-Regular.woff);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(../../fonts/Roboto-Bold.woff);
 }
 body {
   font-family: RobotoRegular, sans-serif !important;
   font-size: 14px !important;
 }
+
+h2 {
+  font-family: RobotoBold !important;
+}
+
 .solution-statement textarea {
   background: #fafafa;
   resize: none;
@@ -64,7 +73,7 @@ body {
   border: 0;
   box-shadow: none;
 }
-.mysolutions-page .userData a{
+.mysolutions-page .userData a {
   color: #222;
   font-size: 18px;
 }
@@ -90,19 +99,19 @@ body {
 .mysolutions-page .right-attachments div .fa-times-circle {
   float: right;
 }
-.mysolutions-page .download-all-btn button{
+.mysolutions-page .download-all-btn button {
   width: 100%;
   margin-bottom: 10px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
 }
-.mysolutions-page .solution-button button{
+.mysolutions-page .solution-button button {
   box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
   margin-bottom: 15px;
 }
 .ppl {
   padding: 15px 0 0 10px;
 }
-.ppl:hover{
+.ppl:hover {
   box-shadow: 0 6px 12px rgb(0 0 0 / 16%);
 }
 @media (max-width: 767px) {
