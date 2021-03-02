@@ -46,6 +46,20 @@ body {
   max-height: 250px;
   overflow: auto;
 }
+.primary-btn {
+  background: #039be5 !important;
+  color: white !important;
+}
+
+.secondary-btn {
+  color: #039be5 !important;
+  border-color: #039be5 !important;
+}
+
+.secondary-btn:hover {
+  background: #039be5 !important;
+  color: white !important;
+}
 
 .screen3-title {
   font-size: 1.4rem;
@@ -58,7 +72,7 @@ body {
 .ppl {
   padding: 15px 0 0 10px;
 }
-.ppl:hover{
+.ppl:hover {
   box-shadow: 0 6px 12px rgb(0 0 0 / 16%);
 }
 .screen3-user-avtar {
@@ -100,10 +114,11 @@ body {
   background: #f6f6f6 !important;
   resize: none;
 }
-.multi-screen-level .screen1, .multi-screen-level .screen2 {
+.multi-screen-level .screen1,
+.multi-screen-level .screen2 {
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #F1F1F3;
+  border-bottom: 1px solid #f1f1f3;
 }
 .multi-screen-level .negotiation-panle .price-tag {
   font-family: RobotoRegular, sans-serif !important;

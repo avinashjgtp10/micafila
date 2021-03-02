@@ -135,7 +135,6 @@ body {
   padding: 0;
 }
 .image-panel {
-  display: inline-block;
   width: 100%;
   margin: 20px 0 0;
 }
@@ -144,6 +143,29 @@ body {
   border-color: #039be5;
   color: #fff;
 }
+
+
+.column {
+  float: left;
+  width: 10%;
+  margin: 12px;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100px;
+  }
+}
+
 @media (max-width: 767px) {
   .user-avtar-details button {
     margin-bottom: 50px;

@@ -136,6 +136,10 @@ body {
   font-family: RobotoRegular;
 }
 
+.project-state {
+  text-align: center;
+}
+
 .active {
   background: white !important;
   border-left: none !important;
@@ -281,16 +285,16 @@ a:active {
   outline: 0;
 }
 @media (max-width: 767px) {
-.responsive-table {
-  overflow: scroll;
-}
-.mentorList li {
-  font-size: 12px;
-}
-.mentorList li.active a {
-  border-bottom: 2px solid #039be5;
-}
-.mentorList li.active span {
-  display: none;
-}
+  .responsive-table {
+    overflow: scroll;
+  }
+  .mentorList li {
+    font-size: 12px;
+  }
+  .mentorList li.active a {
+    border-bottom: 2px solid #039be5;
+  }
+  .mentorList li.active span {
+    display: none;
+  }
 }

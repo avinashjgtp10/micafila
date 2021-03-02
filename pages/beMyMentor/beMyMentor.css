@@ -15,11 +15,11 @@ body {
 .problem img {
   width: 37.34375vw;
 }
-.scroller{
-  height: 42.604167vw;
+/* .scroller{
+  height: 80.604167vw;
   overflow-y: scroll;
   overflow: auto;
-}  
+}   */
 .active{
   background: rgba(40, 181, 244, 0.5);
   border-left: 0.41667vw solid #28b5f4;
