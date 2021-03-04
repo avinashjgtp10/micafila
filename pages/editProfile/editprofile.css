@@ -150,7 +150,7 @@
   float: left;
   cursor: pointer;
   font-weight: normal;
-  padding: 2.34375vw 2.2916666666666665vw 1.5625vw;
+  padding: 20px;
   font-size: calc(0.875rem + ((1vw - 13.6px) * 0.7143));
   border-bottom: 0;
   line-height: 1.25vw;
