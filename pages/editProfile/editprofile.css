@@ -7,6 +7,15 @@
   src: url(../../fonts/Roboto-Bold.woff);
 }
 
+@font-face {
+  font-family: RobotoLight;
+  src: url(../../fonts/Roboto-Light.woff);
+}
+@font-face {
+  font-family: RobotoMedium;
+  src: url(../../fonts/Roboto-Medium.woff);
+}
+
 .banner_blk {
   padding: 0;
   box-shadow: 0px -1px 11px #666;
@@ -143,29 +152,87 @@
 .area-work .skil-section {
   margin: auto;
   width: 70%;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d7d7d7;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
 .area-work div .skill-icon {
   cursor: pointer;
   border: 2px solid rgb(180, 150, 150);
-  width: 70%;
-  height: 70%;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
 }
 
+.area-work div .primary-btn {
+  background-color: #28b5f4;
+  text-align: center;
+  color: white;
+  width: 9.166666666666666vw;
+  line-height: 1.5vw;
+  font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
+  border-radius: 1.25vw;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
+}
+
 .area-work div .skill-icon:hover {
-  background-color: #28B5F4;
-  border-color: #28B5F4;
+  background-color: #28b5f4;
+  cursor: pointer;
+  border-color: #28b5f4;
   color: white;
 }
 
 .area-work div .skill-icon img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
+}
+.area-work span {
+  font-family: "RobotoLight";
 }
 
+.area-work div .active-skill {
+  background-color: #28b5f4;
+  border-color: #28b5f4;
+  width: 65px !important;
+  height: 65px !important;
+}
+
+.home-tab .form-group label {
+  font-family: "RobotoMedium";
+  color: #616161;
+  font-size: calc(0.875rem + ((1vw - 13.6px) * 0.3571));
+}
+
+.home-tab .form-group input {
+  /* font-family: 'RobotoMedium'; */
+  color: #616161;
+  /* box-shadow: 0 1px 4px #616161; */
+
+  height: 2.396vw;
+  font-size: calc(0.875rem + ((1vw - 13.6px) * 0.3571));
+}
+
+.achievement-tab {
+  width: 70%;
+  margin: auto;
+}
+.achievement-tab small {
+  font-size: 1.2rem;
+  float: right;
+}
 .tab_wrapper * {
   box-sizing: border-box;
 }
@@ -188,6 +255,17 @@
   border-top: none;
   border-radius: 0;
 }
+
+.tab_wrapper > ul li a:hover {
+  font-family: "RobotoBold", sans-serif;
+  border-bottom: 5px solid #ff6565 !important;
+  border-left: none;
+  border-right: none;
+  color: #000;
+  border-top: none;
+  border-radius: 0;
+}
+
 .tab_wrapper .content_wrapper {
   float: left;
   width: 100%;
@@ -277,29 +355,29 @@
   background: #28b5f4 url(../images/saveBtn.png) no-repeat 0.9375vw center;
 }
 
-.nav-tabs .nav-item{
-    padding: 16px;
+.nav-tabs .nav-item {
+  padding: 16px;
 }
-.styleChange{
-    background-color: white;
-    color: black;
-    border-left: white;
-
+.styleChange {
+  background-color: white;
+  color: black;
+  border-left: white;
 }
-.changeWidth{
-    width:90%;
+.changeWidth {
+  width: 90%;
 }
 
 .saveBtn {
-    line-height: 2.5vw;
-    padding: 0 0 0 3.4895833333333335vw;
-    margin: 0;
-    text-align: left;
-    width: 9.166666666666666vw;
-    border-radius: 1.25vw;
-    font-size: calc(1rem + ((1vw - 13.6px) * .8929));
-    color: #fff;
-    font-family: Roboto,sans-serif;
-    background: url(../../images/saveBtn.33fc7b5f91c8d6406ad1.png) .9375vw center no-repeat #28b5f4;
-    box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
+  line-height: 2.5vw;
+  padding: 0 0 0 3.4895833333333335vw;
+  margin: 0;
+  text-align: left;
+  width: 9.166666666666666vw;
+  border-radius: 1.25vw;
+  font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  background: url(../../images/saveBtn.33fc7b5f91c8d6406ad1.png) 0.9375vw center
+    no-repeat #28b5f4;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
 }
