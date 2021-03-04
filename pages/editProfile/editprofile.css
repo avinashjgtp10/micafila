@@ -277,6 +277,29 @@
   background: #28b5f4 url(../images/saveBtn.png) no-repeat 0.9375vw center;
 }
 
-.nav-tabs .nav-item {
-  padding: 16px;
+.nav-tabs .nav-item{
+    padding: 16px;
+}
+.styleChange{
+    background-color: white;
+    color: black;
+    border-left: white;
+
+}
+.changeWidth{
+    width:90%;
+}
+
+.saveBtn {
+    line-height: 2.5vw;
+    padding: 0 0 0 3.4895833333333335vw;
+    margin: 0;
+    text-align: left;
+    width: 9.166666666666666vw;
+    border-radius: 1.25vw;
+    font-size: calc(1rem + ((1vw - 13.6px) * .8929));
+    color: #fff;
+    font-family: Roboto,sans-serif;
+    background: url(../../images/saveBtn.33fc7b5f91c8d6406ad1.png) .9375vw center no-repeat #28b5f4;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
 }
