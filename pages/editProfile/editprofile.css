@@ -6,6 +6,34 @@
   font-family: RobotoBold;
   src: url(../../fonts/Roboto-Bold.woff);
 }
+.text {
+  text-align: center;
+}
+/* .saveBtn {
+  line-height: 2.5vw;
+  padding: 0 0 0 3.4895833333333335vw;
+  margin: 0;
+  text-align: left;
+  width: 9.166666666666666vw;
+  border-radius: 1.25vw;
+  font-size: calc(1rem + ((1vw - 13.6px) * .8929));
+  color: #fff;
+  font-family: Roboto,sans-serif;
+  background: url(../../images/saveBtn.33fc7b5f91c8d6406ad1.png) .9375vw center no-repeat #28b5f4;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
+  margin-left: 25%;
+} */
+@media only screen and (max-width: 600px) {
+  .superimg {
+    max-width: 30%;
+    margin-left: 33%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mainform {
+    margin: 4%;
+  }
+}
 
 @font-face {
   font-family: RobotoLight;
@@ -16,14 +44,14 @@
   src: url(../../fonts/Roboto-Medium.woff);
 }
 
-.banner_blk {
+/* .banner_blk {
   padding: 0;
   box-shadow: 0px -1px 11px #666;
   width: 100%;
   overflow: hidden;
   background: #fafafa;
-}
-.avatar-wrapper {
+}  */
+/* .avatar-wrapper {
   position: relative;
   height: 100%;
   width: 100%;
@@ -53,7 +81,7 @@
   height: 13.541666666666666vw;
   left: 2.1875vw;
   z-index: 3;
-}
+}*/
 .tab-content .active {
   background: white !important;
   border-left: none;
@@ -272,6 +300,7 @@
   border-top: 0;
   box-sizing: border-box;
 }
+/*
 .Achi_memery {
   padding: 0;
   margin: 0px auto;
@@ -317,11 +346,12 @@
   border: 1px solid #616161;
   margin: 0 0 0.8333333333333334vw;
   font-size: calc(0.875rem + ((1vw - 13.6px) * 0.7143));
+
   /* color: #000; */
-  font-family: "ROBOTOLIGHT";
+/* font-family: "ROBOTOLIGHT";
   background-color: white;
-}
-.savemain {
+} */
+/* .savemain {
   padding: 0 0 2.5vw;
   margin: 0 auto;
   width: 9.166666666666666vw;
@@ -353,7 +383,7 @@
   color: #fff;
   font-family: "Roboto", sans-serif;
   background: #28b5f4 url(../images/saveBtn.png) no-repeat 0.9375vw center;
-}
+} 
 
 .nav-tabs .nav-item {
   padding: 16px;
@@ -365,7 +395,7 @@
 }
 .changeWidth {
   width: 90%;
-}
+}*/
 
 .saveBtn {
   line-height: 2.5vw;
