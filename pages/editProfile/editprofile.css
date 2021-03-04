@@ -1,234 +1,282 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../..//fonts/Roboto-Regular.woff);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(../../fonts/Roboto-Bold.woff);
+}
 
 .banner_blk {
-    padding: 0;
-    margin: 3.3333333333333335vw 0 0;
-    box-shadow: 0px -1px 11px #666;
-    width: 100%;
-    overflow: hidden;
-    background: #fafafa;
-    height: 26.041666666666668vw;
+  padding: 0;
+  box-shadow: 0px -1px 11px #666;
+  width: 100%;
+  overflow: hidden;
+  background: #fafafa;
 }
 .avatar-wrapper {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 0px auto;
-    box-shadow: 0 8px 16px rgb(0 0 0 / 16%);
-    transition: all .3s ease;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
+  box-shadow: 0 8px 16px rgb(0 0 0 / 16%);
+  transition: all 0.3s ease;
 }
 .banner_blk img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .wrapper1 {
-    padding: 0;
-    margin: 0px auto;
-    width: 73.125vw;
-    position: relative;
-    clear: both;
+  padding: 0;
+  margin: 0px auto;
+  width: 73.125vw;
+  position: relative;
+  clear: both;
 }
 .left_profile {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: -10.416666666666668vw;
-    width: 13.541666666666666vw;
-    background-color: #fff;
-    padding-top: 0;
-    height: 13.541666666666666vw;
-    left: 2.1875vw;
-    z-index: 3;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: -10.416666666666668vw;
+  width: 13.541666666666666vw;
+  background-color: #fff;
+  padding-top: 0;
+  height: 13.541666666666666vw;
+  left: 2.1875vw;
+  z-index: 3;
 }
-/* .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-} */
+.tab-content .active {
+  background: white !important;
+  border-left: none;
+  color: black;
+}
 .profile-pic1 {
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    border: 0;
-    box-shadow: none;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  box-shadow: none;
 }
 .aboutDtlss {
-    position: absolute;
-    width: 30.677083333333332vw;
-    left: -7.447916666666667vw;
-    text-align: center;
-    padding: 5.3125vw 0 0;
+  position: absolute;
+  width: 30.677083333333332vw;
+  left: -7.447916666666667vw;
+  text-align: center;
+  padding: 5.3125vw 0 0;
 }
 .aboutDtlss.proflarwrk .name_year {
-    font-family: 'MontserratRegular';
-    color: #000;
+  font-family: "MontserratRegular";
+  color: #000;
 }
 .name_year {
-    font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
-   
-    font-weight: normal;
-   
-    line-height: 1.5625vw;
+  font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
+
+  font-weight: normal;
+
+  line-height: 1.5625vw;
 }
 
 .profile_dis {
-    padding: 0 0 2.604166666666667vw;
-    margin: 0;
-    position: absolute;
-    top: -10.625vw;
-    width: 49.895833333333336vw;
-    right: 0;
-    z-index: 6;
+  padding: 0 0 2.604166666666667vw;
+  margin: 0;
+  position: absolute;
+  top: -10.625vw;
+  width: 49.895833333333336vw;
+  right: 0;
+  z-index: 6;
 }
 .profile_cnt {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    box-shadow: 0px 8px 16px rgb(0 0 0 / 16%);
-    background: #fff;
-    border-radius: 1.0416666666666665vw;
-    overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-shadow: 0px 8px 16px rgb(0 0 0 / 16%);
+  background: #fff;
+  border-radius: 1.0416666666666665vw;
+  overflow: hidden;
 }
 .tab_wrapper {
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    width: 100%;
-    position: relative;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  position: relative;
 }
 .tab_wrapper > ul {
-    clear: both;
-    display: inline-block;
-    width: 100%;
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+.tab_wrapper > ul li a {
+  color: #999;
 }
 .tab_wrapper > ul li {
-    float: left;
-    cursor: pointer;
-    font-weight: normal;
-    padding: 2.34375vw 2.2916666666666665vw 1.5625vw;
-    font-size: calc(0.875rem + ((1vw - 13.6px) * 0.7143));
-    border-bottom: 0;
-   
-    color: #999;
-    line-height: 1.25vw;
-    margin: 0;
-    font-family: 'ROBOTOLIGHT';
-    
-    text-align: center;
-    position: relative;
-    list-style: none;
+  float: left;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 2.34375vw 2.2916666666666665vw 1.5625vw;
+  font-size: calc(0.875rem + ((1vw - 13.6px) * 0.7143));
+  border-bottom: 0;
+  line-height: 1.25vw;
+  margin: 0;
+  font-family: "ROBOTOLIGHT";
+
+  text-align: center;
+  position: relative;
+  list-style: none;
+}
+
+.area-work p {
+  font-family: "RobotoBold", sans-serif;
+  color: #707070;
+  text-align: center;
+  font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
+}
+
+.area-work .search-input {
+  width: 25rem;
+  text-align: center;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #495057;
+}
+
+.area-work .skil-section {
+  margin: auto;
+  width: 70%;
+}
+.area-work div .skill-icon {
+  cursor: pointer;
+  border: 2px solid rgb(180, 150, 150);
+  width: 70%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.area-work div .skill-icon:hover {
+  background-color: #28B5F4;
+  border-color: #28B5F4;
+  color: white;
+}
+
+.area-work div .skill-icon img {
+  width: 35px;
+  height: 35px;
 }
 
 .tab_wrapper * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .tab_wrapper > ul li span {
-    height: 0.5208333333333333vw;
-    width: 3.177083333333333vw;
-    position: absolute;
-    bottom: -0.26041666666666663vw;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background: rgba(255,255,255,0);
+  height: 0.5208333333333333vw;
+  width: 3.177083333333333vw;
+  position: absolute;
+  bottom: -0.26041666666666663vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(255, 255, 255, 0);
 }
-.tab_wrapper > ul li.active {
-    color: #000;
-    font-family: 'Roboto', sans-serif;
+.tab_wrapper > ul li .active {
+  font-family: "RobotoBold", sans-serif;
+  border-bottom: 5px solid #ff6565 !important;
+  border-left: none;
+  border-right: none;
+  color: #000;
+  border-top: none;
+  border-radius: 0;
 }
 .tab_wrapper .content_wrapper {
-    float: left;
-    width: 100%;
-    border-top: 0;
-    box-sizing: border-box;
+  float: left;
+  width: 100%;
+  border-top: 0;
+  box-sizing: border-box;
 }
 .Achi_memery {
-    padding: 0;
-    margin: 0px auto;
-    width: 81.1%;
+  padding: 0;
+  margin: 0px auto;
+  width: 81.1%;
 }
 .leftCnt {
-    padding: 1.5625vw 0 0;
-    margin: 0;
-    float: left;
-    width: 60.45576407506702%;
-    font-family: 'MontserratBold';
-    font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
-    line-height: 1.5104166666666667;
-    font-weight: normal;
-    color: #707070;
+  padding: 1.5625vw 0 0;
+  margin: 0;
+  float: left;
+  width: 60.45576407506702%;
+  font-family: "MontserratBold";
+  font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
+  line-height: 1.5104166666666667;
+  font-weight: normal;
+  color: #707070;
 }
 .Achive_img {
-    padding: 0.5208333333333333vw 0 0;
-    margin: 0;
-    float: right;
-    width: 39.54%;
+  padding: 0.5208333333333333vw 0 0;
+  margin: 0;
+  float: right;
+  width: 39.54%;
 }
 .Achive_img img {
-    width: 100%;
+  width: 100%;
 }
 .attch_achivement {
-    padding: 1.5625vw 0 0;
-    margin: 0 auto;
-    width: 72.8%;
-    position: relative;
-    clear: both;
+  padding: 1.5625vw 0 0;
+  margin: 0 auto;
+  width: 72.8%;
+  position: relative;
+  clear: both;
 }
 .attFile {
-    padding: 2.083333333333333vw 0 0;
-    clear: both;
+  padding: 2.083333333333333vw 0 0;
+  clear: both;
 }
 .upFile {
-    width: 100%;
-    padding: 0 3%;
-    height: 2.5vw;
-    line-height: 2.5vw;
-    border-radius: 5px;
-    border: 1px solid #616161;
-    margin: 0 0 0.8333333333333334vw;
-    font-size: calc(0.875rem + ((1vw - 13.6px) * 0.7143));
-    /* color: #000; */
-    font-family: 'ROBOTOLIGHT';
-    background-color: white;
+  width: 100%;
+  padding: 0 3%;
+  height: 2.5vw;
+  line-height: 2.5vw;
+  border-radius: 5px;
+  border: 1px solid #616161;
+  margin: 0 0 0.8333333333333334vw;
+  font-size: calc(0.875rem + ((1vw - 13.6px) * 0.7143));
+  /* color: #000; */
+  font-family: "ROBOTOLIGHT";
+  background-color: white;
 }
 .savemain {
-    padding: 0 0 2.5vw;
-    margin: 0 auto;
-    width: 9.166666666666666vw;
-    clear: both;
+  padding: 0 0 2.5vw;
+  margin: 0 auto;
+  width: 9.166666666666666vw;
+  clear: both;
 }
 .addBtn {
-    float: right;
-    padding: 0;
-    margin: 1.9791666666666665vw 0 0;
-    clear: both;
+  float: right;
+  padding: 0;
+  margin: 1.9791666666666665vw 0 0;
+  clear: both;
 }
 .addBtn button {
-    padding: 0;
-    margin: 0;
-    color: #28B5F4;
-    font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
-    font-family: 'Roboto', sans-serif;
-    clear: both;
-    opacity: 0.5;
+  padding: 0;
+  margin: 0;
+  color: #28b5f4;
+  font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
+  font-family: "Roboto", sans-serif;
+  clear: both;
+  opacity: 0.5;
 }
 .saveBtn {
-    line-height: 2.5vw;
-    padding: 0 0 0 3.4895833333333335vw;
-    margin: 0 0 0 0;
-    text-align: left;
-    width: 9.166666666666666vw;
-    border-radius: 1.25vw;
-    font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    background: #28b5f4 url(../images/saveBtn.png) no-repeat 0.9375vw center;
+  line-height: 2.5vw;
+  padding: 0 0 0 3.4895833333333335vw;
+  margin: 0 0 0 0;
+  text-align: left;
+  width: 9.166666666666666vw;
+  border-radius: 1.25vw;
+  font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  background: #28b5f4 url(../images/saveBtn.png) no-repeat 0.9375vw center;
 }
 
-.nav-tabs .nav-item{
-    padding: 16px;
+.nav-tabs .nav-item {
+  padding: 16px;
 }
