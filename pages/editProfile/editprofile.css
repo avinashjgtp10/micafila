@@ -9,6 +9,152 @@
 .text {
   text-align: center;
 }
+
+.activement-title,
+.qualification-title {
+  font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
+  line-height: 1.5104166666666667;
+  font-weight: 400;
+  font-family: "RobotoBold";
+  color: #707070;
+}
+.degree-input label {
+  color: #616161;
+  font-family: "RobotoRegular";
+  font-weight: 400 !important;
+  line-height: 1.5em;
+}
+.year-select {
+  margin-top: 30px;
+}
+.close-degree {
+  margin-top: 35px;
+  color: red;
+}
+.year-select .btn {
+  background-color: #fff;
+  border: 0;
+  display: inline-block;
+  font: inherit;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: calc(0.875rem + ((1vw - 13.6px) * 0.3571));
+  font-family: Roboto, sans-serif;
+  color: #616161;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px #999;
+}
+
+.achievement-tab .close-icon {
+  color: red;
+}
+.achievement-tab .close-icon:hover {
+  color: red;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.primary-btn-outline {
+  border-color: #28b5f4;
+  color: #28b5f4;
+}
+
+.primary-btn {
+  background-color: #28b5f4;
+  text-align: center;
+  color: white;
+  width: 9.166666666666666vw;
+  line-height: 1.5vw;
+  font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
+  border-radius: 1.25vw;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
+}
+
+.primary-btn-outline:hover {
+  border-color: #28b5f4;
+  background-color: #28b5f4;
+  color: white;
+}
+
+.achievement-tab .attachment-list {
+  display: inline-block;
+  padding-right: 0.5em;
+  padding-left: 0.3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 10rem;
+  border: 2px solid #c7c7c7;
+}
+
+.achievement-tab .attachment-list img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.primary-skill-carosuel .card {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-skill-carosuel .card:hover {
+  width: 100%;
+  border: 3px solid #28b5f4;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-skill-carosuel .card-active {
+  width: 100%;
+  border: 3px solid #28b5f4;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-btn {
+  top: 50%;
+  bottom: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background-color: #28b5f4;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.carousel-control-next {
+  right: -26px;
+}
+
+.primary-skill-carosuel .card img {
+  width: 90px;
+  height: 90px;
+}
+
+.home-tab .gender-btn-group .btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #2196f3 !important;
+  line-height: 2.1vw;
+  padding: 0;
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  border-radius: 25px;
+  box-shadow: 0 0 6px #999;
+}
+
+.home-tab .gender-btn-group .btn-primary {
+  color: #616161;
+  background: white;
+  border: none;
+}
+
 /* .saveBtn {
   line-height: 2.5vw;
   padding: 0 0 0 3.4895833333333335vw;
@@ -306,17 +452,7 @@
   margin: 0px auto;
   width: 81.1%;
 }
-.leftCnt {
-  padding: 1.5625vw 0 0;
-  margin: 0;
-  float: left;
-  width: 60.45576407506702%;
-  font-family: "MontserratBold";
-  font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
-  line-height: 1.5104166666666667;
-  font-weight: normal;
-  color: #707070;
-}
+
 .Achive_img {
   padding: 0.5208333333333333vw 0 0;
   margin: 0;

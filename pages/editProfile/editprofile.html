@@ -209,12 +209,12 @@
                                                     role="tab" aria-controls="home" aria-selected="true">Bio</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" id="area-tab" data-toggle="tab" href="#area"
+                                                <a class="nav-link " id="area-tab" data-toggle="tab" href="#area"
                                                     role="tab" aria-controls="area" aria-selected="false">Area of
                                                     Work</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#achievement"
+                                                <a class="nav-link " id="achievement-tab" data-toggle="tab" href="#achievement"
                                                     role="tab" aria-controls="contact"
                                                     aria-selected="false">Achievement</a>
                                             </li>
@@ -224,13 +224,13 @@
                                                     Experience</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact"
-                                                    role="tab" aria-controls="contact"
+                                                <a class="nav-link active" id="qualification-tab" data-toggle="tab" href="#qualification"
+                                                    role="tab" aria-controls="qualification"
                                                     aria-selected="false">Qualification</a>
                                             </li>
                                         </ul>
                                         <div class="tab-content" id="myTabContent">
-                                            <div class="tab-pane fade" style="
+                                            <div class="tab-pane fade home-tab" style="
                                                background-color: white;
                                                 color: black;
                                                  border-left: none;
@@ -243,24 +243,36 @@
                                                         <div class="form-group">
                                                             <label for="exampleInputFirstName">First Name</label>
                                                             <input type="text" name="fName" class="form-control"
-                                                                id="fname" placeholder="Enter First Name">
+                                                                id="fname" placeholder="Enter First Name"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="exampleInputLastName">Last Name</label>
                                                             <input type="text" name="lName" class="form-control"
-                                                                id="lname" placeholder="Enter Last Name">
+                                                                id="lname" placeholder="Enter Last Name"/>
                                                         </div>
-                                                        <div class="form-group">
-                                                            <label for="exampleInputGender">Gender</label></br>
+                                                        <div class="form-group gender-btn-group">
+                                                          <label for="exampleInputGender">Gender</label></br>
+                                                          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                            <label class="btn btn-primary m-1">
+                                                                <input type="radio" name="options" autocomplete="off"> Male
+                                                            </label>
+                                                            <label class="btn btn-primary active m-1">
+                                                                <input type="radio" name="options" autocomplete="off" checked> Female
+                                                            </label>
+                                                            <label class="btn btn-primary m-1">
+                                                                <input type="radio" name="options" autocomplete="off"> Uncertain
+                                                            </label>
+                                                        </div>
+                                                            <!-- <label for="exampleInputGender">Gender</label></br>
                                                             <input type="radio" class="radio-inline" name="radios"
-                                                                value=""><span class="outside"><span
+                                                                value=""/><span class="outside"><span
                                                                     class="inside"></span>Male</span>
                                                             <input type="radio" class="radio-inline" name="radios"
-                                                                value=""><span class="outside"><span
+                                                                value=""/><span class="outside"><span
                                                                     class="inside"></span>Female</span>
                                                             <input type="radio" class="radio-inline" name="radios"
-                                                                value=""><span class="outside"><span
-                                                                    class="inside"></span>Uncertain</span>
+                                                                value=""/><span class="outside"><span
+                                                                    class="inside"></span>Uncertain</span> -->
                                                         </div>
 
 
@@ -269,8 +281,8 @@
                                                             <label for="exampleInputLastDateOfBirth">Date of
                                                                 Birth</label>
                                                             <input type="date" name="begin" placeholder="dd-mm-yyyy"
-                                                                value="" min="1997-01-01" max="2030-12-31"
-                                                                class="form-control">
+                                                                value="" min="1950-01-01" max="2030-12-31"
+                                                                class="form-control"/>
                                                         </div>
 
 
@@ -345,24 +357,24 @@
                                                         <div class="form-group">
                                                             <label for="exampleInputCity">City</label>
                                                             <input type="text" name="city" class="form-control"
-                                                                id="city" placeholder="Enter City ">
+                                                                id="city" placeholder="Enter City "/>
                                                         </div>
 
                                                         <div class="form-group">
                                                             <label for="exampleInputEmail">Email</label>
                                                             <input type="email" name="email" class="form-control"
-                                                                id="email" placeholder="Enter Email ">
+                                                                id="email" placeholder="Enter Email "/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="exampleInputWebsite">Website</label>
                                                             <input type="text" name="website" class="form-control"
-                                                                id="website" placeholder="Enter Website">
+                                                                id="website" placeholder="Enter Website"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="exampleInputMobile">Mobile Number</label>
                                                             <input type="text" name="mobileNo" class="form-control"
                                                                 pattern="[1-9]{1}[0-9]{9}" maxlength="10" id="mobileNo"
-                                                                placeholder="Enter Mobile Number">
+                                                                placeholder="Enter Mobile Number"/>
                                                         </div>
                                                         <button class="saveBtn">Save</button>
                                                     </div>
@@ -371,9 +383,8 @@
                                             </div>
                                            
 
-                      
                 <div
-                  class="tab-pane fade show active area-work"
+                  class="tab-pane fade  area-work"
                   id="area"
                   role="tabpanel"
                   aria-labelledby="area-tab"
@@ -393,7 +404,231 @@
                         </div>
                       </form>
                     </div>
-                    <div class="area-head justify-content-center">
+                    <div class="ml-3 mr-3 primary-skill-carosuel">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <!-- <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol> -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row mt-3 ml-3 mr-3">
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top mt-1" src="../../images/painting_1.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card card-active">
+                                  <img class="card-img-top" src="../../images/patrick.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/paul.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/skyyyy.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/web.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/solutionImg.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row  ml-3 mr-3">
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top mt-1" src="../../images/painting_1.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/patrick.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/paul.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/skyyyy.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/web.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/solutionImg.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row mt-3 ml-3 mr-3">
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top mt-1" src="../../images/painting_1.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/patrick.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/paul.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/skyyyy.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/web.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/solutionImg.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row  ml-3 mr-3">
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top mt-1" src="../../images/painting_1.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/patrick.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/paul.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/skyyyy.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/web.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img class="card-img-top" src="../../images/solutionImg.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <p class="card-text">Painting</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      
+                        </div>
+                       
+                        <a class="carousel-control-prev carousel-control-btn ml-3" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a> 
+                        <a class="carousel-control-next carousel-control-btn mr-3" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="area-head justify-content-center" style="display: none;">
                       <p>Tell us about the skills you're interested in.</p>
                       <form>
                         <div class="form-group">
@@ -529,30 +764,92 @@
                 </div>
                 </div>
                 <div
-                  class="tab-pane fade achievement-tab"
+                  class="tab-pane fade achievement-tab "
                   id="achievement"
                   role="tabpanel"
                   aria-labelledby="achievement"
                 >
-                  <div class="leftCnt">
-                    Share your achievements with us! You can also show us a
-                    photo of the memory.
+                <div class="row">
+                  <div class="activement-title col-md-6">
+                    <h4>Share your achievements with us! You can also show us a
+                    photo of the memory.</h4>
                   </div>
-                  <div class="Achive_img">
+                  <div class="Achive_img col-md-6">
                     <img src="../../images/archiveImg.png" alt="" />
                   </div>
-                  <form class="mt-3 mt-3">
+                  </div>
+                  <form class="mt-3">
                     <div class="form-group">
-
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" />
-                      <small id="emailHelp" class="form-text text-muted "><i class="fas fa-paperclip"></i> Attachment <i class="fas fa-times-circle"></i></small>
+                      <span class="attachment-list mt-1">
+                        <img src="../../images/ceractive.png" >
+                        <label class="ml-1 mr-1">Test Attachment</label>
+                        <i class="fas fa-times close-icon"></i>
+                      </span>
+                      <small id="emailHelp" class="form-text text-muted badge badge-pill mt-1"><i class="fas fa-paperclip"></i> Attachment <i class="fas fa-times-circle close-icon"></i></small>
                     </div>
-                    </form>
-                    <button type="button" class="btn btn-primary align-items-start">Add</button>
+                  </form>
+                    <div class="row justify-content-end">
+                      <button type="button" class="btn btn-outline-primary primary-btn-outline "><i class="fas fa-plus"></i> Add</button>
 
+                      </div>
+
+                      <div class="row justify-content-center">
+                        <button type="button" class="btn btn-primary primary-btn "><i class="fas fa-save"></i> Save</button>
+  
+                        </div>
 
 
                 </div>
+                <div
+                class="tab-pane fade qualification-tab show active"
+                id="qualification"
+                role="tabpanel"
+                aria-labelledby="qualification"
+              >
+                <div class="row ml-5">
+                    <div class="qualification-title col-md-6">
+                      <h4>What year did you graduate? Share your academic accomplishments with us.</h4>
+                    </div>
+                    <div class="Achive_img col-md-6">
+                      <img src="../../images/qualiImg.png" alt="" />
+                    </div>
+                </div>
+                <form>
+                  <div class="row ml-5">
+                    <div class="col-md-6">
+                      <div class="form-group degree-input">
+                        <label for="formGroupExampleInput">Degree / Certificate :
+                        </label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col col-md-3">
+                      <div class="dropdown year-select">
+                        <button class="btn  dropdown-toggle  btn-lg" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Year
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button">2010</button>
+                          <button class="dropdown-item" type="button">2011</button>
+                          <button class="dropdown-item" type="button">2012</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col close-degree">
+                      <i class="fas fa-times-circle"></i>
+                    </div>
+                  </div>
+                </form>
+                <div class="row justify-content-end ml-5 mr-5">
+                  <button type="button" class="btn btn-outline-primary primary-btn-outline "><i class="fas fa-plus"></i> Add</button>
+                </div>
+
+                  <div class="row mt-3 mb-3 justify-content-center">
+                    <button type="button" class="btn primary-btn"> <i class="fas fa-save"></i> Save</button>
+
+                  </div>
+                
               </div>
             </div>
         </div>
