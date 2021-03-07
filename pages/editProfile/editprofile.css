@@ -178,6 +178,12 @@
   border: none;
 }
 
+.adjustcard{
+  margin-left: 18%;
+}
+.qfont1{
+  font-size: 1.3rem;
+}
 
 @media only screen and (max-width: 600px) {
   .superimg {
@@ -188,6 +194,44 @@
 @media only screen and (max-width: 600px) {
   .mainform {
     margin: 4%;
+  }
+}
+
+@media only screen and (max-width:600px){
+  .qfont{
+    font-size: 14px;
+    margin-left: -7%;
+  }
+  .setdropdown{
+    padding-right: 166%;
+    margin-bottom: 13%;
+    margin-top: -13%;
+  }
+  .crosssymbol{
+    padding-left: 111%;
+  }
+}
+.workexfont{
+  margin-left:10%;
+   margin-right: 18%;
+    font-size: 85%;
+}
+
+@media only screen and(max-width:600px){
+  .fontsmallscreen{
+     font-size: 63%
+  }
+}
+@media only screen and (max-width:600px){
+  .textareacontent{
+    margin-left: -17%;
+  }
+}
+
+@media only screen and (max-width:600px){
+  .smallscreen{
+    margin-left: 5%;
+    width: 90%;
   }
 }
 
@@ -242,7 +286,7 @@
 .profile_cnt {
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 94%;
   box-shadow: 0px 8px 16px rgb(0 0 0 / 16%);
   background: #fff;
   border-radius: 1.0416666666666665vw;
