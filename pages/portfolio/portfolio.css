@@ -1,166 +1,186 @@
 @font-face {
-    font-family: RobotoRegular;
-    src: url(../..//fonts/Roboto-Regular.woff);
-  }
-  @font-face {
-    font-family: RobotoBold;
-    src: url(../../fonts/Roboto-Bold.woff);
-  }
-  .text {
-    text-align: center;
-  }
-  @font-face {
-    font-family: RobotoLight;
-    src: url(../../fonts/Roboto-Light.woff);
-  }
-  @font-face {
-    font-family: RobotoMedium;
-    src: url(../../fonts/Roboto-Medium.woff);
-  }
-  .profile_cnt {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    box-shadow: 0px 8px 16px rgb(0 0 0 / 16%);
-    background: #fff;
-    border-radius: 1.0416666666666665vw;
-    overflow: hidden;
-  }
-  
-  .tab_wrapper > ul {
-    clear: both;
-    display: inline-block;
-    width: 100%;
-  }
-  .tab_wrapper > ul li a {
-    color: #999;
-  }
-   .tab_wrapper > ul li {
-    float: left;
-    cursor: pointer;
-    font-weight: normal;
-    padding: 20px;
-    border-bottom: 0;
-    line-height: 1.25vw;
-    margin: 0;
-    font-family: "ROBOTOLIGHT";
-    text-align: center;
-    position: relative;
-    list-style: none;
-  } 
-  .tab_wrapper > ul li .active {
-    font-family: "RobotoBold", sans-serif;
-    border-bottom: 5px solid #ff6565 !important;
-    border-left: none;
-    border-right: none;
-    color: #000;
-    border-top: none;
-    border-radius: 0;
-  }
-  
-  .tab_wrapper > ul li a:hover {
-    font-family: "RobotoBold", sans-serif;
-    border-bottom: 5px solid #ff6565 !important;
-    border-left: none;
-    border-right: none;
-    color: #000;
-    border-top: none;
-    border-radius: 0;
-  }
-  @media only screen and (max-width: 600px) {
-    .superimg {
-      max-width: 30%;
-      margin-left: 33%;
-    }
-  }
-  @media only screen and (max-width: 600px) {
-    .mainform {
-      margin: 4%;
-    }
-  }
+  font-family: RobotoRegular;
+  src: url(../..//fonts/Roboto-Regular.woff);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(../../fonts/Roboto-Bold.woff);
+}
+.text {
+  text-align: center;
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url(../../fonts/Roboto-Light.woff);
+}
+@font-face {
+  font-family: RobotoMedium;
+  src: url(../../fonts/Roboto-Medium.woff);
+}
 
-  @media only screen and (max-width: 600px) {
-    .ssdesign1{
-      margin-left: 82%;
-    }
+.underline-text span {
+  border-bottom: 4px solid #c7c7c7;
+}
+
+.achivement-div {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+.achivement-div p {
+  display: inline-block;
+  float: left;
+  width: 80%;
+}
+.achivement-div img {
+  float: right;
+  width: 20%;
+}
+
+.profile_cnt {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-shadow: 0px 8px 16px rgb(0 0 0 / 16%);
+  background: #fff;
+  border-radius: 1.0416666666666665vw;
+  overflow: hidden;
+}
+
+.tab_wrapper > ul {
+  clear: both;
+  display: inline-block;
+  width: 100%;
+}
+.tab_wrapper > ul li a {
+  color: #999;
+}
+.tab_wrapper > ul li {
+  float: left;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 20px;
+  border-bottom: 0;
+  line-height: 1.25vw;
+  margin: 0;
+  font-family: "ROBOTOLIGHT";
+  text-align: center;
+  position: relative;
+  list-style: none;
+}
+.tab_wrapper > ul li .active {
+  font-family: "RobotoBold", sans-serif;
+  border-bottom: 5px solid #ff6565 !important;
+  border-left: none;
+  border-right: none;
+  color: #000;
+  border-top: none;
+  border-radius: 0;
+}
+
+.tab_wrapper > ul li a:hover {
+  font-family: "RobotoBold", sans-serif;
+  border-bottom: 5px solid #ff6565 !important;
+  border-left: none;
+  border-right: none;
+  color: #000;
+  border-top: none;
+  border-radius: 0;
+}
+@media only screen and (max-width: 600px) {
+  .superimg {
+    max-width: 30%;
+    margin-left: 33%;
   }
-  
-  @media only screen and (max-width: 600px) {
-    .paragraph{
-      margin: 8%;
-    }
+}
+@media only screen and (max-width: 600px) {
+  .mainform {
+    margin: 4%;
   }
-  
-  @media only screen and (max-width: 600px) {
-    .imgss{
-      padding: 3%;
-      margin-top: -4%;
-    }
+}
+
+@media only screen and (max-width: 600px) {
+  .ssdesign1 {
+    margin-left: 82%;
   }
- 
-  
+}
+
+@media only screen and (max-width: 600px) {
+  .paragraph {
+    margin: 8%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .imgss {
+    padding: 3%;
+    margin-top: -4%;
+  }
+}
+
 .content .content-overlay {
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    height: 99%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 .content:hover .content-overlay {
-    opacity: 1
+  opacity: 1;
 }
 
 .content-image {
-    width: 100%
+  width: 100%;
 }
 
 img {
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 5px
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 .content-details {
-    position: absolute;
-    text-align: center;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .content:hover .content-details {
-    top: 50%;
-    left: 50%;
-    opacity: 1
+  top: 50%;
+  left: 50%;
+  opacity: 1;
 }
 .content-details h3 {
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    margin-bottom: 0.5em;
-    text-transform: uppercase
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
 }
 
 .content-details p {
-    color: #fff;
-    font-size: 0.8em
+  color: #fff;
+  font-size: 0.8em;
 }
 
 .fadeIn-bottom {
-    top: 80%
+  top: 80%;
 }
-  
