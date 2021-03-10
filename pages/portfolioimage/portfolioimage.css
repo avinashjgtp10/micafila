@@ -1,0 +1,32 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../..//fonts/Roboto-Regular.woff);
+  }
+  @font-face {
+    font-family: RobotoBold;
+    src: url(../../fonts/Roboto-Bold.woff);
+  }
+  .text {
+    text-align: center;
+  }
+  @font-face {
+    font-family: RobotoLight;
+    src: url(../../fonts/Roboto-Light.woff);
+  }
+  @font-face {
+    font-family: RobotoMedium;
+    src: url(../../fonts/Roboto-Medium.woff);
+  }
+
+ 
+  
+  .card{
+    width: 24rem;
+    float: right;
+   
+    background: #fff;
+    border-radius: 1.0416666666666665vw;
+    overflow: hidden; 
+    margin-right: 6%;
+    margin-top: 2%;
+  }

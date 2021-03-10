@@ -15,11 +15,7 @@ body {
 .problem img {
   width: 37.34375vw;
 }
-/* .scroller{
-  height: 80.604167vw;
-  overflow-y: scroll;
-  overflow: auto;
-}   */
+
 .active{
   background: rgba(40, 181, 244, 0.5);
   border-left: 0.41667vw solid #28b5f4;
@@ -27,7 +23,6 @@ body {
   border-radius: 0 5px 5px 0;
 }
 .pplMsg {
-/* background: #FAFAFA; */
 min-height: 4.6875vw;
 border-bottom: 1px solid #F1F1F3;
 clear: both;
@@ -45,7 +40,6 @@ margin: 4px;
   font-size: calc(1.625rem + ((1vw - 13.6px) * 1.7857));
   line-height: 2.083333333333333vw;
   font-weight: normal;
-  /* padding: 5.208333333333334vw 0 0 3.3333333333333335vw; */
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color: black;
@@ -111,7 +105,6 @@ a {
 .viewPost {
   padding-top: 30%;
   padding-left: 15%;
-  /* padding: 15%; */
   margin: 0;
   cursor: pointer;
 }

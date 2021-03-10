@@ -205,16 +205,16 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="../../pages/widgets.html" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <a href="./images/home_icn.png" class="nav-link">
+                                <i class="home-icon fa"></i>
                                 <p>
                                     Home
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-th"></i>
+                        <li class="nav-item menu-open active">
+                            <a href="#" class="nav-link">
+                                <i class="dashboard-icon fa"></i>
                                 <p>
                                     Dashboard
                                 </p>
@@ -222,15 +222,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tree"></i>
-                                <p>
-                                    Recommandations
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-edit"></i>
+                                <i class="connection-icon fa"></i>
                                 <p>
                                     Connections
                                 </p>
@@ -238,17 +230,34 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
+                                <i class="connection-icon fa"></i>
+                                <p>
+                                    Explore
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="contact-icon fa"></i>
                                 <p>
                                     Contact Us
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../pages/calendar.html" class="nav-link">
-                                <i class="nav-icon fas fa-calendar-alt"></i>
+                            <a href="pages/calendar.html" class="nav-link">
+                                <i class="premium-icon fa"></i>
                                 <p>
                                     Upgrade to Premium!
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/calendar.html" class="nav-link">
+                                <span class="numberCircle"><span>30</span></span>
+
+                                <p>
+                                    Cloud Storage
                                 </p>
                             </a>
                         </li>
@@ -434,7 +443,6 @@
                                                 <div class="clear"></div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -473,48 +481,7 @@
     <script src="../../dist/js/pages/dashboard3.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
-    <script>
-        $(document).ready(function () {
-            console.log("test");
-            $("#action_menu_btn").click(function () {
-                $(".action_menu").toggle();
-            });
-            $(".dropMenu").click(function () {
-                $(".dropMenu ul").toggle();
-                $(this).toggleClass("current");
-            });
 
-            $(".pplMsg").click(function () {
-                $(".inboxMsg, .scrollPo").css({ left: 0 });
-                $(".inboxName").toggleClass("leffaddd");
-                $(".responsive-tabs-panel").toggleClass("scrollPo");
-            });
-
-            $(".backarrw").click(function () {
-                $(".inboxMsg").css({ left: "100%" });
-                $(".inboxName").toggleClass("leffaddd");
-            });
-
-            $(".SubMenu").click(function () {
-                $(".inboxMenu").toggle("leffaddd");
-            });
-        });
-        $(window).load(function () {
-            $(".btn-nav").on("click tap", function () {
-                //$(".nav-container").toggleClass("showNav hideNav").removeClass("hidden");
-                $(this).toggleClass("animated");
-            });
-
-
-        });
-
-        $(document).ready(function () {
-            $(".dropMenu").click(function () {
-                $(".dropMenu ul").toggle();
-                $(this).toggleClass('current')
-            });
-        });
-    </script>
     <script src="js/responsive-tabs.min.js" type="text/javascript"></script>
 </body>
 
