@@ -52,6 +52,15 @@
   font-family: "RobotoBold";
   font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
 }
+.content-wrapper {
+  background-color: #e4e4e4 !important;
+}
+
+.wrapper .content{
+  padding-top: 2vw;
+  margin-left: 2vw;
+  padding-bottom: 2vw;
+}
 
 .title-div {
   display: flex;
@@ -73,6 +82,11 @@
 .secondary-btn {
   color: #039be5 !important;
   border-color: #039be5 !important;
+}
+
+.post-img {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .marker-section {

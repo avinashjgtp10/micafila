@@ -1,0 +1,26 @@
+.primary-btn-outline {
+  border-color: #28b5f4 !important;
+  color: #28b5f4 !important;
+}
+
+.primary-btn-outline:hover {
+  border-color: #28b5f4 !important;
+  background-color: #28b5f4 !important;
+  color: white !important;
+}
+
+.primary-btn {
+  background-color: #28b5f4 !important;
+  text-align: center !important;
+  color: white !important;
+  /* width: 100px; */
+  width: auto;
+  line-height: 1.5vw !important;
+  font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
+  border-radius: 1.25vw !important;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 24%) !important;
+}
+
+.outline-secondary-dropdown {
+  border: 1px solid #28b5f4 !important;
+}

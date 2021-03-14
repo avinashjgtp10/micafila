@@ -1,0 +1,92 @@
+body {
+  background: linear-gradient(
+    to bottom,
+    #ebebeb 0,
+    #28b5f4 76%,
+    #0593d0 100%
+  ) !important;
+}
+.content-wrapper {
+  background: linear-gradient(to bottom, #ebebeb 0, #28b5f4 76%, #0593d0 100%);
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../..//fonts/Roboto-Regular.woff);
+  }
+  @font-face {
+    font-family: RobotoBold;
+    src: url(../../fonts/Roboto-Bold.woff);
+  }
+  .text {
+    text-align: center;
+  }
+  @font-face {
+    font-family: RobotoLight;
+    src: url(../../fonts/Roboto-Light.woff);
+  }
+  @font-face {
+    font-family: RobotoMedium;
+    src: url(../../fonts/Roboto-Medium.woff);
+  }
+
+.message-box {
+margin-top: 25%;
+}
+.message{
+    min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));    
+}
+.content-box{
+    width: 100%;
+    background-color: rgba(255,101,101,.5);
+    text-align: center;
+    color: white;
+    font-family: 'RobotoRegular';
+}
+.message-box h3{
+    font-size: 8rem;
+    color: white;
+    font-family: 'RobotoBold';
+    display: block;
+}
+
+.message-box p{
+    font-family: 'RobotoRegular';
+    color: white;
+    font-size: 2rem;
+}
+
+.user-profiles{
+    max-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));    
+    overflow-y: auto;
+}
+
+.done-btn{
+    padding: 0;
+    margin: 4.063vw 0 0;
+    float: left;
+    line-height: 2.5vw;
+    text-align: center;
+    background: #8ce3ef !important;
+    border-radius: 24px !important;
+    text-decoration: underline;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
+   
+    font-size: calc(1rem + ((1vw - 13.6px) * .8929));
+    color: #fff;
+    font-family: 'RobotoRegular';
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .message-box {
+        margin-top: 0;
+        }
+        .message-box h3{
+            font-size: 4rem;
+        }
+  }
+  
