@@ -1,415 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MiCafila</title>
 
-    <!-- Google Font: Source Sans Pro -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
-    />
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="../../plugins/fontawesome-free/css/all.min.css"
-    />
-    <!-- IonIcons -->
-    <link rel="stylesheet" href="./recommendation.css" />
-    <!-- IonIcons -->
-    <link
-      rel="stylesheet"
-      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
-    />
-    <!-- Theme style -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="vendor/bootstrap/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../dist/css/commonButton.css"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MiCafila</title>
 
-    <!-- <link rel=" stylesheet" type="text/css" href="sass/main.css" /> -->
-    <!-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> -->
-    <link rel="stylesheet" href="../../scss/adminlte.css" />
-    <link rel="stylesheet" type="text/css" href="../../dist/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-  </head>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css" />
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="./recommendation.css" />
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <!-- Theme style -->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../dist/css/commonButton.css" />
 
-  <body class="hold-transition sidebar-mini" style="background: #e4e4e4;">
-    <div class="wrapper">
-      <!-- Navbar Main -->
-      <nav
-        class="main-header navbar navbar-expand navbar-white navbar-light"
-        style="box-shadow: 0px -1px 9px #666;"
-      >
-        <!-- Left navbar links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button">
-              <i class="fas fa-bars"></i>
-            </a>
-          </li>
-          <a class="navbar-brand" href="#">
-            <img src="../../images/logo.png" alt="" style="width: 100%;" />
+  <!-- <link rel=" stylesheet" type="text/css" href="sass/main.css" /> -->
+  <!-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> -->
+  <link rel="stylesheet" href="../../scss/adminlte.css" />
+  <link rel="stylesheet" type="text/css" href="../../dist/css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body class="hold-transition sidebar-mini" style="background: #e4e4e4;">
+  <div class="wrapper">
+    <!-- Navbar Main -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="box-shadow: 0px -1px 9px #666;">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button">
+            <i class="fas fa-bars"></i>
           </a>
-        </ul>
-
-        <!-- Right navbar links -->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Josh Clark
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Edit bio</a></li>
-              <li><a class="dropdown-item" href="#">Change language</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-          </li>
-          <li class="nav-item profilepic">
-            <a class="nav-link" href="#"
-              ><img src="../../images/josh.png" style="width: 30px;"
-            /></a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" data-toggle="dropdown" href="#">
-              <i class="far fa-bell"></i>
-              <span class="badge badge-warning navbar-badge">15</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-              <span class="dropdown-item dropdown-header"
-                >15 Notifications</span
-              >
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
-                <i class="fas fa-envelope mr-2"></i> 4 new messages
-                <span class="float-right text-muted text-sm">3 mins</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
-                <i class="fas fa-users mr-2"></i> 8 friend requests
-                <span class="float-right text-muted text-sm">12 hours</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
-                <i class="fas fa-file mr-2"></i> 3 new reports
-                <span class="float-right text-muted text-sm">2 days</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item dropdown-footer"
-                >See All Notifications</a
-              >
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.navbar main -->
-
-      <!-- menu navbar -->
-
-      <!-- /. menu navbar -->
-
-      <!-- Main Sidebar Container -->
-      <aside class="main-sidebar sidebar-dark-primary elevation-4">
-        <!-- Brand Logo -->
-        <a href="index3.html" class="brand-link">
-          <img
-            src="../../dist/img/AdminLTELogo.png"
-            alt="AdminLTE Logo"
-            class="brand-image img-circle elevation-3"
-            style="opacity: 0.8;"
-          />
-          <span class="brand-text font-weight-light">MiCafila</span>
+        </li>
+        <a class="navbar-brand" href="#">
+          <img src="../../images/logo.png" alt="" style="width: 100%;" />
         </a>
+      </ul>
 
-        <!-- Sidebar -->
-        <div class="sidebar">
-          <!-- SidebarSearch Form -->
-          <div class="form-inline">
-            <div class="input-group" data-widget="sidebar-search">
-              <input
-                class="form-control form-control-sidebar"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <div class="input-group-append">
-                <button class="btn btn-sidebar">
-                  <i class="fas fa-search fa-fw"></i>
-                </button>
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Josh Clark
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Edit bio</a></li>
+            <li><a class="dropdown-item" href="#">Change language</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item profilepic">
+          <a class="nav-link" href="#"><img src="../../images/josh.png" style="width: 30px;" /></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar main -->
+
+    <!-- menu navbar -->
+
+    <!-- /. menu navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index3.html" class="brand-link">
+        <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: 0.8;" />
+        <span class="brand-text font-weight-light">MiCafila</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search" />
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="../../pages/widgets.html" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Home
+                </p>
+              </a>
+            </li>
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Dashboard
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tree"></i>
+                <p>
+                  Recommandations
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Connections
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                  Contact Us
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../pages/calendar.html" class="nav-link">
+                <i class="nav-icon fas fa-calendar-alt"></i>
+                <p>
+                  Upgrade to Premium!
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <div class="row ml-4">
+        <div class="col-md-6 message">
+          <div class="message-box">
+            <h3>
+              HI THERE,
+            </h3>
+            <p>
+              Based on your area of work and your skills, we think you might
+              want to connect with these people.
+            </p>
+            <button class="btn done-btn" style="color:#fff;">Done</button>
+          </div>
+        </div>
+        <div class="col-md-6 user-profiles">
+          <div class="row mt-4 mr-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="../../images/superman.png" class="card-img-top" alt="...">
+                <div class="content-box">
+                  <h5 class="card-text">Abirami Rajesh
+                  </h5>
+                  <span>Artist</span>
+                </div>
+                <div class="card-body ">
+                  <button class="btn primary-btn-outline"> connection</button>
+                  <button class="btn primary-btn-outline"> mentee</button>
+
+                </div>
               </div>
             </div>
-          </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="../../images/superman.png" class="card-img-top" alt="...">
+                <div class="content-box">
+                  <h5 class="card-text">Abirami Rajesh
+                  </h5>
+                  <span>Artist</span>
+                </div>
+                <div class="card-body ">
+                  <button class="btn primary-btn-outline"> connection</button>
+                  <button class="btn primary-btn-outline"> mentee</button>
 
-          <!-- Sidebar Menu -->
-          <nav class="mt-2">
-            <ul
-              class="nav nav-pills nav-sidebar flex-column"
-              data-widget="treeview"
-              role="menu"
-              data-accordion="false"
-            >
-              <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-              <li class="nav-item">
-                <a href="../../pages/widgets.html" class="nav-link">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
-                  <p>
-                    Home
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item menu-open">
-                <a href="#" class="nav-link active">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Dashboard
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-tree"></i>
-                  <p>
-                    Recommandations
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-edit"></i>
-                  <p>
-                    Connections
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-table"></i>
-                  <p>
-                    Contact Us
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../pages/calendar.html" class="nav-link">
-                  <i class="nav-icon fas fa-calendar-alt"></i>
-                  <p>
-                    Upgrade to Premium!
-                  </p>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </aside>
-
-      <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper">
-        <div class="row ml-4">
-          <div class="col-md-6 message">
-            <div class="message-box">
-              <h3>
-                HI THERE,
-              </h3>
-              <p>
-                Based on your area of work and your skills, we think you might
-                want to connect with these people.
-              </p>
-              <button class="btn done-btn">Done</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 user-profiles">
-            <div class="row mt-4 mr-4">
-                <div class="col-md-4">
-                    <div class="card" >
-                        <img src="../../images/superman.png" class="card-img-top" alt="...">
-                        <div class="content-box">
-                            <h5 class="card-text">Abirami Rajesh
-                            </h5>
-                            <span>Artist</span>
-                            </div>
-                        <div class="card-body ">
-                          <button class="btn primary-btn-outline">  connection</button>
-                          <button class="btn primary-btn-outline">  mentee</button>
-                        
-                        </div>
-                      </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="../../images/superman.png" class="card-img-top" alt="...">
+                <div class="content-box">
+                  <h5 class="card-text">Abirami Rajesh
+                  </h5>
+                  <span>Artist</span>
                 </div>
-                <div class="col-md-4">
-                    <div class="card" >
-                        <img src="../../images/superman.png" class="card-img-top" alt="...">
-                        <div class="content-box">
-                            <h5 class="card-text">Abirami Rajesh
-                            </h5>
-                            <span>Artist</span>
-                            </div>
-                        <div class="card-body ">
-                          <button class="btn primary-btn-outline">  connection</button>
-                          <button class="btn primary-btn-outline">  mentee</button>
-                        
-                        </div>
-                      </div>
+                <div class="card-body ">
+                  <button class="btn primary-btn-outline"> connection</button>
+                  <button class="btn primary-btn-outline"> mentee</button>
+
                 </div>
-                <div class="col-md-4">
-                    <div class="card" >
-                        <img src="../../images/superman.png" class="card-img-top" alt="...">
-                        <div class="content-box">
-                            <h5 class="card-text">Abirami Rajesh
-                            </h5>
-                            <span>Artist</span>
-                            </div>
-                        <div class="card-body ">
-                          <button class="btn primary-btn-outline">  connection</button>
-                          <button class="btn primary-btn-outline">  mentee</button>
-                        
-                        </div>
-                      </div>
-                </div>
+              </div>
+            </div>
           </div>
           <div class="row mt-4 mr-4">
             <div class="col-md-4">
-                <div class="card" >
-                    <img src="../../images/superman.png" class="card-img-top" alt="...">
-                    <div class="content-box">
-                        <h5 class="card-text">Abirami Rajesh
-                        </h5>
-                        <span>Artist</span>
-                        </div>
-                    <div class="card-body ">
-                      <button class="btn primary-btn-outline">  connection</button>
-                      <button class="btn primary-btn-outline">  mentee</button>
-                    
-                    </div>
-                  </div>
+              <div class="card">
+                <img src="../../images/superman.png" class="card-img-top" alt="...">
+                <div class="content-box">
+                  <h5 class="card-text">Abirami Rajesh
+                  </h5>
+                  <span>Artist</span>
+                </div>
+                <div class="card-body ">
+                  <button class="btn primary-btn-outline"> connection</button>
+                  <button class="btn primary-btn-outline"> mentee</button>
+
+                </div>
+              </div>
             </div>
             <div class="col-md-4">
-                <div class="card" >
-                    <img src="../../images/superman.png" class="card-img-top" alt="...">
-                    <div class="content-box">
-                        <h5 class="card-text">Abirami Rajesh
-                        </h5>
-                        <span>Artist</span>
-                        </div>
-                    <div class="card-body ">
-                      <button class="btn primary-btn-outline">  connection</button>
-                      <button class="btn primary-btn-outline">  mentee</button>
-                    
-                    </div>
-                  </div>
+              <div class="card">
+                <img src="../../images/superman.png" class="card-img-top" alt="...">
+                <div class="content-box">
+                  <h5 class="card-text">Abirami Rajesh
+                  </h5>
+                  <span>Artist</span>
+                </div>
+                <div class="card-body ">
+                  <button class="btn primary-btn-outline"> connection</button>
+                  <button class="btn primary-btn-outline"> mentee</button>
+
+                </div>
+              </div>
             </div>
             <div class="col-md-4">
-                <div class="card" >
-                    <img src="../../images/superman.png" class="card-img-top" alt="...">
-                    <div class="content-box">
-                        <h5 class="card-text">Abirami Rajesh
-                        </h5>
-                        <span>Artist</span>
-                        </div>
-                    <div class="card-body ">
-                      <button class="btn primary-btn-outline">  connection</button>
-                      <button class="btn primary-btn-outline">  mentee</button>
-                    
-                    </div>
-                  </div>
+              <div class="card">
+                <img src="../../images/superman.png" class="card-img-top" alt="...">
+                <div class="content-box">
+                  <h5 class="card-text">Abirami Rajesh
+                  </h5>
+                  <span>Artist</span>
+                </div>
+                <div class="card-body ">
+                  <button class="btn primary-btn-outline"> connection</button>
+                  <button class="btn primary-btn-outline"> mentee</button>
+
+                </div>
+              </div>
             </div>
-      </div>
-      <div class="row mt-4 mr-4">
-        <div class="col-md-4">
-            <div class="card" >
+          </div>
+          <div class="row mt-4 mr-4">
+            <div class="col-md-4">
+              <div class="card">
                 <img src="../../images/superman.png" class="card-img-top" alt="...">
                 <div class="content-box">
-                    <h5 class="card-text">Abirami Rajesh
-                    </h5>
-                    <span>Artist</span>
-                    </div>
+                  <h5 class="card-text">Abirami Rajesh
+                  </h5>
+                  <span>Artist</span>
+                </div>
                 <div class="card-body ">
-                  <button class="btn primary-btn-outline">  connection</button>
-                  <button class="btn primary-btn-outline">  mentee</button>
-                
+                  <button class="btn primary-btn-outline"> connection</button>
+                  <button class="btn primary-btn-outline"> mentee</button>
+
                 </div>
               </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" >
+            </div>
+            <div class="col-md-4">
+              <div class="card">
                 <img src="../../images/superman.png" class="card-img-top" alt="...">
                 <div class="content-box">
-                    <h5 class="card-text">Abirami Rajesh
-                    </h5>
-                    <span>Artist</span>
-                    </div>
+                  <h5 class="card-text">Abirami Rajesh
+                  </h5>
+                  <span>Artist</span>
+                </div>
                 <div class="card-body ">
-                  <button class="btn primary-btn-outline">  connection</button>
-                  <button class="btn primary-btn-outline">  mentee</button>
-                
+                  <button class="btn primary-btn-outline"> connection</button>
+                  <button class="btn primary-btn-outline"> mentee</button>
+
                 </div>
               </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" >
+            </div>
+            <div class="col-md-4">
+              <div class="card">
                 <img src="../../images/superman.png" class="card-img-top" alt="...">
                 <div class="content-box">
-                    <h5 class="card-text">Abirami Rajesh
-                    </h5>
-                    <span>Artist</span>
-                    </div>
+                  <h5 class="card-text">Abirami Rajesh
+                  </h5>
+                  <span>Artist</span>
+                </div>
                 <div class="card-body ">
-                  <button class="btn primary-btn-outline">  connection</button>
-                  <button class="btn primary-btn-outline">  mentee</button>
-                
+                  <button class="btn primary-btn-outline"> connection</button>
+                  <button class="btn primary-btn-outline"> mentee</button>
+
                 </div>
               </div>
-        </div>
-  </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Page Model -->
       <!-- Cafila Model -->
-      <div
-        class="modal fade right"
-        id="fullHeightModalRight"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="myModalLabel"
-        aria-hidden="true"
-      >
+      <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
         <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
-        <div
-          class="modal-dialog modal-full-height modal-right create-mycafila"
-          role="document"
-        >
+        <div class="modal-dialog modal-full-height modal-right create-mycafila" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h4 class="modal-title w-100" id="myModalLabel">
                 Create your Cafila!
               </h4>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
               </button>
             </div>
@@ -419,78 +357,41 @@
                 <div class="col-md-2">
                   <div class="addcflphoto">
                     <div class="plusign"></div>
-                    <input
-                      _ngcontent-serverapp-c5=""
-                      accept=".jpeg,.png,.jpg"
-                      class="custom-file-input file-upload"
-                      id="category_banner"
-                      type="file"
-                    />
+                    <input _ngcontent-serverapp-c5="" accept=".jpeg,.png,.jpg" class="custom-file-input file-upload"
+                      id="category_banner" type="file" />
                   </div>
                 </div>
                 <div class="col-md-9 ml-3">
                   <form>
                     <div class="form-group">
-                      <label for="exampleInputEmail1"
-                        >What shall we call your Cafila?</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="cafila"
-                        aria-describedby="emailHelp"
-                        placeholder="Enter Cafila"
-                      />
-                      <small id="emailHelp" class="form-text text-muted"
-                        >Validation Message</small
-                      >
+                      <label for="exampleInputEmail1">What shall we call your Cafila?</label>
+                      <input type="text" class="form-control" id="cafila" aria-describedby="emailHelp"
+                        placeholder="Enter Cafila" />
+                      <small id="emailHelp" class="form-text text-muted">Validation Message</small>
                     </div>
                     <div class="form-group" custom-search-form>
                       <label for="exampleInputEmail1">Add participants :</label>
                       <div class="input-append span12">
-                        <input
-                          type="text"
-                          class="form-control"
-                          class="search-query"
-                          placeholder="Search"
-                        />
+                        <input type="text" class="form-control" class="search-query" placeholder="Search" />
                       </div>
                       <ul class="list-group search-line cafila-search">
                         <li class="list-group-item">
-                          <img
-                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            alt="user"
-                            class="avatar-img"
-                          />
+                          <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user" class="avatar-img" />
 
                           <span>Cras justo odio</span>
-                          <span class="trash"
-                            ><i class="fas fa-trash-alt"></i
-                          ></span>
+                          <span class="trash"><i class="fas fa-trash-alt"></i></span>
                         </li>
                         <li class="list-group-item">
-                          <img
-                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            alt="user"
-                            class="avatar-img"
-                          />
+                          <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user" class="avatar-img" />
 
                           <span>Cras justo odio</span>
-                          <span class="trash"
-                            ><i class="fas fa-trash-alt"></i
-                          ></span>
+                          <span class="trash"><i class="fas fa-trash-alt"></i></span>
                         </li>
                         <li class="list-group-item">
-                          <img
-                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            alt="user"
-                            class="avatar-img"
-                          />
+                          <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user" class="avatar-img" />
 
                           <span>Cras justo odio</span>
-                          <span class="trash"
-                            ><i class="fas fa-trash-alt"></i
-                          ></span>
+                          <span class="trash"><i class="fas fa-trash-alt"></i></span>
                         </li>
                       </ul>
                     </div>
@@ -499,11 +400,7 @@
               </div>
             </div>
             <div class="modal-footer justify-content-center">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
                 Close
               </button>
               <button type="button" class="btn btn-primary">
@@ -540,10 +437,7 @@
     <script src="../../dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="../../dist/js/pages/dashboard3.js"></script>
-    <script
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-      type="text/javascript"
-    ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
     <script>
       $(document).ready(function () {
@@ -572,5 +466,6 @@
         });
       });
     </script>
-  </body>
+</body>
+
 </html>

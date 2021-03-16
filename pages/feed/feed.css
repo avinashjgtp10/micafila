@@ -25,8 +25,10 @@ body {
 
 .feeed-title {
   font-size: 1.7rem;
-  font-family: "RobotoBold";
+  /* font-family: "RobotoBold";  */
   text-align: center;
+  /* font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714)); */
+    font-family: MontserratRegular;
 }
 
 .feed-card{
@@ -37,3 +39,17 @@ body {
 .card-text label{
     font-family: 'RobotoBold';
 }
+
+@media only screen and (max-width: 600px) {
+  .smallscreendesign {
+    padding-left: 12%;
+  }
+}
+@media only screen and (max-width:600px)
+{
+  .sstitle{
+    font-size: 100%;
+      margin-top: 3%;
+  }
+}
+
