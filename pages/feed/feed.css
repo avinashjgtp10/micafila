@@ -43,13 +43,44 @@ body {
 @media only screen and (max-width: 600px) {
   .smallscreendesign {
     padding-left: 12%;
+    margin-left: -9%;
+    margin-right: 3%;
   }
 }
-@media only screen and (max-width:600px)
+@media only screen and (max-width: 600px)
 {
   .sstitle{
     font-size: 100%;
       margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sssmallimg1 {
+    margin-left: 1%;
+    width: 30%;
+    margin-bottom: -9%;
+}
+}
+
+@media only screen and (max-width:600px) {
+  .ssstar{
+    margin-left: 432%;
+    margin-top: -156%;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .sstext{
+    margin-left: 150%;
+    margin-top: -139%;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .col-md-2{
+   flex:0 0 20%;
+   max-width: 20%;
   }
 }
 

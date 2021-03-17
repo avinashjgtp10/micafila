@@ -18,9 +18,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="../../dist/css/commonButton.css" />
-
-  <!-- <link rel=" stylesheet" type="text/css" href="sass/main.css" /> -->
-  <!-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="../recommendation/recommendation.css" />
   <link rel="stylesheet" href="../../scss/adminlte.css" />
   <link rel="stylesheet" type="text/css" href="../../dist/css/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -202,8 +200,8 @@
                   <span>Artist</span>
                 </div>
                 <div class="card-body ">
-                  <button class="btn primary-btn-outline"> connection</button>
-                  <button class="btn primary-btn-outline"> mentee</button>
+                  <button class="btn primary-btn-outline"> Request</button>
+                  <button class="btn primary-btn-outline"> ?</button>
 
                 </div>
               </div>
@@ -217,8 +215,8 @@
                   <span>Artist</span>
                 </div>
                 <div class="card-body ">
-                  <button class="btn primary-btn-outline"> connection</button>
-                  <button class="btn primary-btn-outline"> mentee</button>
+                  <button class="btn primary-btn-outline"> Request</button>
+                  <button class="btn primary-btn-outline"> ?</button>
 
                 </div>
               </div>
@@ -232,8 +230,8 @@
                   <span>Artist</span>
                 </div>
                 <div class="card-body ">
-                  <button class="btn primary-btn-outline"> connection</button>
-                  <button class="btn primary-btn-outline"> mentee</button>
+                  <button class="btn primary-btn-outline"> Request</button>
+                  <button class="btn primary-btn-outline"> ?</button>
 
                 </div>
               </div>
@@ -249,8 +247,8 @@
                   <span>Artist</span>
                 </div>
                 <div class="card-body ">
-                  <button class="btn primary-btn-outline"> connection</button>
-                  <button class="btn primary-btn-outline"> mentee</button>
+                  <button class="btn primary-btn-outline"> Request</button>
+                  <button class="btn primary-btn-outline"> ?</button>
 
                 </div>
               </div>
@@ -264,8 +262,8 @@
                   <span>Artist</span>
                 </div>
                 <div class="card-body ">
-                  <button class="btn primary-btn-outline"> connection</button>
-                  <button class="btn primary-btn-outline"> mentee</button>
+                  <button class="btn primary-btn-outline"> Request</button>
+                  <button class="btn primary-btn-outline"> ?</button>
 
                 </div>
               </div>
@@ -279,9 +277,8 @@
                   <span>Artist</span>
                 </div>
                 <div class="card-body ">
-                  <button class="btn primary-btn-outline"> connection</button>
-                  <button class="btn primary-btn-outline"> mentee</button>
-
+                  <button class="btn primary-btn-outline"> Request</button>
+                  <button class="btn primary-btn-outline"> ?</button>
                 </div>
               </div>
             </div>
@@ -410,62 +407,22 @@
           </div>
         </div>
       </div>
-
-      <!-- Main Footer -->
-      <footer class="main-footer">
-        <strong>TERMS OF SERVICE | PRIVACY POLICY | PRICING | HELP </strong>
-        <!-- <div>
-                <i class="fab fa-facebook-square"></i>
-            </div> -->
-        <div class="float-right d-none d-sm-inline-block">
-          Copyright 2021 <strong>@Execelerator Softwares Pvt.Ltd.</strong>
-        </div>
-      </footer>
     </div>
 
-    <script src="js/responsive-tabs.min.js" type="text/javascript"></script>
-    <!-- REQUIRED SCRIPTS -->
-    <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE -->
-    <script src="../../dist/js/adminlte.js"></script>
-    <!-- OPTIONAL SCRIPTS -->
-    <script src="../../plugins/chart.js/Chart.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="../../dist/js/pages/dashboard3.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <strong>TERMS OF SERVICE | PRIVACY POLICY | PRICING | HELP </strong>
+      <div class="float-right d-none d-sm-inline-block">
+        Copyright 2021 <strong>@Execelerator Softwares Pvt.Ltd.</strong>
+      </div>
+    </footer>
+  </div>
 
-    <script>
-      $(document).ready(function () {
-        console.log("test");
-        $("#action_menu_btn").click(function () {
-          $(".action_menu").toggle();
-        });
-        $(".dropMenu").click(function () {
-          $(".dropMenu ul").toggle();
-          $(this).toggleClass("current");
-        });
-
-        $(".pplMsg").click(function () {
-          $(".inboxMsg, .scrollPo").css({ left: 0 });
-          $(".inboxName").toggleClass("leffaddd");
-          $(".responsive-tabs-panel").toggleClass("scrollPo");
-        });
-
-        $(".backarrw").click(function () {
-          $(".inboxMsg").css({ left: "100%" });
-          $(".inboxName").toggleClass("leffaddd");
-        });
-
-        $(".SubMenu").click(function () {
-          $(".inboxMenu").toggle("leffaddd");
-        });
-      });
-    </script>
+  <!-- REQUIRED SCRIPTS -->
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- AdminLTE -->
+  <script src="../../dist/js/adminlte.js"></script>
 </body>
 
 </html>
