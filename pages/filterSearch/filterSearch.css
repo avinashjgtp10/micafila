@@ -185,7 +185,7 @@ body {
   width: 20%;
 }
 .navbar-nav > li > a {
-  border-right: 1px solid #ddd;
+  /* border-right: 1px solid #ddd; */
   padding-bottom: 15px;
   padding-top: 15px;
 }
@@ -247,4 +247,11 @@ body {
           margin-top: 2%;
         }
        }       
-      
+
+       /* @media only screen and (max-width: 768px) {
+        .ssinputgrp{
+          margin-left: 0%;
+          width: 100%;
+        }
+       } */
+       
