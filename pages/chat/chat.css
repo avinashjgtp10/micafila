@@ -2,6 +2,12 @@
   font-family: RobotoRegular;
   src: url(../fonts/Roboto-Regular.woff);
 }
+
+.img-container{
+  border: 1px solid;
+}
+
+
 body {
   font-family: RobotoRegular, sans-serif !important;
   font-size: 14px !important;
