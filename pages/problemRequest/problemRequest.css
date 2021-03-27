@@ -2,10 +2,29 @@
   font-family: RobotoRegular;
   src: url(../fonts/Roboto-Regular.woff);
 }
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(../../fonts/Roboto-Bold.woff);
+}
+@font-face {
+  font-family: RobotoMedium;
+  src: url(../../fonts/Roboto-Medium.woff);
+}
 body {
   font-family: RobotoRegular, sans-serif !important;
   font-size: 14px !important;
 }
+
+.problem-title {
+  font-family: "RobotoBold";
+  font-size: 1.6rem;
+}
+.problem-desc{
+  font-family: "RobotoRegular";
+  font-size: 1.1rem;
+}
+
 .problem {
   color: rgba(0, 0, 0, 0.3);
   margin-top: 12%;
@@ -14,7 +33,7 @@ body {
 .ppl {
   padding: 15px 0 0 10px;
 }
-.ppl:hover{
+.ppl:hover {
   box-shadow: 0 6px 12px rgb(0 0 0 / 16%);
 }
 .problem img {
@@ -69,7 +88,7 @@ body {
 .ppl {
   padding: 15px 0 0 10px;
 }
-.ppl:hover{
+.ppl:hover {
   box-shadow: 0 6px 12px rgb(0 0 0 / 16%);
 }
 .screen3-user-avtar {
@@ -113,10 +132,11 @@ body {
   background: #f6f6f6 !important;
   resize: none;
 }
-.multi-screen-level .screen1, .multi-screen-level .screen2 {
+.multi-screen-level .screen1,
+.multi-screen-level .screen2 {
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #F1F1F3;
+  border-bottom: 1px solid #f1f1f3;
 }
 .multi-screen-level .negotiation-panle .price-tag {
   font-family: RobotoRegular, sans-serif !important;
@@ -125,6 +145,8 @@ body {
 }
 .multi-screen-level .negotiation-panle .amount-negotiation-panel {
   line-height: 30px;
+  font-family: 'RobotoMedium';
+
 }
 .multi-screen-level .solution-dp {
   max-width: 12%;
@@ -143,7 +165,6 @@ body {
   border-color: #039be5;
   color: #fff;
 }
-
 
 .column {
   float: left;

@@ -15,6 +15,11 @@
       rel="stylesheet"
       href="../../plugins/fontawesome-free/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="../../dist/css/commonButton.css"
+    />
+
     <link rel="stylesheet" href="./problemModel.css" />
     <!-- IonIcons -->
     <link
@@ -477,9 +482,10 @@
                       </button>
                     </div>
                     <div class="multi-screen-level">
-                    <div class="screen1" >
+                    <div class="screen1" style="display: none;">
                       <div class="row ml-3">
-                        <p><b>Need help to solve a problem? No problem!</b></p>
+                        <p class="problem-title"><b>Need help to solve a problem? No problem!</b></p>
+                       
                       </div>
                       <div class="row ml-3 mr-3">
                         <div class="col-md-2">
@@ -492,7 +498,7 @@
                           />
                         </div>
                         <div class="col-md-10 problem-area">
-                          <p>
+                          <p class="problem-desc">
                             Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry. Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s,
@@ -523,20 +529,20 @@
                       </div>
         
 
-                      <div class="row ml-3 mr-3">
-                        <div class="column">
+                      <div class="row mt-3 text-center">
+                        <div class=" col-md-3">
                           <img src="https://posts.micafila.com/uploads/DP/260/9103cca5-56af-41ae-80b9-913687fa554a.png" alt="Cinque Terre" width="100" >
                         
                         </div>
-                        <div class="column">
+                        <div class=" col-md-3">
                           <img src="https://posts.micafila.com/uploads/DP/260/9103cca5-56af-41ae-80b9-913687fa554a.png" alt="Cinque Terre" width="100" >
                         
                         </div>
-                        <div class="column">
+                        <div class=" col-md-3">
                           <img src="https://posts.micafila.com/uploads/DP/260/9103cca5-56af-41ae-80b9-913687fa554a.png" alt="Cinque Terre" width="100" >
                         
                         </div>
-                        <div class="column">
+                        <div class=" col-md-3">
                           <img src="https://posts.micafila.com/uploads/DP/260/9103cca5-56af-41ae-80b9-913687fa554a.png" alt="Cinque Terre" width="100" >
                         
                         </div>
@@ -545,15 +551,15 @@
                         <span>Awaiting reply from Super...</span>
                       </div>
                       <div class="row justify-content-end mt-3 mr-3">
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btn primary-btn">
                           Cancel Request
                         </button>
                       </div>
                     </div>
 
-                    <div class="screen2" style="display: none;">
+                    <div class="screen2" style="display: none">
                       <div class="row ml-3">
-                        <p><b>Need help to solve a problem? No problem!</b></p>
+                        <p class="problem-title"><b>Need help to solve a problem? No problem!</b></p>
                       </div>
                       <div class="row ml-3 mr-3">
                         <div class="col-md-2">
@@ -566,7 +572,7 @@
                           />
                         </div>
                         <div class="col-md-10 problem-area">
-                          <p>
+                          <p class="problem-desc">
                             Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry. Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s,
@@ -604,7 +610,7 @@
                           </div>
                         </div>
                         <div class="row mt-2">
-                          <div class="col-md-9">
+                          <div class="col-md-9 amount-negotiation-panel">
                             Super is willing to solve your problem for a fee :
                           </div>
                           <div class="col-md-3">
@@ -612,7 +618,7 @@
                           </div>
                         </div>
                         <div class="row mt-2">
-                          <div class="col-md-9">
+                          <div class="col-md-9 amount-negotiation-panel">
                             Super is willing to solve your problem for a fee :
                           </div>
                           <div class="col-md-3">
@@ -620,7 +626,7 @@
                           </div>
                         </div>
                         <div class="row mt-2">
-                          <div class="col-md-9">
+                          <div class="col-md-9 amount-negotiation-panel">
                             Super is willing to solve your problem for a fee :
                           </div>
                           <div class="col-md-3">
@@ -628,7 +634,7 @@
                           </div>
                         </div>
                         <div class="row mt-2">
-                          <div class="col-md-9">
+                          <div class="col-md-9 amount-negotiation-panel">
                             Super is willing to solve your problem for a fee :
                           </div>
                           <div class="col-md-3">
@@ -638,8 +644,8 @@
                       </div>
                     </div>
 
-                    <div class="screen3 mr-3 ml-3" style="display: none">
-                      <div class="row  screen3-title">
+                    <div class="screen3 mr-3 ml-3" >
+                      <div class="row problem-title">
                         <p>
                           <b
                             >Yaay! You and Super have successfully reached an
@@ -724,7 +730,7 @@
                       </div>
                       <div class="user-avtar-details">
                         <div class="row justify-content-center">
-                          <button type="button" class="btn btn-primary">Share contact details</button>
+                          <button type="button" class="btn primary-btn">Share contact details</button>
 
                         </div>
                       </div>
