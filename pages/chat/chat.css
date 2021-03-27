@@ -3,9 +3,47 @@
   src: url(../fonts/Roboto-Regular.woff);
 }
 
-.img-container{
-  border: 1px solid;
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(../../fonts/Roboto-Bold.woff);
 }
+
+
+.user-list li{
+list-style-type: none;
+}
+.user-list{
+  padding: 0;
+}
+
+.user-tab{
+  width: 100%;
+  color: #616161;
+  margin: 5px 1px 10px 1px;
+  cursor: pointer;
+}
+
+.user-tab .profile-desc{
+font-family: 'RobotoRegular';
+width : 100%;
+overflow:hidden;
+display:inline-block;
+text-overflow: ellipsis;
+white-space: nowrap;
+
+}
+.user-list .selected{
+  border-left: 0.2rem solid  #616161;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 16%)
+}
+.user-tab .profile-name{
+  font-family: 'RobotoBold';
+}
+.user-tab:hover{
+  box-shadow: 0 6px 12px rgb(0 0 0 / 16%)
+}
+
 
 
 body {
