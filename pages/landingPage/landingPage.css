@@ -1,0 +1,57 @@
+.pfont{
+    /* font-size: xxx-large; */
+    margin-top: 18%;
+}
+.ul li.active a {
+    font-family: MontserratBold;
+}
+ul li a {
+    text-decoration: none;
+    color: #616161;
+    line-height: 4.635vw;
+    float: left;
+}
+/* .design{
+    padding: 0;
+    margin: auto;
+    background: #28b5f4;
+    border-radius: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -.417vw;
+    height: .833vw;
+    width: 6.354166666666666vw;
+} */
+.navbar-badge {
+    font-size: 0.6rem;
+    font-weight: 300;
+    padding: 2px 4px;
+    position: absolute;
+    right: 5px;
+    top: 26px;
+    background: #039be5;
+    color: white;
+}
+.navbar{
+    margin-top: -2%;
+}
+.landingMain h4 {
+    padding: 2.5vw 0 0;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.1666666666666667em;
+    font-size: calc(1.625rem + ((1vw - 13.6px) * 1.7857));
+    font-family: Roboto,sans-serif;
+}
+@media only screen and (max-width:600px) {
+    .navbar-badge{
+        top:3px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .micafilatag{
+        margin-left: 34%;
+    }
+}
