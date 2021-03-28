@@ -4,7 +4,7 @@
 }
 
 .primary-btn-outline:hover {
-  border-color: #28b5f4 !important;
+  border-color: #c6cfd3 !important;
   background-color: #28b5f4 !important;
   color: white !important;
 }
@@ -19,6 +19,17 @@
   font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
   border-radius: 1.25vw !important;
   box-shadow: 0 2px 8px rgb(0 0 0 / 24%) !important;
+}
+
+.primary-btn-rounnded {
+  background-color: #039be5 !important;
+ color: white !important;
+
+}
+
+.pri-btn-lg{
+  padding-right: 20% !important;
+  padding-left: 20% !important;
 }
 
 .outline-secondary-dropdown {
