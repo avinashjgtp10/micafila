@@ -50,7 +50,7 @@
 .post-share {
   color: #616161;
   font-family: "RobotoBold";
-  font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
+  font-size: 1.125rem;
 }
 .content-wrapper {
   background-color: #e4e4e4 !important;

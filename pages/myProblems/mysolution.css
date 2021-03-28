@@ -11,6 +11,13 @@ body {
   font-size: 14px !important;
 }
 
+.filename {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 85%;
+}
+
 h2 {
   font-family: RobotoBold !important;
 }

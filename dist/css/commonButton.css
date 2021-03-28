@@ -14,6 +14,8 @@
   text-align: center !important;
   color: white !important;
   /* width: 100px; */
+  padding-left: 3%;
+  padding-right: 3%;
   width: auto;
   line-height: 1.5vw !important;
   font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
@@ -23,11 +25,10 @@
 
 .primary-btn-rounnded {
   background-color: #039be5 !important;
- color: white !important;
-
+  color: white !important;
 }
 
-.pri-btn-lg{
+.pri-btn-lg {
   padding-right: 20% !important;
   padding-left: 20% !important;
 }
