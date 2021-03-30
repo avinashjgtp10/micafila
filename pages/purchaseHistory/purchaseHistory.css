@@ -30,6 +30,13 @@
 .table thead th {
   border: none;
 }
+.plan-modal-body .plan-purchase {
+  font-family: "RobotoBold";
+}
+
+.plan-modal-body .plan-desc {
+  font-family: "RobotoRegular";
+}
 
 .content-wrapper {
   /* background-color: lightblue; */
