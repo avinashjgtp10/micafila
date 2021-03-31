@@ -6,6 +6,7 @@
   font-family: RobotoBold;
   src: url(../../fonts/Roboto-Bold.woff);
 }
+
 .text {
   text-align: center;
 }
@@ -20,14 +21,14 @@
 
 .activement-title,
 .qualification-title {
-  font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
+  font-size: 1.125rem;
   line-height: 1.5104166666666667;
   font-weight: 400;
   font-family: "RobotoBold";
   color: #707070;
 }
 .workexperience-title{
-  font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
+  font-size: 1.125rem;
   line-height: 1.5104166666666667;
   font-weight: 400;
   font-family: "RobotoBold";
@@ -37,7 +38,7 @@
   padding: 5px 2%;
     margin: -11px 0 20px;
     font-family: Roboto,sans-serif;
-    font-size: calc(.75rem + ((1vw - 13.6px) * .3571));
+    font-size:0.75rem;
     color: #666;
     border: 0;
     height: 7.8125vw;
@@ -71,7 +72,7 @@
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-size: calc(0.875rem + ((1vw - 13.6px) * 0.3571));
+  font-size: 0.875rem;
   font-family: Roboto, sans-serif;
   color: #616161;
   border-radius: 5px;
@@ -98,7 +99,7 @@
   color: white;
   width: 9.166666666666666vw;
   line-height: 1.5vw;
-  font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
+  font-size:1rem ;
   border-radius: 1.25vw;
   box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
 }
@@ -252,14 +253,6 @@
   }
 }
 
-@font-face {
-  font-family: RobotoLight;
-  src: url(../../fonts/Roboto-Light.woff);
-}
-@font-face {
-  font-family: RobotoMedium;
-  src: url(../../fonts/Roboto-Medium.woff);
-}
 
 
 .tab-content .active {
@@ -286,7 +279,7 @@
   color: #000;
 }
 .name_year {
-  font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
+  font-size:1.125rem;
   font-weight: normal;
   line-height: 1.5625vw;
 }
@@ -328,13 +321,9 @@
   float: left;
   cursor: pointer;
   font-weight: normal;
-  padding: 20px;
-  /* font-size: calc(0.875rem + ((1vw - 13.6px) * 0.7143)); */
-  border-bottom: 0;
-  line-height: 1.25vw;
+  
   margin: 0;
   font-family: "ROBOTOLIGHT";
-
   text-align: center;
   position: relative;
   list-style: none;
@@ -344,7 +333,7 @@
   font-family: "RobotoBold", sans-serif;
   color: #707070;
   text-align: center;
-  font-size: calc(1.125rem + ((1vw - 13.6px) * 1.0714));
+  font-size:1.125rem;
 }
 
 .area-work .search-input {
@@ -389,7 +378,7 @@
   color: white;
   width: 9.166666666666666vw;
   line-height: 1.5vw;
-  font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
+  font-size: 1rem ;
   border-radius: 1.25vw;
   box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
 }
@@ -419,13 +408,12 @@
 .home-tab .form-group label {
   font-family: "RobotoMedium";
   color: #616161;
-  font-size: calc(0.875rem + ((1vw - 13.6px) * 0.3571));
+  font-size: 0.875rem;
 }
 
 .home-tab .form-group input {
   color: #616161;
-  height: 2.396vw;
-  font-size: calc(0.875rem + ((1vw - 13.6px) * 0.3571));
+  font-size: 0.875rem;
 }
 
 .achievement-tab {
@@ -483,7 +471,7 @@
   text-align: left;
   width: 9.166666666666666vw;
   border-radius: 1.25vw;
-  font-size: calc(1rem + ((1vw - 13.6px) * 0.8929));
+  font-size:1rem ;
   color: #fff;
   font-family: Roboto, sans-serif;
   background: url(../../images/saveBtn.33fc7b5f91c8d6406ad1.png) 0.9375vw center
