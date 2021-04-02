@@ -142,7 +142,6 @@ body {
 }
 .profile-box {
   padding: 0;
-  margin: 10px;
   cursor: pointer;
 }
 .profile-box:hover {

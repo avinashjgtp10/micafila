@@ -11960,6 +11960,7 @@ body {
 .wrapper .content {
   background: #fff;
   border-radius: 2rem;
+  margin-left: 3rem;
 }
 
 .layout-boxed .wrapper {
@@ -13593,10 +13594,10 @@ body.sidebar-collapse:not(.sidebar-mini-xs):not(.sidebar-mini-md):not(.sidebar-m
     margin-left: 4.6rem;
   }
 }
-
+/* 
 .content-wrapper {
   background-color: #f4f6f9;
-}
+} */
 
 .main-sidebar,
 .main-sidebar::before {

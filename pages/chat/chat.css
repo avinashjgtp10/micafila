@@ -9,6 +9,60 @@
   src: url(../../fonts/Roboto-Bold.woff);
 }
 
+.search-icon{
+  font-size: 1.5rem;
+  color: #d7d7d7;
+}
+
+
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.user-list-panel{
+  border-right: 1px solid #f1f1f3;
+  height: 47.604166666666664vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.chat-card-header{
+  padding: 0rem 1.5rem;
+}
+
+.search-box{
+  padding-top: 1rem;
+  font-family: 'RobotoRegular';
+}
+.inboxUl li{
+  cursor: pointer;
+}
+
+.inboxMenu h4{
+  color: #707070;
+  font-family: 'RobotoBold';
+}
+
+.inboxUl li:hover{
+  background: rgba(40, 181, 244, 0.5);
+  border-left: 0.41667vw solid #28b5f4;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+
+.content-wrapper{
+  background-color: none  !important;
+}
+
+
+
+
+
 
 .user-list li{
 list-style-type: none;
@@ -126,12 +180,10 @@ body {
   padding: 5px 10px;
   margin-bottom: 15px !important;
 }
-.active {
-  background-color: rgba(0, 0, 0, 0.3);
-}
+
 .user_img {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border: 1.5px solid #f5f6fa;
 }
 .user_img_msg {
@@ -141,8 +193,8 @@ body {
 }
 .img_cont {
   position: relative;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   left: 10px;
 }
 .img_cont_msg {
@@ -161,8 +213,8 @@ body {
   width: 15px;
   background-color: #28b5f4;
   border-radius: 50%;
-  bottom: 0.2em;
-  right: 0.4em;
+  bottom: 0em;
+  right: 0.5em;
   border: 1.5px solid white;
 }
 .offline_icon {
@@ -227,8 +279,8 @@ body {
 }
 #action_menu_btn {
   position: absolute;
-  left: 10px;
-  top: 25px;
+  left: 7px;
+  top: 20px;
   cursor: pointer;
   font-size: 20px;
 }

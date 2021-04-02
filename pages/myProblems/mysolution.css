@@ -6,16 +6,38 @@
   font-family: RobotoBold;
   src: url(../../fonts/Roboto-Bold.woff);
 }
+
 body {
   font-family: RobotoRegular, sans-serif !important;
   font-size: 14px !important;
+}
+
+.review-block .row {
+  position: relative;
+}
+
+.problem-statement {
+  border: 1px solid #039be5;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "RobotoLight";
+  font-size: 1rem;
+}
+
+.comment-description {
+  font-family: "RobotoRegular";
+  font-size: 1rem;
+  height: 100px;
+  padding: 1px;
+  border: 1px solid #039be5;
+  overflow-y: auto;
 }
 
 .filename {
   display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 85%;
+  max-width: 80%;
 }
 
 h2 {
@@ -26,6 +48,7 @@ h2 {
   background: #fafafa;
   resize: none;
   height: 150px !important;
+  font-family: "RobotoMedium";
   overflow: auto;
 }
 
@@ -44,8 +67,15 @@ h2 {
 
 .close-icon {
   position: absolute;
+  font-size: 1rem;
+  right: 0;
+  top: -20px;
+  z-index: 4;
+}
+
+.close-icon:hover {
+  cursor: pointer;
   font-size: 1.3rem;
-  right: 10px;
 }
 .right-attachments {
   max-height: 100px;
@@ -90,9 +120,7 @@ h2 {
 .mysolutions-page .collapsed {
   font-size: 14px;
 }
-.mysolutions-page .data-section button {
-  margin-right: 10px;
-}
+
 .mysolutions-page .data-section button img {
   width: 20px;
   height: 20px;
@@ -101,7 +129,10 @@ h2 {
   margin-bottom: 20px !important;
 }
 .mysolutions-page .right-attachments div {
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mysolutions-page .right-attachments div .fa-times-circle {
   float: right;
@@ -125,6 +156,9 @@ h2 {
   color: red;
 }
 @media (max-width: 767px) {
+  .wrapper .content{
+    margin-left: 0 !important;
+  }
   .ppl {
     padding: 15px 0 10px 10px;
   }

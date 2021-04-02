@@ -1,15 +1,23 @@
 @font-face {
   font-family: RobotoRegular;
-  src: url(../fonts/Roboto-Regular.woff);
+  src: url(../../fonts/Roboto-Regular.woff);
+}
+@font-face{
+  font-family: RobotoMedium;
+  src:url(../../fonts/Roboto-Medium.woff)
 }
 body {
-  font-family: RobotoRegular, sans-serif !important;
+  font-family: "RobotoRegular" !important;
   font-size: 14px !important;
 }
 .problem {
   color: rgba(0, 0, 0, 0.3);
   margin-top: 12%;
   width: auto;
+}
+.solution-title {
+  font-family: "RobotoBold";
+  font-size: 1.6rem;
 }
 
 .problem img {
@@ -29,6 +37,8 @@ body {
 .problem-area {
   max-height: 250px;
   overflow: auto;
+  font-size: 1rem;
+  font-family: 'RobotoRegular';
 }
 
 .price-tag {
@@ -38,13 +48,14 @@ body {
   line-height: 2.7083333333333335vw;
   border-radius: 4px;
   font-family: MontserratBold;
-  padding: 0 1.9791666666666665vw;
+  padding: 0 10px;
   border: 2px solid #616161;
 }
 
 .negotiation-panle {
   max-height: 250px;
   overflow: auto;
+  font-family: 'RobotoMedium';
 }
 .primary-btn {
   background: #039be5 !important;

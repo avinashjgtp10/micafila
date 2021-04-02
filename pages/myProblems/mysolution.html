@@ -27,10 +27,11 @@
       href="vendor/bootstrap/css/bootstrap.min.css"
     />
     <link rel="stylesheet" type="text/css" href="./mysolution.css" />
+    <link rel="stylesheet" type="text/css" href="../../dist/css/commonFont.css" />
     <!-- <link rel=" stylesheet" type="text/css" href="sass/main.css" /> -->
     <!-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> -->
     <link rel="stylesheet" href="../../scss/adminlte.css" />
-    <link rel="stylesheet" href="./problem.css" />
+    <!-- <link rel="stylesheet" href="./problem.css" /> -->
 
     <link rel="stylesheet" href="./problemModel.css" />
     <link rel="stylesheet" type="text/css" href="../../dist/css/style.css" />
@@ -466,25 +467,29 @@
                   </div>
                 </div>
                 <div class="row mt-3">
-                  <button type="button" class="btn btn-outline-primary">
+                  <button type="button" class="btn btn-outline-primary btn-sm"">
                     Capture
                   </button>
 
-                  <button type="button" class="btn btn-outline-primary">
+                  <button type="button" class="btn btn-outline-primary btn-sm"">
                     <img src="../../images/markericn.png" /> Add Marker
                   </button>
-                  <button type="button" class="btn btn-outline-primary">
+                  <button type="button" class="btn btn-outline-primary btn-sm"">
                     <img src="../../images/markericn.png" /> Clear Marker
                   </button>
                 </div>
 
                 <div class="row pt-3">
                   <div class="input-group">
-                    <input
+                    <!-- <input
                       type="text"
                       class="form-control"
                       placeholder="Capture Timestamp and/or Add Feedback"
-                    />
+                    /> -->
+                    <textarea
+                      class="form-control"
+                      placeholder="Capture Timestamp and/or Add Feedback"
+                    ></textarea>
                     <div class="input-group-append">
                       <button class="btn btn-secondary" type="button">
                         <i class="fas fa-paper-plane"></i>
@@ -494,7 +499,7 @@
                 </div>
 
                 <div class="row justify-content-end pt-3">
-                  <button class="btn btn-light">
+                  <button class="btn btn-light btn-sm"">
                     <i class="fas fa-paperclip"></i> Attach files
                   </button>
                 </div>
@@ -505,188 +510,61 @@
                   <img src="../../images/video.png" height="80" width="80" />
                 </div>
 
-                <div class="row">
+                <div class="row mt-1">
                   <hr />
                   <div class="review-block">
                     <div class="row">
                       <div class="close-icon">
                         <i class="fas fa-window-close"></i>
                       </div>
-                      <div class="col-sm-3">
+                      <div class="col-sm-2 mb-1">
                         <img
-                          src="http://dummyimage.com/60x60/666/ffffff&text=No+Image"
-                          class="img-rounded"
+                          src="../../images/superman.png"
+                          class="img-rounded rounded-circle"
+                          width="100%"
                         />
-                        <div class="review-block-name">
-                          <a href="#">nktailor</a>
-                        </div>
-                        <div class="review-block-date">
-                          January 29, 2016<br />1 day ago
-                        </div>
                       </div>
-                      <div class="col-sm-9">
-                        <div class="review-block-rate">
-                          <button
-                            type="button"
-                            class="btn btn-warning btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-warning btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-warning btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-default btn-grey btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-default btn-grey btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                        </div>
-                        <div class="review-block-title">
-                          this was nice in buy
-                        </div>
-                        <div class="review-block-description">
-                          this was nice in buy. this was nice in buy. this was
-                          nice in buy. this was nice in buy this was nice in buy
-                          this was nice in buy this was nice in buy this was
-                          nice in buy
-                        </div>
-                        <div class="feedback-attahcment">
-                          <button type="button" class="btn btn-outline-primary">
-                            <i class="fas fa-file-audio"></i> Audio Mp3
-                          </button>
-                          <button type="button" class="btn btn-outline-primary">
-                            <i class="fas fa-file-audio"></i> Audio Mp3
-                          </button>
-                          <button type="button" class="btn btn-outline-primary">
+                      <div class="col-sm-10 mt-1">
+                        <div class="row">
+                        <div class="col-md-3 mb-1">
+                          <button type="button" class="btn btn-outline-primary m-0">
                             <i class="fas fa-file-audio"></i> Audio Mp3
                           </button>
                         </div>
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="row">
-                      <div class="close-icon">
-                        <i class="fas fa-window-close"></i>
-                      </div>
-                      <div class="col-sm-3">
-                        <img
-                          src="http://dummyimage.com/60x60/666/ffffff&text=No+Image"
-                          class="img-rounded"
-                        />
-                        <div class="review-block-name">
-                          <a href="#">nktailor</a>
-                        </div>
-                        <div class="review-block-date">
-                          January 29, 2016<br />1 day ago
-                        </div>
-                      </div>
-                      <div class="col-sm-9">
-                        <div class="review-block-rate">
-                          <button
-                            type="button"
-                            class="btn btn-warning btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-warning btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-warning btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-default btn-grey btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-default btn-grey btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                        </div>
-                        <div class="review-block-title">
-                          this was nice in buy
-                        </div>
-                        <div class="review-block-description">
-                          this was nice in buy. this was nice in buy. this was
-                          nice in buy. this was nice in buy this was nice in buy
-                          this was nice in buy this was nice in buy this was
-                          nice in buy
-                        </div>
-                        <div class="row feedback-attahcment">
-                          <div class="col-md-3 feedback-thumbnail thumbnail">
-                            <img
-                              src="../../images/video.png"
-                              width="90"
-                              height="80"
-                            />
+                        <div class="col mb-1">
+                          <div class="comment-description">
+                            this was nice in buy. this was nice in buy. this was
+                            nice in buy. this was nice in buy this was nice in buy
+                            this was nice in buy this was nice in buy this was
+                            nice in buy  this was nice in buy. this was nice in buy. this was
+                            nice in buy. this was nice in buy this was nice in buy
+                            this was nice in buy this was nice in buy this was
+                            nice in buy  this was nice in buy. this was nice in buy. this was
+                            nice in buy. this was nice in buy this was nice in buy
+                            this was nice in buy this was nice in buy this was
+                            nice in buy  this was nice in buy. this was nice in buy. this was
+                            nice in buy. this was nice in buy this was nice in buy
+                            this was nice in buy this was nice in buy this was
+                            nice in buy  this was nice in buy. this was nice in buy. this was
+                            nice in buy. this was nice in buy this was nice in buy
+                            this was nice in buy this was nice in buy this was
+                            nice in buy  this was nice in buy. this was nice in buy. this was
+                            nice in buy. this was nice in buy this was nice in buy
+                            this was nice in buy this was nice in buy this was
+                            nice in buy  this was nice in buy. this was nice in buy. this was
+                            nice in buy. this was nice in buy this was nice in buy
+                            this was nice in buy this was nice in buy this was
+                            nice in buy  this was nice in buy. this was nice in buy. this was
+                            nice in buy. this was nice in buy this was nice in buy
+                            this was nice in buy this was nice in buy this was
+                            nice in buy
                           </div>
                         </div>
+                        <div class="col-md-2">
+                          <img src="../../images/superman.png" width="100%">
+                         </div>
+                        </div>
+                       
                       </div>
                     </div>
                     <hr />
@@ -694,82 +572,37 @@
                       <div class="close-icon">
                         <i class="fas fa-window-close"></i>
                       </div>
-                      <div class="col-sm-3">
+                      <div class="col-sm-2">
                         <img
-                          src="http://dummyimage.com/60x60/666/ffffff&text=No+Image"
-                          class="img-rounded"
+                          src="../../images/superman.png"
+                          class="img-rounded rounded-circle"
+                          width="100%"
                         />
-                        <div class="review-block-name">
-                          <a href="#">nktailor</a>
-                        </div>
-                        <div class="review-block-date">
-                          January 29, 2016<br />1 day ago
-                        </div>
                       </div>
-                      <div class="col-sm-9">
-                        <div class="review-block-rate">
-                          <button
-                            type="button"
-                            class="btn btn-warning btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-warning btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-warning btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-default btn-grey btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-default btn-grey btn-xs"
-                            aria-label="Left Align"
-                          >
-                            <span
-                              class="glyphicon glyphicon-star"
-                              aria-hidden="true"
-                            ></span>
+                      <div class="col-sm-10">
+                        <div class="row">
+                        <div class="col-md-3 mb-1">
+                          <button type="button" class="btn btn-outline-primary m-0">
+                            <i class="fas fa-file-audio"></i> Audio Mp3
                           </button>
                         </div>
-                        <div class="review-block-title">
-                          this was nice in buy
+                        <div class="col mb-1">
+                          <div class="comment-description">
+                            this was nice in buy. this was nice in buy. this was
+                            nice in buy. this was nice in buy this was nice in buy
+                            this was nice in buy this was nice in buy this was
+                            nice in buy
+                          </div>
                         </div>
-                        <div class="review-block-description">
-                          this was nice in buy. this was nice in buy. this was
-                          nice in buy. this was nice in buy this was nice in buy
-                          this was nice in buy this was nice in buy this was
-                          nice in buy
+                        <div class="col-md-2">
+                          <img src="../../images/superman.png" width="100%">
+                         </div>
                         </div>
+                       
                       </div>
                     </div>
+                    <hr />
+                    
                   </div>
                 </div>
               </div>
@@ -854,25 +687,25 @@
                 <div class="solution-button">
                   <button
                     type="button"
-                    class="btn btn-outline-primary btn-block"
+                    class="btn btn-outline-primary btn-block btn-sm""
                   >
                     <i class="fas fa-file-plus"></i> Add Files
                   </button>
                   <button
                     type="button"
-                    class="btn btn-outline-primary btn-block"
+                    class="btn btn-outline-primary btn-block btn-sm""
                     data-toggle="modal"
                     data-target="#exampleModal"
                   >
                     Add Collaborators
                   </button>
-                  <button type="button" class="btn btn-primary btn-block">
+                  <button type="button" class="btn btn-primary btn-block btn-sm"">
                     Save & Share
                   </button>
                 </div>
 
                 <div class="download-all-btn">
-                  <button type="button" class="btn btn-outline-primary">
+                  <button type="button" class="btn btn-outline-primary btn-sm"">
                     <i class="fas fa-file-download"></i> Download All
                   </button>
                 </div>

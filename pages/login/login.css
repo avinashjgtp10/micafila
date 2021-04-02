@@ -1,13 +1,140 @@
+.search-muted {
+  font-family: "RobotoLight";
+  color: '#616161';
+}
+.secondary-skill-carosuel .skil-section {
+  margin: auto;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d7d7d7;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+.secondary-skill-carosuel div .skill-icon {
+  cursor: pointer;
+  border: 2px solid rgb(180, 150, 150);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.secondary-skill-carosuel div .primary-btn {
+  background-color: #28b5f4;
+  text-align: center;
+  color: white;
+  width: 9.166666666666666vw;
+  line-height: 1.5vw;
+  font-size: 1rem;
+  border-radius: 1.25vw;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
+}
+
+.secondary-skill-carosuel div .skill-icon:hover {
+  background-color: #28b5f4;
+  cursor: pointer;
+  border-color: #28b5f4;
+  color: white;
+}
+
+.secondary-skill-carosuel div .skill-icon img {
+  width: 30px;
+  height: 30px;
+}
+.secondary-skill-carosuel span {
+  font-family: "RobotoLight";
+}
+
+.secondary-skill-carosuel div .active-skill {
+  background-color: #28b5f4;
+  border-color: #28b5f4;
+  width: 65px !important;
+  height: 65px !important;
+}
+
 .navbar {
   box-shadow: 0 -1px 9px #666;
   background: #fafafa;
 }
 
 .login-container {
-
   width: 100%;
   background: linear-gradient(to bottom, #ebebeb 0, #28b5f4 76%, #0593d0 100%);
 }
+.profile-img {
+  height: 100%;
+  border: 1px solid white;
+  background: white;
+}
+
+.primary-skill-carosuel .card {
+  width: 100%;
+  align-items: center;
+  padding: 6px;
+  justify-content: center;
+}
+
+.primary-skill-carosuel .card:hover {
+  width: 100%;
+  border: 3px solid #28b5f4;
+  cursor: pointer;
+  align-items: center;
+  opacity: 0.5;
+  justify-content: center;
+}
+
+.primary-skill-carosuel .card-active {
+  width: 100%;
+  border: 3px solid #28b5f4;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-btn {
+  top: 50% !important;
+  bottom: 50% !important;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background-color: #28b5f4;
+  width: 50px !important;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.carousel-control-next {
+  right: -36px !important;
+}
+
+.primary-skill-carosuel .card img {
+  width: 100%;
+  height: 100px;
+}
+
+.profile-title {
+  font-family: "RobotoRegular", sans-serif;
+  color: #707070;
+  text-align: center;
+  font-size: 1.125rem;
+}
+.search-input {
+  text-align: center;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+  color: #495057 !important;
+}
+
 .signup-image {
   display: flex;
   justify-content: center;
@@ -15,9 +142,58 @@
   height: 680px;
 }
 
+.search-header {
+  font-size: 1.5rem;
+  color: #28b5f4;
+  cursor: pointer;
+}
+
+.next-btn button {
+  background: #28b5f4;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
+  font-family: "RobotoRegular";
+  padding-left: 10%;
+  padding-right: 10%;
+  border: none;
+}
+.next-btn button:hover {
+  background: #28b5f4;
+}
+
+.register .form-group label {
+  font-family: "RobotoRegular";
+  color: #616161;
+}
+
+.register .form-group .input-text {
+  height: 2.8rem !important;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0 2%;
+  margin: 0;
+  font-size: 1.2rem !important;
+  font-family: "RobotoRegular";
+  color: #616161;
+}
+
 .sign-in-btn,
 .sign-up-btn {
-  background-color: #28b5f4  !important;
+  background-color: #28b5f4 !important;
+}
+
+.text-section .first {
+  font-family: "MontserratExtraBold";
+  color: #fff;
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.text-section .second {
+  font-family: "MontserratBold";
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /* sign in FORM */
@@ -54,6 +230,10 @@
   border-top-right-radius: 0;
 }
 
+.social-login .social-btn {
+  height: 3rem;
+}
+
 #logreg-forms .social-login {
   width: 390px;
   margin: 0 auto;
@@ -63,7 +243,6 @@
   font-weight: 100;
   color: white;
   width: 190px;
-  font-size: 1.7rem;
 }
 
 #logreg-forms a {
@@ -83,10 +262,13 @@
 
 #logreg-forms .facebook-btn {
   background-color: #3c589c;
+  height: 3rem;
 }
 
 #logreg-forms .google-btn {
-  background-color: #df4b3b;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
 }
 
 #logreg-forms .form-reset,

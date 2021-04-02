@@ -14,8 +14,8 @@
   text-align: center !important;
   color: white !important;
   /* width: 100px; */
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
   width: auto;
   line-height: 1.5vw !important;
   font-size: 1rem;
@@ -35,4 +35,10 @@
 
 .outline-secondary-dropdown {
   border: 1px solid #28b5f4 !important;
+}
+
+.link-primary {
+  color: #28b5f4;
+  cursor: pointer;
+  text-decoration: underline;
 }
