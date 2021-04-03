@@ -182,6 +182,9 @@
     .wrapper .content{
     margin-left: 0;
   }
+  .user-list{
+    height: auto;
+  }
   .user-list-panel{
       height: auto;
   }
@@ -191,7 +194,7 @@
 
   .user-tab {
     margin: 5px 1px 10px 0px;
-    height:4rem;
+    
     border: 1px solid #28b5f4;
  
   }
