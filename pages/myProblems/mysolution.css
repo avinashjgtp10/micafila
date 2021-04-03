@@ -7,6 +7,16 @@
   src: url(../../fonts/Roboto-Bold.woff);
 }
 
+.audio-section .audio-img {
+  padding: 10px;
+  display: block;
+  background-color: #fafafa;
+}
+.audio-section .audio {
+  display: block;
+}
+
+
 body {
   font-family: RobotoRegular, sans-serif !important;
   font-size: 14px !important;
@@ -14,6 +24,9 @@ body {
 
 .review-block .row {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .problem-statement {
@@ -156,7 +169,7 @@ h2 {
   color: red;
 }
 @media (max-width: 767px) {
-  .wrapper .content{
+  .wrapper .content {
     margin-left: 0 !important;
   }
   .ppl {

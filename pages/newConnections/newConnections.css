@@ -117,6 +117,11 @@ img, object, embed, video {
 
 }
 @media (max-width: 767px) {
+    .evrKnow ul{
+        height: 25rem;
+    }
+
+
     .res-img {
         width: 15%;
         max-width: 15%;

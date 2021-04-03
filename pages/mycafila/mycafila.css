@@ -45,7 +45,7 @@ body {
 }
 
 .list-group-item:hover {
-  background: rgba(40,181,244,.5);
+  background: rgba(40, 181, 244, 0.5);
   color: white;
 }
 .mycafila-chat #action_menu_btn {
@@ -58,25 +58,26 @@ body {
 }
 .create-mycafila .cafila-search {
   margin-top: 15px;
+  margin-top: 15px;
+  height: 18rem;
+  border: 1px solid #28b5f4;
+  overflow-y: auto;
+  border-radius: 0.25rem;
 }
 
-.cafila-search .list-group-item{
+.cafila-search .list-group-item {
   padding: 7px 7px;
-
 }
 
-.cafila-search .list-group-item .trash{
+.cafila-search .list-group-item .trash {
   cursor: pointer;
-
 }
 
-
-
-.create-mycafila .modal-footer .btn-primary{
+.create-mycafila .modal-footer .btn-primary {
   background-color: #039be5;
   border-color: #039be5;
 }
-.create-mycafila .modal-footer .btn-secondary{
+.create-mycafila .modal-footer .btn-secondary {
   background-color: #fff;
   border-color: #039be5;
   color: #039be5;
@@ -87,6 +88,9 @@ body {
   color: #fff;
 }
 @media (max-width: 767px) {
+  .wrapper .content {
+    margin-left: 0;
+  }
   .msgsection.chat {
     margin-top: 20px;
   }
@@ -113,5 +117,4 @@ body {
   }
 }
 @media (min-width: 768px) {
-  
 }

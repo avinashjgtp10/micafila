@@ -107,7 +107,9 @@ body {
   font-size: 1rem;
   color: #000;
   overflow-y: auto;
-    max-height: 50%;
+  max-height: 10rem;
+  border: 1px solid  #039be5;
+  border-radius: 5px;
   font-family: "RobotoRegular";
 }
 .viewProfile {
@@ -164,10 +166,7 @@ a {
     font-size: 18px;
     padding-left: 0;
   }
-  .feedCnt p {
-    line-height: 1.2;
-    font-size: 14px;
-  }
+
   .feedPhoto {
     width: 20%;
   }

@@ -1,0 +1,28 @@
+.audio-section .audio-img {
+  padding: 10px;
+  display: block;
+  background-color: #fafafa;
+}
+.audio-section .audio {
+  display: block;
+}
+
+.model-image-viewer {
+  position: relative;
+  padding: 15px;
+}
+.model-image-viewer .close-icon {
+  position: absolute;
+  top: -18px;
+  right: -13px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 8040;
+  color: black;
+  cursor: pointer;
+}
+
+.model-image-viewer .close-icon i{
+  background: white;
+  border-radius: 50%;
+}
