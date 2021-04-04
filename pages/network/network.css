@@ -1,132 +1,18 @@
-@font-face {
-  font-family: RobotoRegular;
-  src: url(../..//fonts/Roboto-Regular.woff);
-}
-@font-face {
-  font-family: RobotoBold;
-  src: url(../../fonts/Roboto-Bold.woff);
-}
+
 body {
   font-family: RobotoRegular, sans-serif !important;
   font-size: 14px !important;
 }
-/* .problem {
-    color: rgba(0, 0, 0, 0.3);
-    margin-top: 12%;
-    width: auto;
-  }
-  
-  .problem img {
-    width: 37.34375vw;
-  }
-.scroller{
-    height: 42.604167vw;
-    overflow-y: scroll;
-}  
-.scroller p{
-    padding: 20%;
-    margin: 0;
-    font-size: calc(1rem + ((1vw - 13.6px) * .8929));
-    line-height: 1.25vw;
-    color: rgba(0,0,0,.3);
-    font-family: ROBOTOMEDIUM;
-    text-align: center;
-}
-.active{
-    background: rgba(40, 181, 244, 0.5);
-    border-left: 0.41667vw solid #28b5f4;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-}
 
-.cafila-btn {
-    border: none;
-    color: #616161;
-  }
-  
-  .addcflphoto {
-    padding: 0;
-    position: relative;
-    background: #ebebeb url(../../images/cameraicn.png) no-repeat center;
-    background-size: 2.5vw;
-    height: 5vw;
-    width: 5vw;
-    border-radius: 5vw;
-  }
-  
-  .plusign {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: -0.3125vw;
-    right: -0.3125vw;
-    background: url(../../images/plussign.png) no-repeat center;
-    width: 1.1979166666666667vw;
-    height: 1.1979166666666667vw;
-    background-size: 1.1979166666666667vw;
-  }
-  
-  .search-line .avatar-img {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-  }
-  
-  .search-line .trash {
-    float: right;
-    padding-top: 10px;
-  }
-  
-  .list-group-item:hover {
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
-  }
-  .mycafila-chat #action_menu_btn {
-    position: absolute;
-    right: 10px;
-    left: inherit;
-    top: 25px;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  .create-mycafila .cafila-search {
-    margin-top: 15px;
-  }
-  .create-mycafila .modal-footer .btn-primary{
-    background-color: rgb(241, 196, 15);
-    border-color: rgb(241, 196, 15);
-  }
-  @media (max-width: 767px) {
-    .msgsection.chat {
-      margin-top: 20px;
-    }
-    .img_cont {
-      margin-left: 15px;
-    }
-    .mycafila-chat .action_menu-arrow {
-      left: 10px !important;
-      right: inherit !important;
-      top: 25px !important;
-      position: absolute;
-    }
-  }
-  @media (min-width: 768px) {
-    
-  } */
 
-@font-face {
-  font-family: RobotoBold;
-  src: url(../../fonts/Roboto-Bold.woff);
-}
 
-@font-face {
-  font-family: RobotoRegular;
-  src: url(../../fonts/Roboto-Regular.woff);
-}
 
 .primary-btn {
   color: white;
   background: #039be5;
+}
+.tab-content> .card{
+  box-shadow: none;
 }
 
 .network-table th {
@@ -140,7 +26,7 @@ body {
   text-align: center;
 }
 
-.active {
+.mentorList > .active {
   background: white !important;
   border-left: none !important;
 }

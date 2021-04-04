@@ -54,6 +54,7 @@ body {
   left: inherit;
   top: 25px;
   cursor: pointer;
+  display: block;
   font-size: 20px;
 }
 .create-mycafila .cafila-search {

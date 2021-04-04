@@ -16,10 +16,6 @@
       href="../../plugins/fontawesome-free/css/all.min.css"
     />
     <!-- IonIcons -->
-    <link rel="stylesheet" href="./mycafila.css" />
-    <link rel="stylesheet" href="../../dist/css/commonButton.css" />
-    <link rel="stylesheet" href="../../dist/css/commonFont.css" />
-    <!-- IonIcons -->
     <link
       rel="stylesheet"
       href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
@@ -30,19 +26,27 @@
       type="text/css"
       href="vendor/bootstrap/css/bootstrap.min.css"
     />
-    <!-- <link rel=" stylesheet" type="text/css" href="sass/main.css" /> -->
-    <!-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> -->
+
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="../dashboardListUser/dashboardListUser.css"
+  />
+
     <link rel="stylesheet" href="../../scss/adminlte.css" />
-    <link rel="stylesheet" href="../feedback/feedback.css" />
+    <link rel="stylesheet" href="./feedback.css" />
+    <link rel="stylesheet" href="../../dist/css/commonButton.css" />
     <link rel="stylesheet" type="text/css" href="../../dist/css/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
   </head>
 
-  <body class="hold-transition sidebar-mini" style="background: #e4e4e4;">
+  <body
+    class="hold-transition sidebar-mini sidebar-collapse"
+    style="background: #e4e4e4;"
+  >
     <div class="wrapper">
       <!-- Navbar Main -->
       <nav
@@ -158,7 +162,7 @@
                       >My problems <span class="menuRight">4</span></a
                     >
                   </li>
-                  <li class="active">
+                  <li>
                     <a class="colorText" href="#"
                       >My Cafila <span class="menuRight">9</span></a
                     >
@@ -359,7 +363,7 @@
               <div class="col-lg-2 col-md-2 inboxMenu">
                 <h4 class="mob-hide">Inbox</h4>
                 <ul class="inboxUl mob-hide">
-                  <li>
+                  <li class="active">
                     <a class="colorText" href="#"
                       >Messages <span class="menuRight">10</span></a
                     >
@@ -375,7 +379,7 @@
                     >
                   </li>
                   <li>
-                    <a class="colorText" class="active" href="#"
+                    <a class="colorText" href="#"
                       >My Cafila <span class="menuRight">9</span></a
                     >
                   </li>
@@ -407,7 +411,7 @@
                       >New connections <span class="menuRight">10</span></a
                     >
                   </li>
-                  <li class="active">
+                  <li>
                     <a class="colorText" href="#"
                       >Feedback <span class="menuRight">5</span></a
                     >
@@ -430,345 +434,230 @@
               </div>
               <div class="col-lg-10 col-md-10">
                 <div class="row no-gutters inboxppl">
-                  <div class="inboxName col-lg-4 col-md-4">
-                    <div class="row no-gutters mob-hide">
-                      <div class="searchbutn">
-                        <button class="btnSearch"></button>
-                      </div>
-                      <input
-                        type="text"
-                        id=""
-                        name=""
-                        class="inboxSearch"
-                        placeholder="Search Message or Name…"
-                      />
-                    </div>
-
-                    <div class="row no-gutters scroller mob-hide">
-                      <ul class="responsive-tabs inboxtab">
-                        <li class="pplMsg feedback">
-                          <a href="#feed-tab-1" class="ppl" target="_self">
-                            <span class="photoProfile col-lg-2 col-md-2">
-                              <img src="../../images/jamie.png" alt=""
-                            /></span>
-                            <span class="proDetails col-lg-10 col-md-10">
-                              <div class="row no-gutters">
-                                <span class="feedchat col-lg-9 col-md-9"
-                                  >Jamie Chan wants your feedback.</span
-                                >
-                              </div>
-                            </span>
-                          </a>
-                        </li>
-                        <li class="pplMsg feedback">
-                          <a href="#chat-tab-1" class="ppl" target="_self">
-                            <span class="photoProfile col-lg-2 col-md-2">
-                              <img src="../../images/pharella.png" alt=""
-                            /></span>
-                            <span class="proDetails col-lg-10 col-md-10">
-                              <div class="row no-gutters">
-                                <span class="feedchat col-lg-9 col-md-9"
-                                  >Pharrell Williams wants your feedback.</span
-                                >
-                              </div>
-                            </span>
-                          </a>
-                        </li>
-                        <li class="pplMsg feedback">
-                          <a href="#chat-tab-1" class="ppl" target="_self">
-                            <span class="photoProfile col-lg-2 col-md-2">
-                              <img src="../../images/Jessica.png" alt=""
-                            /></span>
-                            <span class="proDetails col-lg-10 col-md-10">
-                              <div class="row no-gutters">
-                                <span class="feedchat col-lg-9 col-md-9"
-                                  >Jessica May wants your feedback.</span
-                                >
-                              </div>
-                            </span>
-                          </a>
-                        </li>
-                        <li class="pplMsg feedback">
-                          <a href="#chat-tab-1" class="ppl" target="_self">
-                            <span class="photoProfile col-lg-2 col-md-2">
-                              <img src="../../images/Troy.png" alt=""
-                            /></span>
-                            <span class="proDetails col-lg-10 col-md-10">
-                              <div class="row no-gutters">
-                                <span class="feedchat col-lg-9 col-md-9"
-                                  >Troy Sivan wants your feedback.</span
-                                >
-                              </div>
-                            </span>
-                          </a>
-                        </li>
-                        <li class="pplMsg feedback">
-                          <a href="#chat-tab-1" class="ppl" target="_self">
-                            <span class="photoProfile col-lg-2 col-md-2">
-                              <img
-                                style="padding-top: 2px;"
-                                src="../../images/scot.png"
-                                alt=""
-                            /></span>
-                            <span class="proDetails col-lg-10 col-md-10">
-                              <div class="row no-gutters">
-                                <span class="feedchat col-lg-9 col-md-9"
-                                  >Scott Adkins wants your feedback.</span
-                                >
-                              </div>
-                            </span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-8 col-md-8">
-                    <div class="mt-5">
-                      <h4 class="text-center feed-title">
-                        Jamie Chan wants your feedback.
-                      </h4>
-                      <div class="row mb-1">
-                        <div class="col-md-4 text-center">
-                          <img
-                            style="width: 100px;"
-                            class="image-responsive rounded rounded-circle"
-                            src="../../images/superman.png"
-                            
-                            alt=""
+                  <div class="col-lg-4 col-md-4 user-list-panel">
+                    <form class="">
+                      <div
+                        class="search-box pt-1 row no-gutters align-items-center"
+                      >
+                        <div class="col-auto">
+                          <i class="fas fa-search search-icon"></i>
+                        </div>
+                        <!--end of col-->
+                        <div class="col">
+                          <input
+                            class="form-control form-control-lg form-control-borderless"
+                            type="search"
+                            placeholder="Search message or name"
                           />
-                          <div class="viewProfile">
-                            <a href="#">View profile</a>
+                        </div>
+
+                        <!--end of col-->
+                      </div>
+                    </form>
+
+                    <div class="no-gutters">
+                      <ul class="user-list">
+                        <li class="user-tab row p-1">
+                          <div class="col-2">
+                            <img
+                              src="../../images/proPhoto.png"
+                              alt=""
+                              width="100%"
+                              class="rounded-circle img-fluid"
+                            />
                           </div>
-                        </div>
-                        <div class="feedCnt col-md-8">
-                          <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta repellendus labore molestias doloremque eaque. Eos, quaerat quisquam suscipit veniam similique quos. Adipisci sit velit, eaque eveniet qui quasi reprehenderit? Maiores!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta repellendus labore molestias doloremque eaque. Eos, quaerat quisquam suscipit veniam similique quos. Adipisci sit velit, eaque eveniet qui quasi reprehenderit? Maiores!
-                          </p>
-                         
-                        </div>
-                      </div>
-                      <div class="text-center ">
-                        <button
-                          class="btn primary-btn-rounnded pri-btn-lg  m-1"
-                        >
-                          Accept
-                        </button>
-                        <button
-                          class="btn primary-btn-outline pri-btn-lg  m-1"
-                        >
-                          Ignore
-                        </button>
-                      </div>
-                    </div>
-                    <!-- <div class="msgsection problem">
-                      <div class="feedMsg" style="display: none;">
-                        <p>Select a request to view more details.</p>
-                        <img src="../../images/feedbackImg.png" alt="" />
-                      </div>
-                      <div class="row scroller">
-                        <div class="responsive-tabs-content bm-larger">
-                          <div class="feedSec">
-                            <h4>Jamie Chan wants your feedback.</h4>
+                          <div class="col-10">
                             <div class="row">
-                              <div class="col-md-4 text-center">
-                                <img
-                                  style="width: 100px;"
-                                  class="image-responsive rounded rounded-circle"
-                                  src="../../images/superman.png"
-                                  alt=""
-                                />
-                                <div class="viewProfile">
-                                  <a href="#">View profile</a>
-                                </div>
-                              </div>
-                              <div class="feedCnt col-md-8">
-                                <p>
-                                  jhj
+                              <div class="col-8 ">
+                                <span class="profile-name">David James</span>
+                                <p class="profile-desc">
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Iusto ipsam at cumque omnis
+                                  eos debitis velit magnam accusamus quam
+                                  ducimus nemo voluptates sapiente placeat
+                                  possimus, laborum, in ex blanditiis id!
                                 </p>
-                                <div class="viewPost">
-                                  <a href="#">Accept</a>
-                                </div>
-                                <div class="ignore"><a href="#">Ignore</a></div>
+                              </div>
+                              <div class="col-4 text-center">
+                                <button
+                                  class="btn btn-outline-primary btn-sm btn-xs m-1"
+                                >
+                                  Ignore
+                                </button>
+                                <button class="btn btn-primary btn-sm m-1 btn-xs">
+                                  Accept
+                                </button>
                               </div>
                             </div>
                           </div>
-                          <div class="clear"></div>
-                        </div>
-                      </div>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Page Model -->
-      <!-- Cafila Model -->
-      <div
-        class="modal fade right"
-        id="fullHeightModalRight"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="myModalLabel"
-        aria-hidden="true"
-      >
-        <div
-          class="modal-dialog modal-full-height modal-right create-mycafila"
-          role="document"
-        >
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title w-100" id="myModalLabel">
-                Create your Cafila!
-              </h4>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-md-2">
-                  <div class="addcflphoto">
-                    <div class="plusign"></div>
-                    <input
-                      _ngcontent-serverapp-c5=""
-                      accept=".jpeg,.png,.jpg"
-                      class="custom-file-input file-upload"
-                      id="category_banner"
-                      type="file"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-9 ml-3">
-                  <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1"
-                        >What shall we call your Cafila?</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="cafila"
-                        aria-describedby="emailHelp"
-                        placeholder="Enter Cafila"
-                      />
-                      <small id="emailHelp" class="form-text text-muted"
-                        >Validation Message</small
-                      >
-                    </div>
-                    <div class="form-group" custom-search-form>
-                      <label for="exampleInputEmail1">Add participants :</label>
-                      <div class="input-append span12">
-                        <input
-                          type="text"
-                          class="form-control"
-                          class="search-query"
-                          placeholder="Search"
-                        />
-                      </div>
-                      <ul class="list-group search-line cafila-search">
-                        <li class="list-group-item">
-                          <img
-                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            alt="user"
-                            class="avatar-img"
-                          />
-
-                          <span>Cras justo odio</span>
-                          <span class="trash"
-                            ><i class="fas fa-trash-alt"></i
-                          ></span>
                         </li>
-                        <li class="list-group-item">
-                          <img
-                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            alt="user"
-                            class="avatar-img"
-                          />
-
-                          <span>Cras justo odio</span>
-                          <span class="trash"
-                            ><i class="fas fa-trash-alt"></i
-                          ></span>
+                        <li class="user-tab row">
+                          <div class="col-2">
+                            <img
+                              src="../../images/proPhoto.png"
+                              alt=""
+                              width="100%"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div class="col-10">
+                            <div class="row">
+                              <div class="col-8 ">
+                                <span class="profile-name">David James</span>
+                                <p class="profile-desc">
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Iusto ipsam at cumque omnis
+                                  eos debitis velit magnam accusamus quam
+                                  ducimus nemo voluptates sapiente placeat
+                                  possimus, laborum, in ex blanditiis id!
+                                </p>
+                              </div>
+                              <div class="col-4 text-center">
+                                <button
+                                  class="btn btn-outline-primary btn-sm btn-xs m-1"
+                                >
+                                  Ignore
+                                </button>
+                                <button class="btn btn-primary btn-sm m-1 btn-xs">
+                                  Accept
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </li>
-                        <li class="list-group-item">
-                          <img
-                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            alt="user"
-                            class="avatar-img"
-                          />
-
-                          <span>Cras justo odio</span>
-                          <span class="trash"
-                            ><i class="fas fa-trash-alt"></i
-                          ></span>
+                        <li class="user-tab row selected">
+                          <div class="col-2">
+                            <img
+                              src="../../images/proPhoto.png"
+                              alt=""
+                              width="100%"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div class="col-10">
+                            <div class="row">
+                              <div class="col-8 ">
+                                <span class="profile-name">David James</span>
+                                <p class="profile-desc">
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Iusto ipsam at cumque omnis
+                                  eos debitis velit magnam accusamus quam
+                                  ducimus nemo voluptates sapiente placeat
+                                  possimus, laborum, in ex blanditiis id!
+                                </p>
+                              </div>
+                              <div class="col-4 text-center">
+                                <button
+                                class="btn btn-outline-primary btn-sm btn-xs m-1"
+                              >
+                                Ignore
+                              </button>
+                              <button class="btn btn-primary btn-sm m-1 btn-xs">
+                                Accept
+                              </button>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="user-tab row">
+                          <div class="col-2">
+                            <img
+                              src="../../images/proPhoto.png"
+                              alt=""
+                              width="100%"
+                              class="rounded-circle"
+                            />
+                          </div>
+                          <div class="col-10">
+                            <div class="row">
+                              <div class="col-8 ">
+                                <span class="profile-name">David James</span>
+                                <p class="profile-desc">
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Iusto ipsam at cumque omnis
+                                  eos debitis velit magnam accusamus quam
+                                  ducimus nemo voluptates sapiente placeat
+                                  possimus, laborum, in ex blanditiis id!
+                                </p>
+                              </div>
+                              <div class="col-4 text-center">
+                                5 jan
+                              </div>
+                            </div>
+                          </div>
                         </li>
                       </ul>
                     </div>
-                  </form>
+                  </div>
+                  <div class="col-md-8 ">
+                    <div class="mt-5">
+                        <h4 class="text-center feed-title">
+                          Jamie Chan wants your feedback.
+                        </h4>
+                        <div class="row mb-1">
+                          <div class="col-md-4 text-center">
+                            <img
+                              style="width: 100px;"
+                              class="image-responsive rounded rounded-circle"
+                              src="../../images/superman.png"
+                              
+                              alt=""
+                            />
+                            <div class="viewProfile">
+                              <a href="#">View profile</a>
+                            </div>
+                          </div>
+                          <div class="feedCnt col-md-8">
+                            <p>
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta repellendus labore molestias doloremque eaque. Eos, quaerat quisquam suscipit veniam similique quos. Adipisci sit velit, eaque eveniet qui quasi reprehenderit? Maiores!
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta repellendus labore molestias doloremque eaque. Eos, quaerat quisquam suscipit veniam similique quos. Adipisci sit velit, eaque eveniet qui quasi reprehenderit? Maiores!
+                            </p>
+                           
+                          </div>
+                        </div>
+                        <div class="text-center ">
+                          <button
+                            class="btn primary-btn-rounnded  bt-sm m-1 "
+                          >
+                            Accept
+                          </button>
+                          <button
+                            class="btn primary-btn-outline  btn-sm  m-1 "
+                          >
+                            Ignore
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="clear"></div>
                 </div>
               </div>
-            </div>
-            <div class="modal-footer justify-content-center">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Create Cafila
-              </button>
             </div>
           </div>
         </div>
       </div>
-
       <!-- Main Footer -->
       <footer class="main-footer">
         <strong>TERMS OF SERVICE | PRIVACY POLICY | PRICING | HELP </strong>
-
+        <!-- <div>
+                <i class="fab fa-facebook-square"></i>
+            </div> -->
         <div class="float-right d-none d-sm-inline-block">
           Copyright 2021 <strong>@Execelerator Softwares Pvt.Ltd.</strong>
         </div>
       </footer>
     </div>
-
-    <script src="js/responsive-tabs.min.js" type="text/javascript"></script>
-    <!-- REQUIRED SCRIPTS -->
-    <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE -->
-    <script src="../../dist/js/adminlte.js"></script>
-    <!-- OPTIONAL SCRIPTS -->
-    <script src="../../plugins/chart.js/Chart.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="../../dist/js/pages/dashboard3.js"></script>
-    <script
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-      type="text/javascript"
-    ></script>
-
     <script>
-      $(document).ready(function () {
-        console.log("test");
-        $("#action_menu_btn").click(function () {
-          $(".action_menu").toggle();
+      $(window).load(function () {
+        $(".btn-nav").on("click tap", function () {
+          $(".nav-container")
+            .toggleClass("showNav hideNav")
+            .removeClass("hidden");
+          $(this).toggleClass("animated");
         });
+      });
+      $(document).ready(function () {
         $(".dropMenu").click(function () {
           $(".dropMenu ul").toggle();
           $(this).toggleClass("current");
@@ -789,20 +678,20 @@
           $(".inboxMenu").toggle("leffaddd");
         });
       });
-      $(window).load(function () {
-        $(".btn-nav").on("click tap", function () {
-          //$(".nav-container").toggleClass("showNav hideNav").removeClass("hidden");
-          $(this).toggleClass("animated");
-        });
-      });
-
-      $(document).ready(function () {
-        $(".dropMenu").click(function () {
-          $(".dropMenu ul").toggle();
-          $(this).toggleClass("current");
-        });
-      });
     </script>
     <script src="js/responsive-tabs.min.js" type="text/javascript"></script>
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE -->
+    <script src="../../dist/js/adminlte.js"></script>
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../../dist/js/pages/dashboard3.js"></script>
   </body>
 </html>

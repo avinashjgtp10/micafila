@@ -16,22 +16,31 @@
       href="../../plugins/fontawesome-free/css/all.min.css"
     />
     <!-- IonIcons -->
-    <link rel="stylesheet" href="./mycafila.css" />
-    <!-- IonIcons -->
     <link
       rel="stylesheet"
       href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="../dashboardListUser/dashboardListUser.css"
+    />
+
+    <link
+    rel="stylesheet"
+    href="./network.css"
+  />
+
     <!-- Theme style -->
     <link
       rel="stylesheet"
       type="text/css"
       href="vendor/bootstrap/css/bootstrap.min.css"
     />
-    <!-- <link rel=" stylesheet" type="text/css" href="sass/main.css" /> -->
-    <!-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> -->
+
     <link rel="stylesheet" href="../../scss/adminlte.css" />
-    <link rel="stylesheet" href="../network/network.css" />
+    <link rel="stylesheet" href="./dashboardListUser.css" />
+    <link rel="stylesheet" href="../../dist/css/commonButton.css" />
+    <link rel="stylesheet" href="../../dist/css/commonFont.css" />
     <link rel="stylesheet" type="text/css" href="../../dist/css/style.css" />
     <link
       rel="stylesheet"
@@ -39,7 +48,10 @@
     />
   </head>
 
-  <body class="hold-transition sidebar-mini" style="background: #e4e4e4;">
+  <body
+    class="hold-transition sidebar-mini sidebar-collapse"
+    style="background: #e4e4e4;"
+  >
     <div class="wrapper">
       <!-- Navbar Main -->
       <nav
@@ -155,7 +167,7 @@
                       >My problems <span class="menuRight">4</span></a
                     >
                   </li>
-                  <li class="active">
+                  <li>
                     <a class="colorText" href="#"
                       >My Cafila <span class="menuRight">9</span></a
                     >
@@ -356,7 +368,7 @@
               <div class="col-lg-2 col-md-2 inboxMenu">
                 <h4 class="mob-hide">Inbox</h4>
                 <ul class="inboxUl mob-hide">
-                  <li>
+                  <li class="active">
                     <a class="colorText" href="#"
                       >Messages <span class="menuRight">10</span></a
                     >
@@ -372,7 +384,7 @@
                     >
                   </li>
                   <li>
-                    <a class="colorText" class="active" href="#"
+                    <a class="colorText" href="#"
                       >My Cafila <span class="menuRight">9</span></a
                     >
                   </li>
@@ -412,7 +424,7 @@
                 </ul>
                 <h4 class="mob-hide">People</h4>
                 <ul class="inboxUl mob-hide">
-                  <li class="active">
+                  <li>
                     <a class="colorText" href="#"
                       >My network <span class="menuRight">6</span></a
                     >
@@ -426,26 +438,7 @@
                 <div class="clear"></div>
               </div>
               <div class="col-lg-10 col-md-10">
-                <div class="">
-                  <!-- Content Header (Page header) -->
-                  <section class="content-header">
-                    <!-- <div class="container-fluid">
-                                        <div class="row mb-2">
-                                            <div class="col-sm-6">
-                                                <h1>Projects</h1>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <ol class="breadcrumb float-sm-right">
-                                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                                    <li class="breadcrumb-item active">Projects</li>
-                                                </ol>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                  </section>
-
-                  <!-- Main content -->
-                  <section class="content">
+                <section class="tab-content">
                     <!-- Default box -->
                     <div class="card">
                       <div class="card-header">
@@ -554,13 +547,13 @@
                                 </button>
                                 <button
                                   type="button"
-                                  class="btn btn-danger m-1"
+                                  class="btn danger-btn m-1"
                                 >
                                   <i class="fas fa-trash"> </i>
                                 </button>
                                 <button
                                   type="button"
-                                  class="btn btn-danger"
+                                  class="btn danger-btn"
                                 >
                                   <i class="fas fa-ban"></i>
                                 </button>
@@ -605,13 +598,13 @@
                             
                                 <button
                                   type="button"
-                                  class="btn btn-danger m-1"
+                                  class="btn danger-btn m-1"
                                 >
                                   <i class="fas fa-trash"> </i>
                                 </button>
                                 <button
                                   type="button"
-                                  class="btn btn-danger"
+                                  class="btn danger-btn"
                                 >
                                   <i class="fas fa-ban"></i>
                                 </button>
@@ -624,200 +617,11 @@
                     </div>
                     <!-- /.card -->
                   </section>
-                  <!-- /.content -->
-                </div>
               </div>
-            </div>
-            <!-- <div class="flowPopup">
-                        <div class="flowpopmain">
-                            <div class="close_iconflw"></div>
-                            <h5>You've blocked the following users successfully.</h5>
-
-                            <div class="popdtls">
-                                <div class="networkDet flowrs">
-                                    <div class="mentorImg"><img src="images/mentor1.png" alt="" />
-                                    </div>
-                                    <div class="mentorName">Paul Jones</div>
-                                    <div class="mentorPoss">Art director</div>
-                                    <div class="mentorCer">Certified Mentor</div>
-                                </div>
-
-                                <div class="networkDet flowrs">
-                                    <div class="mentorImg"><img src="images/mentor2.png" alt="" /></div>
-                                    <div class="mentorName">Dev Sharma</div>
-                                    <div class="mentorPoss">Photographer</div>
-                                    <div class="mentorCer">Certified Mentor</div>
-                                </div>
-                                <div class="networkDet flowrs">
-                                    <div class="mentorImg"><img src="images/mentor3.png" alt="" /></div>
-                                    <div class="mentorName">Dhimant Panchal</div>
-                                    <div class="mentorPoss">Designer</div>
-                                </div>
-                                <div class="networkDet flowrs">
-                                    <div class="mentorImg"><img src="images/mentor4.png" alt="" /></div>
-                                    <div class="mentorName">Vikas Vyas</div>
-                                    <div class="mentorPoss">Curator</div>
-                                    <div class="mentorCer">Certified Mentor</div>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <button class="donebtn netwrk">Done</button>
-
-                        </div>
-                    </div>
-
-
-                    <div class="removePopup">
-                        <div class="removePhoto">
-                            <div class="close_icon"></div>
-                            <div class="photodetails">
-                                <div class="mentorImg"><img src="images/mentor7.png" alt="" /></div>
-                                <div class="mentorName">Darshan Joshi</div>
-                                <div class="mentorPoss">Illustrator</div>
-                                <div class="mentorCer">Certified Mentor</div>
-                            </div>
-                            <div class="sureRemoe">
-                                <h5>Are you sure you want to remove
-                                    Username from your mentors?</h5>
-                                <button class="noBtn btnnspace">No</button>
-                                <button class="YesBtn">Yes</button>
-                            </div>
-                        </div>
-                    </div> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Page Model -->
-      <!-- Cafila Model -->
-      <div
-        class="modal fade right"
-        id="fullHeightModalRight"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="myModalLabel"
-        aria-hidden="true"
-      >
-        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
-        <div
-          class="modal-dialog modal-full-height modal-right create-mycafila"
-          role="document"
-        >
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title w-100" id="myModalLabel">
-                Create your Cafila!
-              </h4>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-md-2">
-                  <div class="addcflphoto">
-                    <div class="plusign"></div>
-                    <input
-                      _ngcontent-serverapp-c5=""
-                      accept=".jpeg,.png,.jpg"
-                      class="custom-file-input file-upload"
-                      id="category_banner"
-                      type="file"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-9 ml-3">
-                  <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1"
-                        >What shall we call your Cafila?</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="cafila"
-                        aria-describedby="emailHelp"
-                        placeholder="Enter Cafila"
-                      />
-                      <small id="emailHelp" class="form-text text-muted"
-                        >Validation Message</small
-                      >
-                    </div>
-                    <div class="form-group" custom-search-form>
-                      <label for="exampleInputEmail1">Add participants :</label>
-                      <div class="input-append span12">
-                        <input
-                          type="text"
-                          class="form-control"
-                          class="search-query"
-                          placeholder="Search"
-                        />
-                      </div>
-                      <ul class="list-group search-line cafila-search">
-                        <li class="list-group-item">
-                          <img
-                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            alt="user"
-                            class="avatar-img"
-                          />
-
-                          <span>Cras justo odio</span>
-                          <span class="trash"
-                            ><i class="fas fa-trash-alt"></i
-                          ></span>
-                        </li>
-                        <li class="list-group-item">
-                          <img
-                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            alt="user"
-                            class="avatar-img"
-                          />
-
-                          <span>Cras justo odio</span>
-                          <span class="trash"
-                            ><i class="fas fa-trash-alt"></i
-                          ></span>
-                        </li>
-                        <li class="list-group-item">
-                          <img
-                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                            alt="user"
-                            class="avatar-img"
-                          />
-
-                          <span>Cras justo odio</span>
-                          <span class="trash"
-                            ><i class="fas fa-trash-alt"></i
-                          ></span>
-                        </li>
-                      </ul>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer justify-content-center">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Create Cafila
-              </button>
             </div>
           </div>
         </div>
       </div>
-
       <!-- Main Footer -->
       <footer class="main-footer">
         <strong>TERMS OF SERVICE | PRIVACY POLICY | PRICING | HELP </strong>
@@ -829,32 +633,16 @@
         </div>
       </footer>
     </div>
-
-    <script src="js/responsive-tabs.min.js" type="text/javascript"></script>
-    <!-- REQUIRED SCRIPTS -->
-    <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE -->
-    <script src="../../dist/js/adminlte.js"></script>
-    <!-- OPTIONAL SCRIPTS -->
-    <script src="../../plugins/chart.js/Chart.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="../../dist/js/pages/dashboard3.js"></script>
-    <script
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-      type="text/javascript"
-    ></script>
-
     <script>
-      $(document).ready(function () {
-        console.log("test");
-        $("#action_menu_btn").click(function () {
-          $(".action_menu").toggle();
+      $(window).load(function () {
+        $(".btn-nav").on("click tap", function () {
+          $(".nav-container")
+            .toggleClass("showNav hideNav")
+            .removeClass("hidden");
+          $(this).toggleClass("animated");
         });
+      });
+      $(document).ready(function () {
         $(".dropMenu").click(function () {
           $(".dropMenu ul").toggle();
           $(this).toggleClass("current");
@@ -876,5 +664,19 @@
         });
       });
     </script>
+    <script src="js/responsive-tabs.min.js" type="text/javascript"></script>
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE -->
+    <script src="../../dist/js/adminlte.js"></script>
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../../dist/js/pages/dashboard3.js"></script>
   </body>
 </html>
