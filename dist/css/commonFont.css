@@ -25,3 +25,9 @@
   src: url(../../fonts/Montserrat-Bold.ttf);
 }
 
+.f-roboto-regular {
+  font-family: RobotoRegular;
+}
+.f-montserrat-bold {
+  font-family: MontserratBold;
+}

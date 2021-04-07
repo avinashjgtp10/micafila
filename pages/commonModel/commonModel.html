@@ -12,6 +12,9 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./commonModel.css" />
+    <link rel="stylesheet" href="../../dist/css/commonFont.css" />
+    <link rel="stylesheet" href="../../dist/css/commonButton.css" />
+    <link rel="stylesheet" href="../../dist/css/commonFontSize.css" />
     <link
       rel="stylesheet"
       href="../../plugins/fontawesome-free/css/all.min.css"
@@ -29,7 +32,7 @@
     <div class="bs-example">
       <!-- Button trigger modal -->
       <div class="row">
-        <div class="col-md-1">
+        <div class="col-1">
           <button
             type="button"
             class="btn btn-primary"
@@ -39,47 +42,8 @@
             Confirm
           </button>
         </div>
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModalCenter"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">
-                  Modal title
-                </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                Are you sure you want to delete this item?
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  No
-                </button>
-                <button type="button" class="btn btn-primary">Yes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-1">
+
+        <div class="col-1">
           <button
             type="button"
             class="btn btn-primary"
@@ -89,7 +53,7 @@
             Success
           </button>
         </div>
-        <div class="col-md-1 mr-3">
+        <div class="col-1 mr-3">
           <button
             type="button"
             class="btn btn-primary"
@@ -97,6 +61,17 @@
             data-target="#image-viewer"
           >
             Image
+          </button>
+        </div>
+
+        <div class="col-1 mr-3">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#profile-user"
+          >
+            Profile
           </button>
         </div>
       </div>
@@ -109,10 +84,15 @@
         aria-labelledby="successModalCenter"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered modal-sm " role="document">
+        <div
+          class="modal-dialog modal-dialog-centered modal-sm"
+          role="document"
+        >
           <!-- size  modal-xl  modal-lg modal-sm-->
           <div class="modal-content model-image-viewer">
-            <span class="close-icon" data-dismiss="modal" aria-label="Close"><i class="far fa-times-circle" ></i></span>
+            <span class="close-icon" data-dismiss="modal" aria-label="Close"
+              ><i class="far fa-times-circle"></i
+            ></span>
             <section>
               <!-- <img src="../../images/superman.png" width="100%"/> -->
               <!-- <div class="audio-section">
@@ -126,8 +106,8 @@
                 </div>
               </div> -->
               <video width="100%" controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
+                <source src="movie.mp4" type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
                 Your browser does not support the video tag.
               </video>
             </section>
@@ -167,6 +147,115 @@
                 data-dismiss="modal"
               >
                 Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Modal title
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Are you sure you want to delete this item?
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                No
+              </button>
+              <button type="button" class="btn btn-primary">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="profile-user"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="successModalCenter"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-lg"
+          role="document"
+        >
+          <div class="modal-content profile-modal">
+            <div class="modal-header">
+              <h4 class="modal-title f-montserrat-bold">
+                Need Help to solve a Problem? No Problem!
+              </h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="../../images/superman.png"
+                    class="rounded-circle"
+                    width="100%"
+                    height="100%"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-10 d-flex align-items-center f-roboto-regular fs-20"
+                >
+                  <span>Pramod Kamble is a quite popular user. </span>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <form class="col-12">
+                  <div class="form-group">
+                    <label
+                      for="exampleFormControlTextarea1"
+                      class="f-roboto-regular fs-20"
+                      >Describe your problem as best you can :</label
+                    >
+                    <textarea
+                      class="form-control f-roboto-regular fs-20"
+                      id="exampleFormControlTextarea1"
+                      placeholder="Add your problem description here and attach images(jpg/jpeg), audio(mp3) or video(mp4) files for reference ..."
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">
+                <i class="fas fa-paperclip"></i> Attach
+              </button>
+              <button type="button" class="btn btn-primary">
+                Send a request <img src="../../dist/img/sendreq.png" />
               </button>
             </div>
           </div>

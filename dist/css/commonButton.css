@@ -22,8 +22,7 @@
   box-shadow: 0 2px 8px rgb(0 0 0 / 24%) !important;
 }
 
-
-.danger-btn{
+.danger-btn {
   background-color: #dc3545 !important;
   text-align: center !important;
   color: white !important;
@@ -54,4 +53,26 @@
   color: #28b5f4;
   cursor: pointer;
   text-decoration: underline;
+}
+
+.toggle-primary button {
+  border-color: #28b5f4 !important;
+  color: #28b5f4 !important;
+  background: transparent;
+}
+
+.toggle-primary button:hover {
+  border-color: #c6cfd3 !important;
+  background-color: #28b5f4 !important;
+  color: white !important;
+}
+
+.toggle-primary .dropdown-item:hover {
+  background-color: #28b5f4 !important;
+  color: white !important;
+}
+
+
+.toggle-primary .show > .btn-danger.dropdown-toggle {
+  background: white;
 }

@@ -1,0 +1,155 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../..//fonts/Roboto-Regular.woff);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(../../fonts/Roboto-Bold.woff);
+}
+.text {
+  text-align: center;
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url(../../fonts/Roboto-Light.woff);
+}
+@font-face {
+  font-family: RobotoMedium;
+  src: url(../../fonts/Roboto-Medium.woff);
+}
+.image-post{
+  position: relative;
+  border: 1px solid #28b5f4;
+}
+ .close-icon{
+   position: absolute;
+   top: 0%;
+   right: 0%;
+ }
+.back-button {
+  text-align: center;
+}
+.marker-buttons > button {
+  width: 75%;
+}
+
+.btn-group {
+  width: 75%;
+}
+.toggle-primary .dropdown-menu {
+  min-width: 0 !important;
+  width: 100%;
+}
+.canvas-img {
+  height: 750px;
+  width: 100%;
+}
+.primary-btn-outline .carousel-item img {
+  width: 100%;
+  height: 30vw;
+}
+
+.carousel-control-btn {
+  top: 50% !important;
+  bottom: 50% !important;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background-color: #28b5f4;
+  width: 50px !important;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.carousel-control-next {
+  right: -50px !important;
+}
+
+.carousel-inner .active {
+  border: none;
+}
+
+.post-share {
+  color: #616161;
+  font-family: "RobotoBold";
+  font-size: 1.125rem;
+}
+.content-wrapper {
+  background-color: #e4e4e4 !important;
+}
+
+.wrapper .content {
+  padding-top: 2vw;
+  margin-left: 2vw;
+  padding-bottom: 2vw;
+}
+
+.title-div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.title-div p {
+  display: inline;
+  margin-left: 10%;
+  font-family: "RobotoBold";
+}
+
+.primary-btn {
+  background: #039be5 !important;
+  color: white !important;
+}
+
+.secondary-btn {
+  color: #039be5 !important;
+  border-color: #039be5 !important;
+}
+
+.post-img {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.marker-section {
+  background: #fafafa;
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d7d7d7;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+
+.marker-comment-close {
+  display: flex;
+  align-items: center;
+  text-align: end;
+}
+
+@media (max-width: 576px) {
+  .marker-buttons button {
+    width: 100%;
+ 
+  }
+  .btn-group {
+    width: 100%;
+  }
+  .canvas-img {
+    height: 620px;
+  }
+
+  .wrapper .content {
+    border-radius: 0  !important;
+    margin-left: 0 !important;
+  }
+}
