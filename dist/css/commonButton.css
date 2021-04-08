@@ -72,7 +72,11 @@
   color: white !important;
 }
 
-
 .toggle-primary .show > .btn-danger.dropdown-toggle {
   background: white;
+}
+
+/* Border Less drop down */
+.borderless-dropdown {
+  
 }

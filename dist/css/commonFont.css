@@ -24,10 +24,18 @@
   font-family: MontserratBold;
   src: url(../../fonts/Montserrat-Bold.ttf);
 }
+@font-face {
+  font-family: MontserratRegular;
+  src: url(../../fonts/Montserrat-Regular.ttf);
+}
 
 .f-roboto-regular {
   font-family: RobotoRegular;
 }
 .f-montserrat-bold {
   font-family: MontserratBold;
+}
+
+.f-montserrat-regular {
+  font-family: MontserratRegular;
 }

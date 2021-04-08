@@ -24,7 +24,20 @@
 
 .carousel-item img {
   width: 100%;
-  height: 30vw;
+  height: 43vw;
+  object-fit: contain;
+  background-color: #616161;
+}
+
+.image-canvas {
+  position: relative;
+}
+.zoom-icon {
+  position: absolute;
+  z-index: 65;
+  right: 17px;
+  cursor: pointer;
+  top: 25px;
 }
 
 .carousel-control-btn {
@@ -48,15 +61,15 @@
 }
 
 .post-share {
-  color: #616161;
-  font-family: "RobotoBold";
-  font-size: 1.125rem;
+  color: #616161 !important;
+  font-family: "RobotoBold" !important;
+  font-size: 1.125rem !important;
 }
 .content-wrapper {
   background-color: #e4e4e4 !important;
 }
 
-.wrapper .content{
+.wrapper .content {
   padding-top: 2vw;
   margin-left: 2vw;
   padding-bottom: 2vw;
@@ -110,4 +123,41 @@
   display: flex;
   align-items: center;
   text-align: end;
+}
+
+.view-edit-post .image-post {
+  position: relative;
+}
+.view-edit-post .close-icon {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+}
+.view-edit-post .back-button {
+  text-align: center;
+}
+.view-edit-post .marker-buttons > button {
+  width: 75%;
+}
+
+.view-edit-post .btn-group {
+  width: 75%;
+}
+.view-edit-post .toggle-primary .dropdown-menu {
+  min-width: 0 !important;
+  width: 100%;
+}
+.view-edit-post .canvas-img {
+  height: 750px;
+  width: 100%;
+}
+.view-edit-post .primary-btn-outline .carousel-item img {
+  width: 100%;
+  height: 30vw;
+}
+
+@media (max-width: 576px) {
+  .view-edit-post .canvas-img {
+    height: 450px;
+  }
 }
