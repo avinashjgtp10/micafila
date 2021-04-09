@@ -44,3 +44,7 @@
 .f-montserrat-regular {
   font-family: MontserratRegular;
 }
+
+.el-gray {
+  color: #616161 !important;
+}
