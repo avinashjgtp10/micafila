@@ -12,6 +12,7 @@
   font-family: RobotoLight;
   src: url(../../fonts/Roboto-Light.woff);
 }
+
 @font-face {
   font-family: RobotoMedium;
   src: url(../../fonts/Roboto-Medium.woff);
@@ -31,6 +32,10 @@
 
 .f-roboto-regular {
   font-family: RobotoRegular;
+}
+
+.f-roboto-light {
+  font-family: RobotoLight;
 }
 .f-montserrat-bold {
   font-family: MontserratBold;

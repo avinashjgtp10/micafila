@@ -9,6 +9,18 @@
   color: white !important;
 }
 
+.primary-btn-with-outline {
+  background-color: white !important;
+  text-align: center !important;
+  color: #28b5f4 !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  width: auto;
+  font-size: 1rem;
+  border-radius: 1.25vw !important;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 24%) !important;
+}
+
 .primary-btn {
   background-color: #28b5f4 !important;
   text-align: center !important;
@@ -16,10 +28,14 @@
   padding-left: 25px !important;
   padding-right: 25px !important;
   width: auto;
-  line-height: 1.5vw !important;
   font-size: 1rem;
   border-radius: 1.25vw !important;
   box-shadow: 0 2px 8px rgb(0 0 0 / 24%) !important;
+}
+
+.primary-btn-color {
+  background-color: #28b5f4 !important;
+  color: white !important;
 }
 
 .danger-btn {
@@ -78,5 +94,4 @@
 
 /* Border Less drop down */
 .borderless-dropdown {
-  
 }

@@ -119,11 +119,11 @@
   background: #f1f1f1;
 }
 
-.marker-comment-close {
+/* .marker-comment-close {
   display: flex;
   align-items: center;
   text-align: end;
-}
+} */
 
 .view-edit-post .image-post {
   position: relative;

@@ -1,0 +1,121 @@
+.wrapper {
+  background-color: white;
+}
+
+.filter-btn > .dropdown {
+  display: inline-block;
+}
+
+.filter-btn > .dropdown button {
+  width: 8rem;
+}
+.fixed-filter {
+  /* position: fixed;
+z-index: 100; */
+}
+
+.filter-result {
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.connect-people .card {
+}
+.connect-people .card .card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-profile-section {
+  position: relative;
+  border: 1px solid;
+}
+
+.card-profile-section > .bg-user-blue-color {
+  background: rgba(3, 155, 229, 0.5);
+}
+.card-profile-section > .bg-user-red-color {
+  background: rgba(255, 101, 101, 0.5);
+}
+
+.card-profile > .card-body {
+  padding: 0.5rem;
+}
+
+.card-profile-section > .user-name {
+  position: absolute;
+  bottom: 0;
+
+  color: white;
+  width: 100%;
+  height: 9vh;
+  opacity: 1.5;
+  text-align: left;
+}
+
+.card-profile-section > .user-name .certification {
+  font-style: italic;
+}
+
+.card-profile-section > .cerative {
+  position: absolute;
+  top: 0%;
+  right: 0;
+}
+.card-profile-section > .selected-profile {
+  position: absolute;
+  color: white;
+  top: 0%;
+  left: 0;
+}
+
+.profile-container {
+  position: relative;
+  width: 100%;
+  max-height: 180px;
+  cursor: pointer;
+}
+.profile-container:hover {
+  background: rgba(97, 97, 97, 0.7);
+}
+.profile-container .image {
+  display: block;
+  max-height: 180px;
+  width: 100%;
+  background-color: #f2f2f2;
+  object-fit: scale-down;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.profile-container .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.profile-container:hover .image {
+  opacity: 0.3;
+}
+
+.profile-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .connect-people .card {
+    min-width: 170px;
+  }
+}
