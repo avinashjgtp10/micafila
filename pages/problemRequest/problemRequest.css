@@ -20,7 +20,7 @@ body {
   font-family: "RobotoBold";
   font-size: 1.6rem;
 }
-.problem-desc{
+.problem-desc {
   font-family: "RobotoRegular";
   font-size: 1.1rem;
 }
@@ -145,8 +145,7 @@ body {
 }
 .multi-screen-level .negotiation-panle .amount-negotiation-panel {
   line-height: 30px;
-  font-family: 'RobotoMedium';
-
+  font-family: "RobotoMedium";
 }
 .multi-screen-level .solution-dp {
   max-width: 12%;
@@ -197,4 +196,17 @@ body {
   .ppl {
     padding: 15px 0 10px 10px;
   }
+}
+
+.problem-attachment {
+  max-height: 15rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.attachment-problem-request img {
+  height: 99px;
+  width: 100%;
+  object-fit: contain;
+  background: lightgray;
 }
