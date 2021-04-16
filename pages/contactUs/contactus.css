@@ -1,0 +1,251 @@
+.search-muted {
+  font-family: "RobotoLight";
+  color: "#616161";
+}
+
+.contact-label {
+  color: #606060;
+  font-family: "MontserratBold";
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d7d7d7;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+.navbar {
+  box-shadow: 0 -1px 9px #666;
+  background: #fafafa;
+}
+
+.login-container {
+  width: 100%;
+  background: linear-gradient(to bottom, #ebebeb 0, #28b5f4 76%, #0593d0 100%);
+}
+.profile-img {
+  height: 100%;
+  border: 1px solid white;
+  background: white;
+}
+
+.carousel-control-btn {
+  top: 50% !important;
+  bottom: 50% !important;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  background-color: #28b5f4;
+  width: 50px !important;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.carousel-control-next {
+  right: -36px !important;
+}
+
+.profile-title {
+  font-family: "RobotoRegular", sans-serif;
+  color: #707070;
+  text-align: center;
+  font-size: 1.125rem;
+}
+.search-input {
+  text-align: center;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+  color: #495057 !important;
+}
+
+.signup-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 680px;
+}
+
+.search-header {
+  font-size: 1.5rem;
+  color: #28b5f4;
+  cursor: pointer;
+}
+
+.next-btn button {
+  background: #28b5f4;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 24%);
+  font-family: "RobotoRegular";
+  padding-left: 10%;
+  padding-right: 10%;
+  border: none;
+}
+.next-btn button:hover {
+  background: #28b5f4;
+}
+
+.register .form-group label {
+  font-family: "RobotoRegular";
+  color: #616161;
+}
+
+.register .form-group .input-text {
+  height: 2.8rem !important;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0 2%;
+  margin: 0;
+  font-size: 1.2rem !important;
+  font-family: "RobotoRegular";
+  color: #616161;
+}
+
+.sign-in-btn,
+.sign-up-btn {
+  background-color: #28b5f4 !important;
+}
+
+.text-section .first {
+  font-family: "MontserratExtraBold";
+  color: #fff;
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.text-section .second {
+  font-family: "MontserratBold";
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* sign in FORM */
+#logreg-forms {
+  width: 412px;
+  margin: 10vh auto;
+  background-color: #f3f3f3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#logreg-forms form {
+  width: 100%;
+  max-width: 410px;
+  padding: 15px;
+  margin: auto;
+}
+#logreg-forms .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+#logreg-forms .form-control:focus {
+  z-index: 2;
+}
+#logreg-forms .form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#logreg-forms .form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.social-login .social-btn {
+  height: 3rem;
+}
+
+#logreg-forms .social-login {
+  width: 390px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+#logreg-forms .social-btn {
+  font-weight: 100;
+  color: white;
+  width: 190px;
+}
+
+#logreg-forms a {
+  display: block;
+  padding-top: 10px;
+  color: lightseagreen;
+}
+
+#logreg-form .lines {
+  width: 200px;
+  border: 1px solid red;
+}
+
+#logreg-forms button[type="submit"] {
+  margin-top: 10px;
+}
+
+#logreg-forms .facebook-btn {
+  background-color: #3c589c;
+  height: 3rem;
+}
+
+#logreg-forms .google-btn {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+
+#logreg-forms .form-reset,
+#logreg-forms .form-signup {
+  display: none;
+}
+
+#logreg-forms .form-signup .social-btn {
+  width: 210px;
+}
+
+#logreg-forms .form-signup input {
+  margin-bottom: 2px;
+}
+
+.form-signup .social-login {
+  width: 210px !important;
+  margin: 0 auto;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 500px) {
+  #logreg-forms {
+    width: 300px;
+  }
+
+  #logreg-forms .social-login {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  #logreg-forms .social-btn {
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: white;
+    width: 200px;
+    height: 56px;
+  }
+  #logreg-forms .social-btn:nth-child(1) {
+    margin-bottom: 5px;
+  }
+  #logreg-forms .social-btn span {
+    display: none;
+  }
+  #logreg-forms .facebook-btn:after {
+    content: "Facebook";
+  }
+
+  #logreg-forms .google-btn:after {
+    content: "Google+";
+  }
+}

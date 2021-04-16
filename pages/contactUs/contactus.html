@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MiCafila</title>
+    <!-- Font Awesome Icons -->
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="../../plugins/fontawesome-free/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./contactus.css" />
+    <link rel="stylesheet" href="../../dist/css/commonFont.css" />
+    <link rel="stylesheet" href="../../dist/css/commonButton.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="" style="background: #e4e4e4;">
+    <div class="">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light"
+        style="box-shadow: 0px -1px 9px #666;"
+      >
+        <a class="navbar-brand" href="#">
+          <img src="../../images/logo.png" alt="" style="width: 100%;" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn primary-btn my-2 my-sm-0 mr-5" type="submit">
+              Log in
+            </button>
+            <a href="https://www.w3schools.com" class="mr-5"
+              >Not a member yet? Sign up now</a
+            >
+
+            <i class="fas fa-search search-header"></i>
+          </form>
+        </div>
+      </nav>
+
+      <div class="row container-fluid login-container">
+        <div class="col-md-6 signup-image">
+          <div class="text-section">
+            <p class="first">QUERY!</p>
+            <p class="second">tell us about your query.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div id="logreg-forms">
+            <div class="register">
+              <label class="text-center mt-2 d-flex flex-column contact-label" >Contact Us </label>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Work Email:</label>
+                  <input
+                    type="email"
+                    class="form-control input-text"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder=""
+                  />
+                </div>   
+
+                <div class="form-group">
+                  <label for="inputState">Whats's this about </label>
+                  <select id="inputState" class="form-control input-text">
+                    <option selected>Select </option>
+                    <option>Technical issue</option>
+                    <option>Technical issue</option>
+                  </select>
+                </div>
+             
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Go ahead, we're listening..</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize:none;"></textarea>
+                  </div>
+                <div class="next-btn text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-primary justify-content-center"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <p style="text-align: center;">
+            <a
+              href="http://bit.ly/2RjWFMfunction toggleResetPswd(e){
+            e.preventDefault();
+            $('#logreg-forms .form-signin').toggle() // display:block or none
+            $('#logreg-forms .form-reset').toggle() // display:block or none
+        }
+        
+        function toggleSignUp(e){
+            e.preventDefault();
+            $('#logreg-forms .form-signin').toggle(); // display:block or none
+            $('#logreg-forms .form-signup').toggle(); // display:block or none
+        }
+        
+        $(()=>{
+            // Login Register Form
+            $('#logreg-forms #forgot_pswd').click(toggleResetPswd);
+            $('#logreg-forms #cancel_reset').click(toggleResetPswd);
+            $('#logreg-forms #btn-signup').click(toggleSignUp);
+            $('#logreg-forms #cancel_signup').click(toggleSignUp);
+        })g"
+              target="_blank"
+              style="color: black;"
+            ></a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <strong>TERMS OF SERVICE | PRIVACY POLICY | PRICING | HELP </strong>
+        <div class="float-right d-none d-sm-inline-block">
+          Copyright 2021 <strong>@Execelerator Softwares Pvt.Ltd.</strong>
+        </div>
+      </footer>
+    </div>
+
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <!-- <script src="../../plugins/jquery/jquery.min.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function toggleResetPswd(e) {
+        e.preventDefault();
+        $("#logreg-forms .form-signin").toggle(); // display:block or none
+        $("#logreg-forms .form-reset").toggle(); // display:block or none
+      }
+
+      function toggleSignUp(e) {
+        e.preventDefault();
+        $("#logreg-forms .form-signin").toggle(); // display:block or none
+        $("#logreg-forms .form-signup").toggle(); // display:block or none
+      }
+
+      $(() => {
+        // Login Register Form
+        $("#logreg-forms #forgot_pswd").click(toggleResetPswd);
+        $("#logreg-forms #cancel_reset").click(toggleResetPswd);
+        $("#logreg-forms #btn-signup").click(toggleSignUp);
+        $("#logreg-forms #cancel_signup").click(toggleSignUp);
+      });
+    </script>
+  </body>
+</html>
