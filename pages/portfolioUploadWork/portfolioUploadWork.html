@@ -251,13 +251,87 @@
                 <i class="fas fa-arrow-left"></i>
               </div>
               <div class="col-lg-7 col-md-7 mt-4 upload-section">
-                <div class="upload-frame ">
+                <div class="row text-center d-flex justify-content-center ">
+                  <div class="col-2 upload-type m-1">
+                    <label for="file-pdf-input">PDF</label>
+                    <input id="file-pdf-input" type="file" accept="application/pdf" />
+
+                  </div>
+                  <div class="col-2 upload-type m-1">
+       
+                    <label for="file-video-input">             Video</label>
+                    <input id="file-video-input" type="file" accept="application/pdf" />
+                  </div>
+                  <div class="col-2 upload-type m-1">
+                    <label for="file-audio-input">             Audio</label>
+                    <input id="file-audio-input" type="file" accept="application/pdf" />
+                    
+                  </div>
+                  <div class="col-2 upload-type m-1">
+                    <label for="file-image-input">       Image</label>
+                    <input id="file-image-input" type="file" accept="application/pdf" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="carouselExampleControls"  class="carousel slide w-100 col-12 upload-profile-carsousel" data-interval="false" data-ride="carousel" 
+                  >
+                  <div class='carousel-outer'>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="upload-frame ">
+                          <img src="../../images/uploadIcon.png" width="100" class="position-absolute " style="z-index: 12;">
+                          <img src="../../images/feed_1.png" class="position-absolute uploaded-data h-100">
+                          <input type="file" class="file_upload">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="upload-frame ">
+                          <img src="../../images/uploadIcon.png" width="100" class="position-absolute " style="z-index: 12;">
+                          <img src="../../images/feed_2.png" class="position-absolute uploaded-data h-100">
+                          <input type="file" class="file_upload">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="upload-frame ">
+                          <img src="../../images/uploadIcon.png" width="100" class="position-absolute " style="z-index: 12;">
+                          <img src="../../images/feed_3.png" class="position-absolute uploaded-data h-100">
+                          <input type="file" class="file_upload">
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev carousel-control-btn" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next carousel-control-btn" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                   </div>
+                   <ol class='carousel-indicators'>
+                    <li data-target='#carouselExampleControls' data-slide-to='0' class='active p-1'><img src="../../images/feed_1.png" class=" w-100"></li>
+                    <li data-target='#carouselExampleControls' data-slide-to='1' class="p-1"><img src="../../images/feed_2.png" class="w-100"></li>
+                    <li data-target='#carouselExampleControls' data-slide-to='2' class="p-1"><img src="../../images/feed_3.png" class="w-100"></li>
+                      
+                         
+                </ol>
+                  </div>
+            
+                
+                </div>
+                <!-- <div class="upload-frame ">
                   
                   <img src="../../images/uploadIcon.png" width="100" class="position-absolute " style="z-index: 12;">
                   <img src="../../images/superman.png" class="position-absolute">
                   <input type="file" class="file_upload">
 
-                </div>
+                </div> -->
+
+            
+
+
+
+
                 <form class="mt-2">
                     <div class="form-group row">
                       <label for="inputEmail3" class="col-sm-2 col-form-label">Tag</label>
