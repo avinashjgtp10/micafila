@@ -1,0 +1,38 @@
+.preference-page {
+  width: 50%;
+}
+
+.image-stripper {
+  border: 1px solid;
+  width: 100%;
+  padding: 1px;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-stripper .multi-img {
+  width: 100px;
+}
+.multi-img img {
+  width: 100%;
+}
+
+
+.image-stripper .fas{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .preference-page {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .preference-page {
+        width: 80%;
+      }
+}

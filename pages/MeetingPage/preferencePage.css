@@ -1,0 +1,10 @@
+.preference-page {
+  width: 50%;
+}
+
+
+@media screen and (max-width: 500px) {
+  .preference-page {
+    width: 100%;
+  }
+}
