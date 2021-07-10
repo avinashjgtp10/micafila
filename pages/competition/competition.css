@@ -35,9 +35,13 @@ video::-webkit-media-controls {
   background-color: #28b5f4;
   /* border: 1px solid white; */
 }
-.competition-info h4 {
-  font-size: 1rem;
-  font-weight: bold;
+
+.competition-info p {
+  color: rgb(0, 35, 51);
+  font-size: 16px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-style: normal;
 }
 
 .competition-content img {
@@ -71,4 +75,33 @@ video::-webkit-media-controls {
 #button .fas {
   font-size: 3rem;
   color: #ff9800;
+}
+
+@media (max-width: 768px) {
+  .image-section {
+    height: auto;
+  }
+  .carousel-inner {
+    height: auto;
+  }
+  .image-section .info-section-btn {
+    position: absolute;
+    top: 0;
+    margin-left: 0;
+    padding: 0;
+
+    width: 70%;
+    left: 16%;
+    border: 1px solid;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  .competition-content {
+    margin-bottom: 1rem;
+  }
+  .competition-info {
+    margin: 1rem;
+  }
 }
